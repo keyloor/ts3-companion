@@ -1,0 +1,2469 @@
+{
+ "capsulas": [
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule1",
+   "item_juego": "CL_BH_B_King",
+   "cp": "CP185",
+   "nombre": "King Outfit",
+   "dudosa": false,
+   "lock": 326
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule2",
+   "item_juego": "CL_BH_B_Merlin",
+   "cp": "CP184",
+   "nombre": "Merlin Outfit",
+   "dudosa": false,
+   "lock": 330
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule3",
+   "item_juego": "CL_BH_B_Princess",
+   "cp": "CP187",
+   "nombre": "Princess Outfit",
+   "dudosa": false,
+   "lock": 340
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule5",
+   "item_juego": "CL_BH_HR_MedievalKid",
+   "cp": "CP188",
+   "nombre": "Pauper Hair",
+   "dudosa": false,
+   "lock": 408
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule6",
+   "item_juego": "CL_BH_B_MedievalKid",
+   "cp": "CP189",
+   "nombre": "Pauper Outfit",
+   "dudosa": false,
+   "lock": 329
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule7",
+   "item_juego": "CL_Alien_HT_Blueberries",
+   "cp": "CP176",
+   "nombre": "Blueberries Hat",
+   "dudosa": false,
+   "lock": 227
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule9",
+   "item_juego": "BC_Wall_EG",
+   "cp": "CP179",
+   "nombre": "Enchanted Walls",
+   "dudosa": false,
+   "lock": 106
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule10",
+   "item_juego": "BC_Left_EG_Flowers",
+   "cp": "CP178",
+   "nombre": "Enchanted Flowers",
+   "dudosa": false,
+   "lock": 27
+  },
+  {
+   "mundo": "enchantedglen",
+   "objeto": "Capsule4",
+   "item_juego": "CL_BH_B_Queen",
+   "cp": "CP186",
+   "nombre": "Queen Outfit",
+   "dudosa": false,
+   "lock": 343
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule1",
+   "item_juego": "CL_BH_HT_FlowerHat",
+   "cp": "CP190",
+   "nombre": "Flower Girl Hat",
+   "dudosa": false,
+   "lock": 463
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule2",
+   "item_juego": "CL_BH_HT_King",
+   "cp": "CP191",
+   "nombre": "King Hat",
+   "dudosa": false,
+   "lock": 467
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule3",
+   "item_juego": "CL_BH_HR_Merlin",
+   "cp": "CP192",
+   "nombre": "Merlin Hair",
+   "dudosa": false,
+   "lock": 409
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule5",
+   "item_juego": "CL_BH_HR_FlowerHat",
+   "cp": "CP195",
+   "nombre": "Flower Girl Hair",
+   "dudosa": false,
+   "lock": 395
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule6",
+   "item_juego": "CL_BH_HR_King",
+   "cp": "CP196",
+   "nombre": "King Hair",
+   "dudosa": false,
+   "lock": 404
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule7",
+   "item_juego": "CL_BH_HT_Merlin",
+   "cp": "CP198",
+   "nombre": "Merlin Hat",
+   "dudosa": false,
+   "lock": 470
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule8",
+   "item_juego": "CL_BH_HT_Princess",
+   "cp": "CP203",
+   "nombre": "Princess hat",
+   "dudosa": false,
+   "lock": 483
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule9",
+   "item_juego": "CL_BH_HT_Queen",
+   "cp": "CP202",
+   "nombre": "Queen Hat",
+   "dudosa": false,
+   "lock": 486
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule10",
+   "item_juego": "CL_BH_B_FlowerHat",
+   "cp": "CP205",
+   "nombre": "Flower Girl Outfit",
+   "dudosa": false,
+   "lock": 317
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule11",
+   "item_juego": "BC_Roof_EG_Rainbow",
+   "cp": "CP193",
+   "nombre": "Enchanted Rainbow",
+   "dudosa": false,
+   "lock": 45
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule12",
+   "item_juego": "BC_Roof_EG_Strawberries",
+   "cp": "CP194",
+   "nombre": "Enchanted Strawberries",
+   "dudosa": false,
+   "lock": 46
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule13",
+   "item_juego": "BC_WFrame_EG",
+   "cp": "CP197",
+   "nombre": "Enchanted Windows",
+   "dudosa": false,
+   "lock": 85
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule14",
+   "item_juego": "BC_Yard_EG_Flamingo",
+   "cp": "CP199",
+   "nombre": "Enchanted Flamingo Bush",
+   "dudosa": false,
+   "lock": 128
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule15",
+   "item_juego": "BC_Yard_EG_Mushrooms",
+   "cp": "CP200",
+   "nombre": "Enchanted Mushrooms",
+   "dudosa": false,
+   "lock": 129
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule16",
+   "item_juego": "BC_Yard_EG_Strawberry",
+   "cp": "CP201",
+   "nombre": "Enchanted strawberries",
+   "dudosa": false,
+   "lock": 130
+  },
+  {
+   "mundo": "enchantedglen_interior",
+   "objeto": "Capsule17",
+   "item_juego": "BC_Door_EG",
+   "cp": "CP204",
+   "nombre": "Enchanted Doors",
+   "dudosa": false,
+   "lock": 12
+  },
+  {
+   "mundo": "hauntedhouse",
+   "objeto": "Capsule1",
+   "item_juego": "BC_Yard_HM_Fist",
+   "cp": "CP146",
+   "nombre": "Broken Fist",
+   "dudosa": false,
+   "lock": 132
+  },
+  {
+   "mundo": "hauntedhouse",
+   "objeto": "Capsule2",
+   "item_juego": "BC_Pbox_PumpkinAntlers",
+   "cp": "CP148",
+   "nombre": "Antler-O-Lantern",
+   "dudosa": false,
+   "lock": 39
+  },
+  {
+   "mundo": "hauntedhouse",
+   "objeto": "Capsule3",
+   "item_juego": "BC_HM_DollArmLight",
+   "cp": "CP143",
+   "nombre": "Doll Arm",
+   "dudosa": false,
+   "lock": 23
+  },
+  {
+   "mundo": "hauntedhouse",
+   "objeto": "Capsule4",
+   "item_juego": "BC_Wall_HH_Skulls",
+   "cp": "CP142",
+   "nombre": "Skull Walls",
+   "dudosa": false,
+   "lock": 111
+  },
+  {
+   "mundo": "hauntedhouse",
+   "objeto": "Capsule5",
+   "item_juego": "BC_Yard_HM_LavaLamp",
+   "cp": "CP147",
+   "nombre": "Haunted Lamp",
+   "dudosa": false,
+   "lock": 134
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup3",
+   "item_juego": "BC_Door_HM_Bat",
+   "cp": "CP158",
+   "nombre": "Bat Doors",
+   "dudosa": false,
+   "lock": 13
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup1",
+   "item_juego": "CL_Alien_B_HauntedDeputy",
+   "cp": "CP150",
+   "nombre": "Haunted Deputy Outfit",
+   "dudosa": false,
+   "lock": 192
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup2",
+   "item_juego": "BC_Pbox_ArmyGuyScrew",
+   "cp": "CP149",
+   "nombre": "Haunted Army Toy",
+   "dudosa": false,
+   "lock": 32
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup4",
+   "item_juego": "CL_BH_B_Frankenstein",
+   "cp": "CP155",
+   "nombre": "Haunted Man Outfit",
+   "dudosa": false,
+   "lock": 318
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup7",
+   "item_juego": "BC_Door_HM_Coffin",
+   "cp": "CP151",
+   "nombre": "Coffin Doors",
+   "dudosa": false,
+   "lock": 14
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup10",
+   "item_juego": "BC_WFrame_HM_Bat",
+   "cp": "CP165",
+   "nombre": "Bat Windows",
+   "dudosa": false,
+   "lock": 86
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup11",
+   "item_juego": "CL_Alien_Poltergeist",
+   "cp": "CP157",
+   "nombre": "Poltergeist Outfit",
+   "dudosa": false,
+   "lock": 267
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup8",
+   "item_juego": "CL_BH_Skeleton",
+   "cp": "CP164",
+   "nombre": "Skeleton Outfit",
+   "dudosa": false,
+   "lock": 530
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup5",
+   "item_juego": "CL_Alien_B_Invisible",
+   "cp": "CP162",
+   "nombre": "Invisible Alien Outfit",
+   "dudosa": false,
+   "lock": 193
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup12",
+   "item_juego": "BC_Yard_HM_HandEyeball",
+   "cp": "CP171",
+   "nombre": "Hand Eyeball",
+   "dudosa": false,
+   "lock": 133
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup13",
+   "item_juego": "CL_Alien_Spider",
+   "cp": "CP168",
+   "nombre": "Spider Outfit",
+   "dudosa": false,
+   "lock": 279
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup14",
+   "item_juego": "CL_Alien_Vampire",
+   "cp": "CP169",
+   "nombre": "Vampire Outfit",
+   "dudosa": false,
+   "lock": 292
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup15",
+   "item_juego": "CL_BH_B_Witch",
+   "cp": "CP170",
+   "nombre": "Witch Outfit",
+   "dudosa": false,
+   "lock": 355
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup16",
+   "item_juego": "CL_Alien_HT_HauntedDeputy",
+   "cp": "CP156",
+   "nombre": "Haunted Deputy Hat",
+   "dudosa": false,
+   "lock": 236
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup17",
+   "item_juego": "CL_Alien_HT_Invisible",
+   "cp": "CP153",
+   "nombre": "Invisible Alien Hat",
+   "dudosa": false,
+   "lock": 237
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup18",
+   "item_juego": "CL_BH_HR_Frankenstein",
+   "cp": "CP154",
+   "nombre": "Haunted Man Hair",
+   "dudosa": false,
+   "lock": 397
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup19",
+   "item_juego": "CL_Alien_HR_MadScientist",
+   "cp": "CP152",
+   "nombre": "Mad Scientist Hair",
+   "dudosa": false,
+   "lock": 224
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup20",
+   "item_juego": "BC_Yard_HM_Eye",
+   "cp": "CP166",
+   "nombre": "Scary Eyeball",
+   "dudosa": false,
+   "lock": 131
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup21",
+   "item_juego": "BC_Wall_HH_Sketch",
+   "cp": "CP159",
+   "nombre": "Scary Sketch Walls",
+   "dudosa": false,
+   "lock": 110
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup22",
+   "item_juego": "BC_WFrame_HM_Coffin",
+   "cp": "CP160",
+   "nombre": "Coffin Windows",
+   "dudosa": false,
+   "lock": 87
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup23",
+   "item_juego": "BC_HM_Side1",
+   "cp": "CP161",
+   "nombre": "Doll Parts",
+   "dudosa": false,
+   "lock": 25
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup24",
+   "item_juego": "BC_HM_LargeHand",
+   "cp": "CP163",
+   "nombre": "Hand in Box",
+   "dudosa": false,
+   "lock": 24
+  },
+  {
+   "mundo": "hauntedhouse_tutorial",
+   "objeto": "Pickup25",
+   "item_juego": "CL_Alien_Zombie",
+   "cp": "CP167",
+   "nombre": "Gross Zombie Outfit",
+   "dudosa": true,
+   "lock": 297
+  },
+  {
+   "mundo": "spaceport",
+   "objeto": "Capsule1",
+   "item_juego": "CL_BH_CyborgGunslinger",
+   "cp": "CP89",
+   "nombre": "Cyborg Outfit",
+   "dudosa": false,
+   "lock": 371
+  },
+  {
+   "mundo": "spaceport",
+   "objeto": "Capsule2",
+   "item_juego": "CL_Alien_LoungeSinger",
+   "cp": "CP90",
+   "nombre": "Lounge Singer Outfit",
+   "dudosa": false,
+   "lock": 257
+  },
+  {
+   "mundo": "spaceport",
+   "objeto": "Capsule3",
+   "item_juego": "CL_BH_SpaceRanger",
+   "cp": "CP91",
+   "nombre": "Space Ranger Outfit",
+   "dudosa": false,
+   "lock": 533
+  },
+  {
+   "mundo": "spaceport",
+   "objeto": "Capsule4",
+   "item_juego": "CL_Alien_HR_Renegade",
+   "cp": "CP94",
+   "nombre": "Renegade Hair",
+   "dudosa": false,
+   "lock": 225
+  },
+  {
+   "mundo": "spaceport",
+   "objeto": "Capsule5",
+   "item_juego": "CL_BH_B_Tinfoil",
+   "cp": "CP93",
+   "nombre": "Alien T-shirt",
+   "dudosa": true,
+   "lock": 353
+  },
+  {
+   "mundo": "spaceport",
+   "objeto": "Capsule6",
+   "item_juego": "CL_BH_HT_Tinfoil",
+   "cp": "CP92",
+   "nombre": "Tin foil Hat",
+   "dudosa": false,
+   "lock": 499
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule1",
+   "item_juego": "BC_Left_Astronomy",
+   "cp": "CP95",
+   "nombre": "Astronomy Space Ships",
+   "dudosa": false,
+   "lock": 26
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule2",
+   "item_juego": "BC_Roof_Astronomy",
+   "cp": "CP98",
+   "nombre": "Astronomy Planets",
+   "dudosa": false,
+   "lock": 44
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule26",
+   "item_juego": "BC_Yard_Astronomy_Electric",
+   "cp": "CP99",
+   "nombre": "Astronomy Electric Orb",
+   "dudosa": false,
+   "lock": 125
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule3",
+   "item_juego": "BC_Yard_Astronomy_Globe",
+   "cp": "CP100",
+   "nombre": "Astronomy Globe",
+   "dudosa": false,
+   "lock": 126
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule25",
+   "item_juego": "BC_Yard_SP_Zurg1",
+   "cp": "CP103",
+   "nombre": "Spaceport Structure",
+   "dudosa": false,
+   "lock": 136
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule24",
+   "item_juego": "CL_Alien_B_Commando",
+   "cp": "CP105",
+   "nombre": "Commando Outfit",
+   "dudosa": false,
+   "lock": 187
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule4",
+   "item_juego": "CL_Alien_B_Renegade",
+   "cp": "CP106",
+   "nombre": "Renegade Outfit",
+   "dudosa": false,
+   "lock": 200
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule23",
+   "item_juego": "CL_Alien_ContaminationSuit",
+   "cp": "CP108",
+   "nombre": "Contamination Suit",
+   "dudosa": false,
+   "lock": 215
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule5",
+   "item_juego": "CL_Alien_HT_Zurgy",
+   "cp": "CP111",
+   "nombre": "Zurg Commander Helmet",
+   "dudosa": true,
+   "lock": 248
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule28",
+   "item_juego": "BC_Door_Astronomy",
+   "cp": "CP110",
+   "nombre": "Astronomy Doors",
+   "dudosa": false,
+   "lock": 10
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule27",
+   "item_juego": "CL_BH_HR_ZurgHair2",
+   "cp": "CP112",
+   "nombre": "Zurg Pony Tail Hair",
+   "dudosa": true,
+   "lock": 448
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule6",
+   "item_juego": "CL_BH_SpaceExplorer",
+   "cp": "CP121",
+   "nombre": "Space Explorer Outfit",
+   "dudosa": false,
+   "lock": 532
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule22",
+   "item_juego": "CL_BH_ZurgFan",
+   "cp": "CP117",
+   "nombre": "Zurg Fan Outfit",
+   "dudosa": false,
+   "lock": 549
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule21",
+   "item_juego": "CL_Alien_StarCom1",
+   "cp": "CP120",
+   "nombre": "Space Cadet Suit",
+   "dudosa": false,
+   "lock": 281
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule15",
+   "item_juego": "CL_Alien_B_SpaceDeputy",
+   "cp": "CP102",
+   "nombre": "Space Deputy Outfit",
+   "dudosa": false,
+   "lock": 201
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule8",
+   "item_juego": "CL_Alien_HT_SpaceSuit",
+   "cp": "CP96",
+   "nombre": "Space Suit Helmet",
+   "dudosa": false,
+   "lock": 244
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule9",
+   "item_juego": "CL_Alien_B_Zurgy3",
+   "cp": "CP101",
+   "nombre": "Zurg Trooper Outfit",
+   "dudosa": true,
+   "lock": 207
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule19",
+   "item_juego": "CL_Alien_B_Zurgy4",
+   "cp": "CP116",
+   "nombre": "Zurg Sentry Outfit",
+   "dudosa": true,
+   "lock": 208
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule18",
+   "item_juego": "CL_BH_HR_ZurgHair1",
+   "cp": "CP104",
+   "nombre": "Zurg Hair Doo",
+   "dudosa": true,
+   "lock": 447
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule17",
+   "item_juego": "BC_Door_SpacePort",
+   "cp": "CP107",
+   "nombre": "Spaceport Doors",
+   "dudosa": false,
+   "lock": 22
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule7",
+   "item_juego": "CL_Alien_B_SpaceSuit",
+   "cp": "CP122",
+   "nombre": "Space Suit Outfit",
+   "dudosa": false,
+   "lock": 202
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule20",
+   "item_juego": "CL_Alien_B_Zurgy",
+   "cp": "CP97",
+   "nombre": "Zurg Commander Outfit",
+   "dudosa": true,
+   "lock": 206
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule10",
+   "item_juego": "CL_Alien_HT_Zurgy4",
+   "cp": "CP119",
+   "nombre": "Zurg Sentry Hat",
+   "dudosa": true,
+   "lock": 250
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule11",
+   "item_juego": "CL_Alien_HT_Zurgy3",
+   "cp": "CP113",
+   "nombre": "Zurg Trooper Hat",
+   "dudosa": true,
+   "lock": 249
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule12",
+   "item_juego": "BC_WFrame_Astronomy",
+   "cp": "CP118",
+   "nombre": "Astronomy Windows",
+   "dudosa": false,
+   "lock": 83
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule13",
+   "item_juego": "BC_Left_SpacePort",
+   "cp": "CP115",
+   "nombre": "Spaceport Antennae",
+   "dudosa": false,
+   "lock": 30
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule16",
+   "item_juego": "BC_Roof_SpacePort",
+   "cp": "CP114",
+   "nombre": "Spaceport Tower",
+   "dudosa": false,
+   "lock": 51
+  },
+  {
+   "mundo": "spaceport_interior",
+   "objeto": "SPIntCapsule14",
+   "item_juego": "BC_WFrame_SpacePort",
+   "cp": "CP109",
+   "nombre": "Spaceport Windows",
+   "dudosa": false,
+   "lock": 91
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town8",
+   "item_juego": "BC_WFrame_Dragon",
+   "cp": "CP1",
+   "nombre": "Dragon Windows",
+   "dudosa": false,
+   "lock": 84
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn1",
+   "item_juego": "BC_Door_Dragon",
+   "cp": "CP56",
+   "nombre": "Dragon Doors",
+   "dudosa": false,
+   "lock": 11
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn2",
+   "item_juego": "CL_Alien_HelmetHair",
+   "cp": "CP60",
+   "nombre": "Afro Hair",
+   "dudosa": true,
+   "lock": 254
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm1",
+   "item_juego": "CL_BH_B_SqDanceMan2",
+   "cp": "CP22",
+   "nombre": "Blue Cowboy Outfit",
+   "dudosa": false,
+   "lock": 348
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm2",
+   "item_juego": "CL_BH_HT_SqDanceMan2",
+   "cp": "CP29",
+   "nombre": "White Cowboy Hat",
+   "dudosa": false,
+   "lock": 491
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm3",
+   "item_juego": "CL_BH_HT_Vikinghorn",
+   "cp": "CP30",
+   "nombre": "Viking Hat",
+   "dudosa": false,
+   "lock": 500
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm4",
+   "item_juego": "CL_BH_B_ColorfulSuit",
+   "cp": "CP28",
+   "nombre": "Colorful Suit Outfit",
+   "dudosa": false,
+   "lock": 311
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm5",
+   "item_juego": "CL_BH_B_SqDanceWoman1",
+   "cp": "CP26",
+   "nombre": "Pink Cowgirl Outfit",
+   "dudosa": false,
+   "lock": 349
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm6",
+   "item_juego": "BC_Pbox_FlowerPotSm",
+   "cp": "CP16",
+   "nombre": "Small flower pot",
+   "dudosa": false,
+   "lock": 33
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town7",
+   "item_juego": "BC_Wall_Stripes",
+   "cp": "CP11",
+   "nombre": "Striped Walls",
+   "dudosa": false,
+   "lock": 119
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Well1",
+   "item_juego": "BC_Door_Nemo",
+   "cp": "CP54",
+   "nombre": "Finding Nemo Doors",
+   "dudosa": false,
+   "lock": 18
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Well2",
+   "item_juego": "BC_Left_Fin",
+   "cp": "CP51",
+   "nombre": "Finding Nemo Fins",
+   "dudosa": false,
+   "lock": 28
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Well3",
+   "item_juego": "BC_Wall_Nemo",
+   "cp": "CP52",
+   "nombre": "Finding Nemo Walls",
+   "dudosa": false,
+   "lock": 115
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn3",
+   "item_juego": "CL_BH_HR_Afro",
+   "cp": "CP62",
+   "nombre": "Afro Hair",
+   "dudosa": false,
+   "lock": 379
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town2",
+   "item_juego": "CL_BH_HT_CaptainShip",
+   "cp": "CP3",
+   "nombre": "Ship Captains hat",
+   "dudosa": false,
+   "lock": 456
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town1",
+   "item_juego": "CL_BH_HR_Curlers",
+   "cp": "CP4",
+   "nombre": "Curlers Hair",
+   "dudosa": false,
+   "lock": 393
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town6",
+   "item_juego": "BC_Wall_Slime",
+   "cp": "CP249",
+   "nombre": "Goo Walls",
+   "dudosa": false,
+   "lock": 117
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town5",
+   "item_juego": "BC_Pbox_PlanterBoxSm",
+   "cp": "CP19",
+   "nombre": "Small Planter Box",
+   "dudosa": false,
+   "lock": 38
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn4",
+   "item_juego": "CL_BH_HR_Ballerina",
+   "cp": "CP61",
+   "nombre": "Ballerina Hair",
+   "dudosa": false,
+   "lock": 380
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn5",
+   "item_juego": "CL_BH_HR_Beehive",
+   "cp": "CP58",
+   "nombre": "Beehive Hair",
+   "dudosa": false,
+   "lock": 384
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm7",
+   "item_juego": "CL_BH_HT_SqDanceWoman1",
+   "cp": "CP32",
+   "nombre": "Pink Cowgirl Hat",
+   "dudosa": false,
+   "lock": 492
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town4",
+   "item_juego": "CL_BH_B_PirateMod",
+   "cp": "CP7",
+   "nombre": "Pirate Outfit",
+   "dudosa": false,
+   "lock": 339
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town3",
+   "item_juego": "CL_BH_B_Basketball",
+   "cp": "CP18",
+   "nombre": "Basketball Player Outfit",
+   "dudosa": false,
+   "lock": 307
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Well4",
+   "item_juego": "BC_Roof_Reef",
+   "cp": "CP53",
+   "nombre": "Finding Nemo Reef",
+   "dudosa": false,
+   "lock": 49
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG2",
+   "item_juego": "CL_Alien_HT_EnchtdDeputy",
+   "cp": "CP182",
+   "nombre": "Enchanted Deputy Hat",
+   "dudosa": false,
+   "lock": 235
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG6",
+   "item_juego": "CL_Alien_B_Blueberries",
+   "cp": "CP181",
+   "nombre": "Blueberries Outfit",
+   "dudosa": false,
+   "lock": 183
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG7",
+   "item_juego": "CL_Alien_B_EnchtdDeputy",
+   "cp": "CP180",
+   "nombre": "Enchanted Deputy Outfit",
+   "dudosa": false,
+   "lock": 191
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG9",
+   "item_juego": "CL_Alien_B_RedCape",
+   "cp": "CP174",
+   "nombre": "Red Cape Outfit",
+   "dudosa": false,
+   "lock": 199
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG10",
+   "item_juego": "CL_Alien_Strawberry",
+   "cp": "CP172",
+   "nombre": "Strawberry Outfit",
+   "dudosa": false,
+   "lock": 288
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG11",
+   "item_juego": "CL_Alien_B_Unicorn",
+   "cp": "CP177",
+   "nombre": "Pony Outfit",
+   "dudosa": false,
+   "lock": 205
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG12",
+   "item_juego": "BC_Wall_Lotso",
+   "cp": "CP175",
+   "nombre": "Lotso Walls",
+   "dudosa": false,
+   "lock": 113
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG13",
+   "item_juego": "BC_Wall_EG_Mushroom",
+   "cp": "CP173",
+   "nombre": "Mushroom Walls",
+   "dudosa": false,
+   "lock": 107
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH2",
+   "item_juego": "CL_BH_HR_Vampire",
+   "cp": "CP141",
+   "nombre": "Vampire Hair",
+   "dudosa": false,
+   "lock": 441
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH3",
+   "item_juego": "CL_BH_HT_Witch",
+   "cp": "CP139",
+   "nombre": "Witch’s hat",
+   "dudosa": false,
+   "lock": 501
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH4",
+   "item_juego": "CL_BH_HR_ZombieFemale",
+   "cp": "CP140",
+   "nombre": "Zombie Girl Hair",
+   "dudosa": false,
+   "lock": 446
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH5",
+   "item_juego": "CL_BH_HT_Mummy",
+   "cp": "CP125",
+   "nombre": "Mummy Hat",
+   "dudosa": false,
+   "lock": 472
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH6",
+   "item_juego": "CL_BH_HT_Pirate",
+   "cp": "CP124",
+   "nombre": "Pirate hat",
+   "dudosa": false,
+   "lock": 481
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH7",
+   "item_juego": "CL_BH_HT_Scarecrow",
+   "cp": "CP126",
+   "nombre": "Scarecrow Hat",
+   "dudosa": false,
+   "lock": 488
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH8",
+   "item_juego": "CL_BH_B_MrsFrankenstein",
+   "cp": "CP127",
+   "nombre": "Haunted Woman Outfit",
+   "dudosa": false,
+   "lock": 333
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH9",
+   "item_juego": "CL_BH_B_Mummy",
+   "cp": "CP131",
+   "nombre": "Mummy Outfit",
+   "dudosa": false,
+   "lock": 334
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH10",
+   "item_juego": "CL_BH_HR_MrsFrankenstein",
+   "cp": "CP129",
+   "nombre": "Haunted Woman Hair",
+   "dudosa": false,
+   "lock": 413
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH11",
+   "item_juego": "CL_Alien_B_MadScientist",
+   "cp": "CP133",
+   "nombre": "Mad Scientist Outfit",
+   "dudosa": false,
+   "lock": 195
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH12",
+   "item_juego": "CL_BH_HR_PirateGhost",
+   "cp": "CP134",
+   "nombre": "Pirate Hair",
+   "dudosa": false,
+   "lock": 418
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH13",
+   "item_juego": "CL_BH_HR_Scarecrow",
+   "cp": "CP137",
+   "nombre": "Scarecrow Hair",
+   "dudosa": false,
+   "lock": 429
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH14",
+   "item_juego": "CL_BH_B_ZombieFemale",
+   "cp": "CP138",
+   "nombre": "Zombie Girl Outfit",
+   "dudosa": false,
+   "lock": 357
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH15",
+   "item_juego": "CL_BH_ZombieMale",
+   "cp": "CP135",
+   "nombre": "Zombie Boy Outfit",
+   "dudosa": false,
+   "lock": 548
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH16",
+   "item_juego": "CL_BH_HR_Witch",
+   "cp": "CP136",
+   "nombre": "Witch Hair",
+   "dudosa": false,
+   "lock": 443
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH17",
+   "item_juego": "CL_Alien_Werewolf",
+   "cp": "CP132",
+   "nombre": "Werewolf Outfit",
+   "dudosa": false,
+   "lock": 295
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH18",
+   "item_juego": "CL_BH_B_Vampire",
+   "cp": "CP128",
+   "nombre": "Vampire Outfit",
+   "dudosa": false,
+   "lock": 354
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_HH19",
+   "item_juego": "CL_BH_B_Scarecrow",
+   "cp": "CP130",
+   "nombre": "Scarecrow Outfit",
+   "dudosa": false,
+   "lock": 344
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP1",
+   "item_juego": "BC_Wall_Astronomy",
+   "cp": "CP87",
+   "nombre": "Astronomy Walls",
+   "dudosa": false,
+   "lock": 104
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP3",
+   "item_juego": "CL_BH_HT_ZurgClaw",
+   "cp": "CP82",
+   "nombre": "Zurg Claw Hat",
+   "dudosa": false,
+   "lock": 503
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP4",
+   "item_juego": "CL_BH_HT_ZurgCap",
+   "cp": "CP83",
+   "nombre": "Zurg Cap Hat",
+   "dudosa": false,
+   "lock": 502
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP5",
+   "item_juego": "CL_Alien_HT_Commando",
+   "cp": "CP84",
+   "nombre": "Commando Hat",
+   "dudosa": false,
+   "lock": 231
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP6",
+   "item_juego": "CL_Alien_HT_SpaceDeputy",
+   "cp": "CP85",
+   "nombre": "Space Deputy Hat",
+   "dudosa": false,
+   "lock": 243
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP7",
+   "item_juego": "CL_Alien_Spiked",
+   "cp": "CP80",
+   "nombre": "Spiked Hair",
+   "dudosa": false,
+   "lock": 280
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP8",
+   "item_juego": "CL_Alien_B_StealthSuit",
+   "cp": "CP81",
+   "nombre": "Stealth Suit",
+   "dudosa": false,
+   "lock": 203
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP9",
+   "item_juego": "CL_Alien_HT_StealthSuit",
+   "cp": "CP86",
+   "nombre": "Stealth Suit Hat",
+   "dudosa": false,
+   "lock": 245
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_SP10",
+   "item_juego": "BC_Wall_SpacePort",
+   "cp": "CP88",
+   "nombre": "Spaceport Walls",
+   "dudosa": false,
+   "lock": 118
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Well5",
+   "item_juego": "BC_Yard_Coral",
+   "cp": "CP50",
+   "nombre": "Finding Nemo Coral",
+   "dudosa": false,
+   "lock": 127
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Well6",
+   "item_juego": "BC_Pbox_Nemo",
+   "cp": "CP48",
+   "nombre": "Finding Nemo Chest",
+   "dudosa": true,
+   "lock": 37
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town",
+   "item_juego": "CL_BH_B_Nemo",
+   "cp": "CP12",
+   "nombre": "Finding Nemo Outfit",
+   "dudosa": false,
+   "lock": 336
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Well8",
+   "item_juego": "BC_Wframe_Nemo",
+   "cp": "CP49",
+   "nombre": "Finding Nemo Windows",
+   "dudosa": false,
+   "lock": 122
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town9",
+   "item_juego": "CL_BH_HT_Bottles",
+   "cp": "CP2",
+   "nombre": "Milk Bottle Hat",
+   "dudosa": false,
+   "lock": 455
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town11",
+   "item_juego": "CL_BH_HT_BalloonHat",
+   "cp": "CP8",
+   "nombre": "Balloons Hat",
+   "dudosa": false,
+   "lock": 450
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town12",
+   "item_juego": "CL_BH_HR_Spiked",
+   "cp": "CP6",
+   "nombre": "Spikey Hair",
+   "dudosa": false,
+   "lock": 434
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb1",
+   "item_juego": "CL_BH_B_HermitWife",
+   "cp": "CP55",
+   "nombre": "Bride Outfit",
+   "dudosa": true,
+   "lock": 323
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb2",
+   "item_juego": "BC_Wall_Brick_PinkCamo",
+   "cp": "CP63",
+   "nombre": "Pink Camouflage Walls",
+   "dudosa": false,
+   "lock": 105
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb3",
+   "item_juego": "CL_BH_B_SchoolBoy",
+   "cp": "CP64",
+   "nombre": "School Boy Outfit",
+   "dudosa": false,
+   "lock": 345
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb4",
+   "item_juego": "CL_BH_HR_CornRows",
+   "cp": "CP66",
+   "nombre": "Butterfly Hair",
+   "dudosa": true,
+   "lock": 391
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb5",
+   "item_juego": "CL_BH_B_SchoolGirl",
+   "cp": "CP67",
+   "nombre": "School Girl Outfit",
+   "dudosa": false,
+   "lock": 346
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Quarry1",
+   "item_juego": "CL_BH_B_Ballerina",
+   "cp": "CP25",
+   "nombre": "Ballerina Outfit",
+   "dudosa": false,
+   "lock": 306
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Quarry2",
+   "item_juego": "CL_BH_B_Baby",
+   "cp": "CP24",
+   "nombre": "Baby Outfit",
+   "dudosa": false,
+   "lock": 305
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Quarry3",
+   "item_juego": "CL_BH_HT_HermitWife",
+   "cp": "CP15",
+   "nombre": "Bride Hat",
+   "dudosa": true,
+   "lock": 465
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town14",
+   "item_juego": "CL_BH_HT_Plunger",
+   "cp": "CP13",
+   "nombre": "Plunger Hat",
+   "dudosa": false,
+   "lock": 482
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon1",
+   "item_juego": "CL_BH_WallE",
+   "cp": "CP33",
+   "nombre": "Wall-E Outfit",
+   "dudosa": false,
+   "lock": 544
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon2",
+   "item_juego": "CL_BH_Mike",
+   "cp": "CP46",
+   "nombre": "Mike",
+   "dudosa": false,
+   "lock": 509
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon3",
+   "item_juego": "CL_BH_MrInc",
+   "cp": "CP45",
+   "nombre": "Mr Incredible",
+   "dudosa": false,
+   "lock": 514
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon4",
+   "item_juego": "CL_BH_MrsInc",
+   "cp": "CP37",
+   "nombre": "Mrs Incredible Outfit",
+   "dudosa": false,
+   "lock": 515
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon5",
+   "item_juego": "CL_BH_Sully",
+   "cp": "CP44",
+   "nombre": "Sulley Outfit",
+   "dudosa": false,
+   "lock": 536
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon6",
+   "item_juego": "CL_BH_Syndrom",
+   "cp": "CP34",
+   "nombre": "Syndrome Outfit",
+   "dudosa": false,
+   "lock": 538
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon7",
+   "item_juego": "CL_Alien_Viking_HT",
+   "cp": "CP35",
+   "nombre": "Viking Hat",
+   "dudosa": false,
+   "lock": 294
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon8",
+   "item_juego": "CL_Alien_Viking_B",
+   "cp": "CP36",
+   "nombre": "Viking Outfit",
+   "dudosa": false,
+   "lock": 293
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon9",
+   "item_juego": "CL_BH_Violet",
+   "cp": "CP43",
+   "nombre": "Violet",
+   "dudosa": false,
+   "lock": 543
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon10",
+   "item_juego": "CL_BH_Dash",
+   "cp": "CP42",
+   "nombre": "Dash",
+   "dudosa": false,
+   "lock": 372
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon11",
+   "item_juego": "CL_BH_Dori",
+   "cp": "CP39",
+   "nombre": "Dory Outfit",
+   "dudosa": false,
+   "lock": 373
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon12",
+   "item_juego": "CL_BH_Eve",
+   "cp": "CP40",
+   "nombre": "EVE Outfit",
+   "dudosa": false,
+   "lock": 374
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon13",
+   "item_juego": "CL_BH_JackJack",
+   "cp": "CP41",
+   "nombre": "Jack-Jack",
+   "dudosa": false,
+   "lock": 507
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town15",
+   "item_juego": "CL_BH_HT_Pan",
+   "cp": "CP21",
+   "nombre": "Pot Hat",
+   "dudosa": false,
+   "lock": 477
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town16",
+   "item_juego": "CL_BH_HT_Nemo",
+   "cp": "CP9",
+   "nombre": "Finding Nemo Hat",
+   "dudosa": false,
+   "lock": 474
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town17",
+   "item_juego": "CL_BH_HT_Tiki",
+   "cp": "CP5",
+   "nombre": "Tiki Mask Hat",
+   "dudosa": false,
+   "lock": 497
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb6",
+   "item_juego": "CL_BH_HT_Dodgeball",
+   "cp": "CP65",
+   "nombre": "Dodgeball Hat",
+   "dudosa": false,
+   "lock": 462
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb7",
+   "item_juego": "CL_BH_B_Dodgeball",
+   "cp": "CP69",
+   "nombre": "Dodgeball Outfit",
+   "dudosa": false,
+   "lock": 316
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Suburb8",
+   "item_juego": "CL_BH_B_Doctor",
+   "cp": "CP68",
+   "nombre": "Doctor Outfit",
+   "dudosa": false,
+   "lock": 315
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn6",
+   "item_juego": "CL_BH_HT_Leprechaun",
+   "cp": "CP57",
+   "nombre": "Leprechaun hat",
+   "dudosa": false,
+   "lock": 468
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm8",
+   "item_juego": "CL_BH_HR_KidParted",
+   "cp": "CP31",
+   "nombre": "Parted Hair",
+   "dudosa": false,
+   "lock": 403
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Farm9",
+   "item_juego": "CL_BH_HR_YellowAfro",
+   "cp": "CP27",
+   "nombre": "Colorful Fro Hair",
+   "dudosa": false,
+   "lock": 444
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Quarry4",
+   "item_juego": "CL_BH_HT_Propeller",
+   "cp": "CP23",
+   "nombre": "Propeller Hat",
+   "dudosa": false,
+   "lock": 484
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Quarry5",
+   "item_juego": "CL_BH_B_Timmy",
+   "cp": "CP14",
+   "nombre": "Conrad Outfit",
+   "dudosa": true,
+   "lock": 352
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town18",
+   "item_juego": "CL_BH_BeardedLady_HR",
+   "cp": "CP10",
+   "nombre": "Scruffy Lady Hair",
+   "dudosa": false,
+   "lock": 361
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Town19",
+   "item_juego": "CL_BH_BeardedLady_B",
+   "cp": "CP20",
+   "nombre": "Scruffy Lady Outfit",
+   "dudosa": false,
+   "lock": 360
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_BenditoCanyon14",
+   "item_juego": "CL_BH_NemoBlockhead",
+   "cp": "CP38",
+   "nombre": "Nemo Outfit",
+   "dudosa": false,
+   "lock": 516
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Quarry6",
+   "item_juego": "BC_Roof_Slime",
+   "cp": "CP17",
+   "nombre": "Goo Trashcan",
+   "dudosa": false,
+   "lock": 50
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn7",
+   "item_juego": "BC_Door_Slime",
+   "cp": "CP123",
+   "nombre": "Goo Doors",
+   "dudosa": false,
+   "lock": 21
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_DonkeyMtn8",
+   "item_juego": "BC_WFrame_Slime",
+   "cp": "CP59",
+   "nombre": "Goo Windows",
+   "dudosa": false,
+   "lock": 90
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_EG14",
+   "item_juego": "CL_Alien_Ogre",
+   "cp": "CP183",
+   "nombre": "Ogre Outfit",
+   "dudosa": false,
+   "lock": 264
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Steeple",
+   "item_juego": "BC_Pbox_PumpkinFists",
+   "cp": "CP211",
+   "nombre": "Fist-O-Lantern",
+   "dudosa": true,
+   "lock": 42
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Steeple1",
+   "item_juego": "BC_Pbox_PumpkinDart",
+   "cp": "CP210",
+   "nombre": "Dart-O-Lantern",
+   "dudosa": false,
+   "lock": 41
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Steeple2",
+   "item_juego": "BC_Pbox_PumpkinArms",
+   "cp": "CP209",
+   "nombre": "Muscle-O-Lantern",
+   "dudosa": true,
+   "lock": 40
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Steeple3",
+   "item_juego": "BC_Pbox_GnomeAntlers",
+   "cp": "CP208",
+   "nombre": "Antlered Gnome",
+   "dudosa": true,
+   "lock": 35
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Steeple4",
+   "item_juego": "CL_BH_CrazySuit_HR",
+   "cp": "CP206",
+   "nombre": "Crazy Suit Hair",
+   "dudosa": false,
+   "lock": 370
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "PickUp_Capsule_Steeple5",
+   "item_juego": "CL_BH_CrazySuit_B",
+   "cp": "CP207",
+   "nombre": "Crazy Suit Outfit",
+   "dudosa": false,
+   "lock": 369
+  },
+  {
+   "mundo": "westerntown",
+   "objeto": "Spawn Actor168",
+   "item_juego": "CL_BH_B_YellowSuit",
+   "cp": "CP47",
+   "nombre": "Gold Suit Outfit",
+   "dudosa": false,
+   "lock": 356
+  },
+  {
+   "mundo": "wt_skatepark",
+   "objeto": "cheerCapsule",
+   "item_juego": "CL_BH_B_Cheerleader",
+   "cp": "CP216",
+   "nombre": "Cheerleader Outfit",
+   "dudosa": false,
+   "lock": 310
+  },
+  {
+   "mundo": "wt_skatepark",
+   "objeto": "conductorCapsule",
+   "item_juego": "CL_BH_B_Conductor",
+   "cp": "CP215",
+   "nombre": "Ringleader Outfit",
+   "dudosa": true,
+   "lock": 312
+  },
+  {
+   "mundo": "wt_skatepark",
+   "objeto": "inCostumeCapsule",
+   "item_juego": "CL_BH_HR_IncCostume",
+   "cp": "CP212",
+   "nombre": "Incredibles Hair",
+   "dudosa": false,
+   "lock": 402
+  },
+  {
+   "mundo": "wt_skatepark",
+   "objeto": "conductorCapsule2",
+   "item_juego": "CL_BH_HT_Conductor",
+   "cp": "CP213",
+   "nombre": "Ring Leader Hat",
+   "dudosa": true,
+   "lock": 459
+  },
+  {
+   "mundo": "wt_skatepark",
+   "objeto": "inCostumeCapsule1",
+   "item_juego": "CL_BH_B_IncCostume",
+   "cp": "CP214",
+   "nombre": "Incredibles Outfit",
+   "dudosa": false,
+   "lock": 324
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule22",
+   "item_juego": "BC_WFrame_Porthole",
+   "cp": "CP237",
+   "nombre": "Porthole Windows",
+   "dudosa": false,
+   "lock": 89
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule23",
+   "item_juego": "CL_BH_B_MadScientist",
+   "cp": "CP238",
+   "nombre": "Mad Scientist Outfit",
+   "dudosa": false,
+   "lock": 328
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule29",
+   "item_juego": "CL_BH_HT_MadScientist",
+   "cp": "CP229",
+   "nombre": "Mad Scientist Hat",
+   "dudosa": false,
+   "lock": 469
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule21",
+   "item_juego": "BC_Roof_MonsterEye",
+   "cp": "CP220",
+   "nombre": "Monsters Inc Eyeballs",
+   "dudosa": false,
+   "lock": 48
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule19",
+   "item_juego": "BC_Pbox_Scream",
+   "cp": "CP217",
+   "nombre": "Monsters Inc Screamer",
+   "dudosa": true,
+   "lock": 43
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule3",
+   "item_juego": "BC_Wframe_HotRod",
+   "cp": "CP244",
+   "nombre": "Hot Rod Windows",
+   "dudosa": false,
+   "lock": 120
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule2",
+   "item_juego": "CL_Alien_B_Clown",
+   "cp": "CP247",
+   "nombre": "Clown",
+   "dudosa": false,
+   "lock": 186
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule13",
+   "item_juego": "CL_Alien_HT_Doctor",
+   "cp": "CP248",
+   "nombre": "Doctor Hat",
+   "dudosa": false,
+   "lock": 233
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule27",
+   "item_juego": "CL_Alien_RockNRoll",
+   "cp": "CP224",
+   "nombre": "Rock-n-Roll Hair",
+   "dudosa": false,
+   "lock": 274
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule12",
+   "item_juego": "BC_Left_Tentacle",
+   "cp": "CP223",
+   "nombre": "Monsters Inc Tentacles",
+   "dudosa": false,
+   "lock": 31
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule31",
+   "item_juego": "CL_BH_TrapezeArtist_B",
+   "cp": "CP245",
+   "nombre": "Trapeze Artist Outfit",
+   "dudosa": false,
+   "lock": 541
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule8",
+   "item_juego": "CL_Alien_B_Doctor",
+   "cp": "CP239",
+   "nombre": "Doctor Outfit",
+   "dudosa": false,
+   "lock": 189
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule9",
+   "item_juego": "BC_Door_Monsters",
+   "cp": "CP243",
+   "nombre": "Monsters Inc Doors",
+   "dudosa": false,
+   "lock": 17
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule18",
+   "item_juego": "CL_Alien_HT_Clown",
+   "cp": "CP232",
+   "nombre": "Clown Hat",
+   "dudosa": false,
+   "lock": 230
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule14",
+   "item_juego": "CL_Alien_HT_Pilot",
+   "cp": "CP236",
+   "nombre": "Pilot Hat",
+   "dudosa": false,
+   "lock": 241
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule28",
+   "item_juego": "BC_Door_Porthole",
+   "cp": "CP226",
+   "nombre": "Porthole Doors",
+   "dudosa": false,
+   "lock": 20
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule30",
+   "item_juego": "BC_Yard_Scream",
+   "cp": "CP240",
+   "nombre": "Monsters Inc Screamers",
+   "dudosa": true,
+   "lock": 138
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule11",
+   "item_juego": "BC_Wall_Monster",
+   "cp": "CP233",
+   "nombre": "Monsters Inc Walls",
+   "dudosa": false,
+   "lock": 114
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule17",
+   "item_juego": "CL_Alien_B_MsGalaxy",
+   "cp": "CP230",
+   "nombre": "Pageant Queen Outfit",
+   "dudosa": false,
+   "lock": 196
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule1",
+   "item_juego": "BC_Roof_HotRod",
+   "cp": "CP221",
+   "nombre": "Hot Rod Engine",
+   "dudosa": false,
+   "lock": 47
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule26",
+   "item_juego": "CL_Alien_B_Tourist",
+   "cp": "CP228",
+   "nombre": "Tourist Outfit",
+   "dudosa": false,
+   "lock": 204
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule32",
+   "item_juego": "BC_Wall_Hotrod",
+   "cp": "CP235",
+   "nombre": "Hot Rod Walls",
+   "dudosa": false,
+   "lock": 112
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule4",
+   "item_juego": "CL_Alien_HT_Tourist",
+   "cp": "CP234",
+   "nombre": "Panama Hat",
+   "dudosa": false,
+   "lock": 246
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule6",
+   "item_juego": "BC_Pbox_HotRod",
+   "cp": "CP225",
+   "nombre": "Hot Rod Wheels",
+   "dudosa": true,
+   "lock": 36
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule16",
+   "item_juego": "CL_Alien_HT_MsGalaxy",
+   "cp": "CP241",
+   "nombre": "Pageant Queen Hat",
+   "dudosa": false,
+   "lock": 239
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule10",
+   "item_juego": "BC_Left_HotRod",
+   "cp": "CP218",
+   "nombre": "Hot Rod Exhaust Pipes",
+   "dudosa": false,
+   "lock": 29
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule20",
+   "item_juego": "BC_Wframe_Monsters",
+   "cp": "CP242",
+   "nombre": "Monsters Inc Windows",
+   "dudosa": false,
+   "lock": 121
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule5",
+   "item_juego": "BC_Door_HotRod",
+   "cp": "CP227",
+   "nombre": "Hot Rod Doors",
+   "dudosa": false,
+   "lock": 16
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule7",
+   "item_juego": "CL_BH_TrapezeArtist_HT",
+   "cp": "CP231",
+   "nombre": "Trapeze Artist Hat",
+   "dudosa": false,
+   "lock": 542
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule15",
+   "item_juego": "BC_Yard_HotRod",
+   "cp": "CP222",
+   "nombre": "Hot Rod Flags",
+   "dudosa": true,
+   "lock": 135
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule24",
+   "item_juego": "CL_Alien_Mohawk",
+   "cp": "CP219",
+   "nombre": "Mohawk Hair",
+   "dudosa": false,
+   "lock": 262
+  },
+  {
+   "mundo": "wt_stuntpark",
+   "objeto": "StuntparkCapsule25",
+   "item_juego": "CL_Alien_B_Pilot",
+   "cp": "CP246",
+   "nombre": "Pilot Outfit",
+   "dudosa": false,
+   "lock": 198
+  }
+ ],
+ "discos_pictomatic": {
+  "SlideViewer_Town1": 1,
+  "SlideViewer_Quarry": 2,
+  "SlideViewer_Suburbs": 3,
+  "SlideViewer_SP": 4,
+  "SlideViewer_HH": 5,
+  "SlideViewer_EG": 6
+ },
+ "otros_objetos": [
+  {
+   "cp": "CP70",
+   "item_juego": "CL_BH_HR_Mohawk",
+   "lock": 412,
+   "dudosa": false
+  },
+  {
+   "cp": "CP71",
+   "item_juego": "CL_BH_HR_BangsCurlyQ",
+   "lock": 381,
+   "dudosa": true
+  },
+  {
+   "cp": "CP72",
+   "item_juego": "CL_BH_HT_SullyCostume",
+   "lock": 493,
+   "dudosa": true
+  },
+  {
+   "cp": "CP73",
+   "item_juego": "CL_Alien_HT_Dodgeball",
+   "lock": 234,
+   "dudosa": false
+  },
+  {
+   "cp": "CP74",
+   "item_juego": "BC_Wall_GlowingCracks",
+   "lock": 108,
+   "dudosa": true
+  },
+  {
+   "cp": "CP75",
+   "item_juego": "CL_Alien_B_Dodgeball",
+   "lock": 190,
+   "dudosa": false
+  },
+  {
+   "cp": "CP76",
+   "item_juego": "CL_BH_HT_PartyHat",
+   "lock": 478,
+   "dudosa": false
+  },
+  {
+   "cp": "CP77",
+   "item_juego": "CL_Alien_B_Conductor",
+   "lock": 188,
+   "dudosa": false
+  },
+  {
+   "cp": "CP78",
+   "item_juego": "CL_BH_HR_Mullet",
+   "lock": 414,
+   "dudosa": false
+  },
+  {
+   "cp": "CP79",
+   "item_juego": "CL_Alien_HT_Conductor",
+   "lock": 232,
+   "dudosa": false
+  },
+  {
+   "cp": "CP144",
+   "item_juego": "CL_Alien_Mummy",
+   "lock": 263,
+   "dudosa": false
+  },
+  {
+   "cp": "CP145",
+   "item_juego": "CL_Alien_Zombie2",
+   "lock": 298,
+   "dudosa": true
+  },
+  {
+   "cp": "RC1",
+   "item_juego": "CL_Alien_Rainbow",
+   "lock": 272,
+   "dudosa": false
+  },
+  {
+   "cp": "RC2",
+   "item_juego": "CL_BH_HT_Mushroom",
+   "lock": 473,
+   "dudosa": false
+  },
+  {
+   "cp": "RC3",
+   "item_juego": "CL_BH_B_Mushroom",
+   "lock": 335,
+   "dudosa": false
+  },
+  {
+   "cp": "ZB1",
+   "item_juego": "CL_BH_HR_ZurgHair3",
+   "lock": 449,
+   "dudosa": false
+  },
+  {
+   "cp": "ZB2",
+   "item_juego": "CL_Alien_PurpleMoon",
+   "lock": 271,
+   "dudosa": true
+  },
+  {
+   "cp": "ZB3",
+   "item_juego": "CL_BH_HT_ZurgHelmet",
+   "lock": 504,
+   "dudosa": false
+  },
+  {
+   "cp": "KN1",
+   "item_juego": "CL_BH_HR_GothGirl",
+   "lock": 398,
+   "dudosa": false
+  },
+  {
+   "cp": "KN2",
+   "item_juego": "CL_Alien_Skeleton",
+   "lock": 277,
+   "dudosa": false
+  },
+  {
+   "cp": "KN3",
+   "item_juego": "BC_WFrame_HM_IronMaiden",
+   "lock": 88,
+   "dudosa": false
+  },
+  {
+   "cp": "KN4",
+   "item_juego": "CL_BH_B_GothGirl",
+   "lock": 319,
+   "dudosa": false
+  },
+  {
+   "cp": "KN5",
+   "item_juego": "BC_Door_HM_IronMaiden",
+   "lock": 15,
+   "dudosa": false
+  }
+ ],
+ "tienda_golosinas": [
+  {
+   "id": "DUL1",
+   "item_juego": "CL_BH_HT_Corn",
+   "lock": 460,
+   "dudosa": true
+  },
+  {
+   "id": "DUL2",
+   "item_juego": "CL_BH_HT_Beanie",
+   "lock": 452,
+   "dudosa": true
+  },
+  {
+   "id": "DUL3",
+   "item_juego": "CL_BH_HT_BigBand",
+   "lock": 453,
+   "dudosa": true
+  },
+  {
+   "id": "DUL4",
+   "item_juego": "CL_BH_HR_Cactus",
+   "lock": 388,
+   "dudosa": false
+  },
+  {
+   "id": "DUL5",
+   "item_juego": "CL_BH_HR_Swashbuckler",
+   "lock": 437,
+   "dudosa": true
+  },
+  {
+   "id": "DUL6",
+   "item_juego": "CL_BH_HR_PoofyPigTails",
+   "lock": 420,
+   "dudosa": true
+  },
+  {
+   "id": "DUL7",
+   "item_juego": "CL_BH_HR_RainbowCloud",
+   "lock": 426,
+   "dudosa": false
+  },
+  {
+   "id": "DUL8",
+   "item_juego": "CL_BH_HR_Snakes",
+   "lock": 433,
+   "dudosa": false
+  },
+  {
+   "id": "DUL9",
+   "item_juego": "CL_BH_HR_BlueTreeMan",
+   "lock": 386,
+   "dudosa": false
+  },
+  {
+   "id": "DUL10",
+   "item_juego": "CL_BH_HR_Mermaid",
+   "lock": 410,
+   "dudosa": false
+  },
+  {
+   "id": "DUL11",
+   "item_juego": "CL_BH_HR_BangsWave",
+   "lock": 382,
+   "dudosa": true
+  },
+  {
+   "id": "DUL12",
+   "item_juego": "CL_BH_HR_LongHair",
+   "lock": 407,
+   "dudosa": true
+  },
+  {
+   "id": "DUL13",
+   "item_juego": "CL_BH_B_Cactus",
+   "lock": 309,
+   "dudosa": false
+  },
+  {
+   "id": "DUL14",
+   "item_juego": "CL_BH_B_Corn",
+   "lock": 313,
+   "dudosa": false
+  },
+  {
+   "id": "DUL15",
+   "item_juego": "CL_BH_B_DarkBlue",
+   "lock": 314,
+   "dudosa": true
+  },
+  {
+   "id": "DUL16",
+   "item_juego": "CL_BH_B_LionTamer",
+   "lock": 327,
+   "dudosa": true
+  },
+  {
+   "id": "DUL17",
+   "item_juego": "CL_BH_B_Mermaid",
+   "lock": 331,
+   "dudosa": false
+  },
+  {
+   "id": "DUL18",
+   "item_juego": "CL_BH_Mortician",
+   "lock": 511,
+   "dudosa": false
+  },
+  {
+   "id": "DUL19",
+   "item_juego": "CL_BH_B_OrphanPotatoSack",
+   "lock": 337,
+   "dudosa": false
+  },
+  {
+   "id": "DUL20",
+   "item_juego": "CL_Alien_HT_Bunny",
+   "lock": 228,
+   "dudosa": false
+  },
+  {
+   "id": "DUL21",
+   "item_juego": "CL_Alien_Chef_HT",
+   "lock": 214,
+   "dudosa": false
+  },
+  {
+   "id": "DUL22",
+   "item_juego": "CL_Alien_HT_Lederhosen",
+   "lock": 238,
+   "dudosa": false
+  },
+  {
+   "id": "DUL23",
+   "item_juego": "CL_Alien_PippyBraids",
+   "lock": 266,
+   "dudosa": false
+  },
+  {
+   "id": "DUL24",
+   "item_juego": "CL_Alien_B_Bunny",
+   "lock": 184,
+   "dudosa": false
+  },
+  {
+   "id": "DUL25",
+   "item_juego": "CL_Alien_Chef_B",
+   "lock": 213,
+   "dudosa": false
+  },
+  {
+   "id": "DUL26",
+   "item_juego": "CL_Alien_B_Lederhosen",
+   "lock": 194,
+   "dudosa": false
+  },
+  {
+   "id": "DUL27",
+   "item_juego": "CL_Alien_Pumpkin",
+   "lock": 270,
+   "dudosa": false
+  },
+  {
+   "id": "DUL28",
+   "item_juego": "BC_Wall_Rex",
+   "lock": 116,
+   "dudosa": false
+  },
+  {
+   "id": "DUL29",
+   "item_juego": "BC_Yard_SP_Zurg2",
+   "lock": 137,
+   "dudosa": false
+  }
+ ],
+ "discos_pictomatic_locks": {
+  "1": 722,
+  "2": 723,
+  "3": 724,
+  "4": 720,
+  "5": 717,
+  "6": 716
+ }
+}

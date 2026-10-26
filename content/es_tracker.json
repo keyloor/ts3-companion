@@ -1,0 +1,3930 @@
+{
+ "TYPES": {
+  "CC": {
+   "name": "Cartas",
+   "one": "Carta"
+  },
+  "SP": {
+   "name": "Cartas especiales",
+   "one": "Especial"
+  },
+  "TP": {
+   "name": "Habitantes",
+   "one": "Habitante"
+  },
+  "AM": {
+   "name": "Recuerdos de Andy",
+   "one": "Recuerdo"
+  },
+  "ZP": {
+   "name": "Piezas de Zurg",
+   "one": "Pieza Zurg"
+  },
+  "AL": {
+   "name": "Aliens",
+   "one": "Alien"
+  }
+ },
+ "LEVELS": [
+  {
+   "es": "Rescate del tren",
+   "en": "Train Rescue · Loco Motives",
+   "items": [
+    [
+     "CC",
+     "Tras el primer salto, ve a la izquierda, sube la rampa y síguela hacia la derecha antes de volver a bajar."
+    ],
+    [
+     "CC",
+     "Justo después de la anterior: caes encima de ella, en medio de la vía."
+    ],
+    [
+     "CC",
+     "Bajando por el cañón, a tu derecha cuando la cornisa de roca empieza a romperse."
+    ],
+    [
+     "CC",
+     "En la cueva, tras saltar la primera valla, ve a la izquierda siguiendo los rieles de la vagoneta hasta el final."
+    ],
+    [
+     "CC",
+     "Ya en el tren, justo delante de ti al salvar al primer huérfano."
+    ],
+    [
+     "CC",
+     "Justo delante tras salvar al segundo huérfano (el de la jaula que se levanta disparando a la diana)."
+    ],
+    [
+     "TP",
+     "Rompe la caja gris alargada de la izquierda: figura de Woody."
+    ],
+    [
+     "CC",
+     "Tras el tercer huérfano, rompe la puerta con [△]; está enfrente."
+    ],
+    [
+     "SP",
+     "Zona de las 4 vacas: baja la catapulta con una bola, lanza una vaca y después lánzate tú. La carta está en el agujero que abrió la vaca."
+    ],
+    [
+     "CC",
+     "Enseguida, delante a la izquierda, frente a una caja."
+    ],
+    [
+     "AM",
+     "Aparece delante de ti al rescatar al último huérfano."
+    ]
+   ]
+  },
+  {
+   "es": "La casa de Andy",
+   "en": "Andy's House · Hold the Phone",
+   "items": [
+    [
+     "TP",
+     "Nada más empezar, corre recto por debajo de la cama: figura de Jessie."
+    ],
+    [
+     "CC",
+     "Al salir de la cama, salta dentro de la papelera naranja que tiene un tipi encima."
+    ],
+    [
+     "CC",
+     "A la derecha, aparta la caja roja: la carta está dentro."
+    ],
+    [
+     "CC",
+     "Desde la caja roja ve al escritorio del ordenador y cruza a las cajas de la pared; en la del «?» salta y pulsa [△]."
+    ],
+    [
+     "CC",
+     "Vuelve a subir y rodea hasta la cama: otro «?», salta y pulsa [△]."
+    ],
+    [
+     "CC",
+     "Deja ahí a Woody, cambia a Buzz con [L1], recoge a Woody con [□] y lánzalo con [R2] encima de la cómoda blanca. Sale Ham con la carta."
+    ],
+    [
+     "SP",
+     "En el sótano, ve hacia la escalera y rompe la rejilla de abajo con [△]."
+    ],
+    [
+     "AM",
+     "Sube hasta lo alto de la escalera y salta sobre la caja."
+    ],
+    [
+     "CC",
+     "Deslízate por la barandilla hasta la tabla de planchar: está delante."
+    ],
+    [
+     "CC",
+     "Trepa las cajas rojas junto a la escalera; está en la esquina, encima de la nevera."
+    ],
+    [
+     "CC",
+     "Salta a la estantería de la izquierda y abre la puerta tirando de la manija roja."
+    ],
+    [
+     "CC",
+     "Baja al banco de herramientas y al suelo. Usa la caja roja para subir a la lavadora, coge al soldadito y lánzalo sobre la carta, junto a la cesta de calabaza."
+    ],
+    [
+     "CC",
+     "Con Jessie, sube al banco y trepa los dardos en zigzag ([X] y luego [□] en el aire) hasta otro soldadito; la carta está tras los botes de limpiador."
+    ]
+   ]
+  },
+  {
+   "es": "El videojuego de Buzz",
+   "en": "Buzz Video Game · To Infinity and Beyond",
+   "items": [
+    [
+     "CC",
+     "Volando entre asteroides, en la primera zona abierta: destrúyelos todos y aparece delante."
+    ],
+    [
+     "CC",
+     "Pasada la primera sección de esquivar muros (dirección + [X]), en la siguiente zona abierta llena de asteroides."
+    ],
+    [
+     "CC",
+     "En la segunda sección de muros, más difícil: en el centro, justo después de uno de ellos."
+    ],
+    [
+     "SP",
+     "En el planeta, zona de plataformas con minas flotantes. Acércate todo lo posible, apunta a la derecha con [L2] y calienta el cristal con [R2]; sube rápido a la plataforma que pasa y salta a la carta."
+    ],
+    [
+     "CC",
+     "Tras hundir las 2 rocas, de nuevo entre plataformas con minas: está en el centro."
+    ],
+    [
+     "CC",
+     "Justo después, cerca del borde derecho. La niebla la esconde un poco."
+    ],
+    [
+     "TP",
+     "En la base de Zurg, pasado el taladro gigante, ve a la derecha y mira arriba: figura de Buzz. Unos saltos de pared desde el centro del muro."
+    ],
+    [
+     "CC",
+     "En lo alto del primer taladro, a la izquierda."
+    ],
+    [
+     "CC",
+     "Sala con el suelo en «Z»: limpia la sala, dispara los 2 cristales bajo el suelo y entra. Está en la esquina opuesta a la salida."
+    ],
+    [
+     "CC",
+     "En lo alto del segundo taladro."
+    ]
+   ]
+  },
+  {
+   "es": "Guardería Sunnyside",
+   "en": "Sunnyside Daycare · Fair Play",
+   "items": [
+    [
+     "CC",
+     "Con Jessie, gira a la izquierda (cápsula de monedas), sube y recorre las estanterías hasta los cubos boca abajo sobre los armarios azules. Está detrás."
+    ],
+    [
+     "SP",
+     "Desde los cubos, salta a las lámparas y a las mariposas del centro. La carta está junto al techo, al lado de otras dos mariposas; salta a por ella y vuelve con [□]."
+    ],
+    [
+     "CC",
+     "Desde las mariposas, salta a la lámpara más cercana, cruza a la de delante (junto a la casa verde) y salta al tejado verde."
+    ],
+    [
+     "TP",
+     "Lleva a Woody al primer saliente (tanque con la serpiente roja), lánzalo con Buzz al tejado verde y balancéate por los 3 ganchos dorados: figura de la guardería."
+    ],
+    [
+     "ZP",
+     "Al pie de la rampa de la casa verde, por el lado derecho: la cabeza, encima de un taburete marrón."
+    ],
+    [
+     "ZP",
+     "De espaldas a la rampa, detrás del sillón de estampado tropical; en la estantería del pulpo morado, esquina opuesta: el cuerpo."
+    ],
+    [
+     "ZP",
+     "Dentro del caballete con dibujos infantiles, pasado el sillón grande: la pistola."
+    ],
+    [
+     "CC",
+     "Pasado Ham, salta de pared entre el perchero y el lavabo hasta Rex. Gira 180° y usa [□] en el gancho para subir a los armarios."
+    ],
+    [
+     "CC",
+     "Lleva a Buzz junto a Rex y lanza a Woody al otro lado del hueco: la carta está sobre la estantería morada."
+    ],
+    [
+     "ZP",
+     "Baja al escritorio verde y mira debajo: la capa."
+    ],
+    [
+     "CC",
+     "La más enrevesada: Woody sube a la primera lámpara y cruza 2 ganchos hasta la del final. Buzz sube por las estanterías azules hasta la cadena plateada, que lo lleva junto a Woody. Lanza a Woody al conducto abierto."
+    ],
+    [
+     "CC",
+     "Habla con Twitch (el bicho verde junto a la rampa) y revienta los 40 globos con Bullseye."
+    ],
+    [
+     "CC",
+     "Habla con Sparks (el robot del fondo, junto al escritorio verde): Teeny Racer, rompe los 10 montones de bloques."
+    ],
+    [
+     "CC",
+     "Habla con Chunk (junto al sillón grande): Alley Throw, detén 100 aliens sin fallar ninguno. Mantener [R2] dispara en ráfaga; en cooperativo salen 155 aliens.",
+     {
+      "note": "Minijuego difícil"
+     }
+    ]
+   ]
+  },
+  {
+   "es": "La casa de Bonnie",
+   "en": "Bonnie's House · Witch Way Out",
+   "items": [
+    [
+     "CC",
+     "En la lámpara rosa, mira arriba junto a la bombilla y balancéate con [□] desde el borde de la plataforma."
+    ],
+    [
+     "CC",
+     "Rompe el montón de bloques, salta de pared, aplana el libro y rompe los bloques de debajo."
+    ],
+    [
+     "CC",
+     "Sube por los libros de la esquina, recorre la cornisa estrecha y déjate caer sobre el libro."
+    ],
+    [
+     "CC",
+     "Tras los jabones verdes flotantes, derriba la bolsa con un embiste y sigue a la izquierda por 3 helicópteros."
+    ],
+    [
+     "CC",
+     "Vuelve atrás y salta a la estantería marrón: la tienes delante."
+    ],
+    [
+     "CC",
+     "Recorre las ceras de la pared, rompe los bloques, cruza el libro flotante antes de que suba y rompe otro montón."
+    ],
+    [
+     "SP",
+     "En la jaula del hámster, antes de salir de la primera sección: sube a la plataforma azul, salta al túnel de arriba y súbelo con saltos de pared.",
+     {
+      "miss": "Si avanzas sin ella, toca repetir el nivel"
+     }
+    ],
+    [
+     "CC",
+     "Pasado el túnel y los libros flotantes, desde la bolsa rosa salta al jabón verde de la izquierda."
+    ],
+    [
+     "CC",
+     "En la sala de baterías, sube en el ascensor al saliente morado y, antes de salir, ve hasta el extremo izquierdo."
+    ],
+    [
+     "TP",
+     "En el segundo raíl, salta al primer aro verde de la derecha y luego a la línea verde de la izquierda. En el asteroide, baja a la izquierda y golpea el suelo frágil: figura de Blue Dog.",
+     {
+      "trophy": "Caza de ciudadanos"
+     }
+    ]
+   ]
+  },
+  {
+   "es": "Fuga de la prisión",
+   "en": "Prison Break · Hide and Sneak",
+   "items": [
+    [
+     "AL",
+     "Tras abrir la barrera de Jessie, corre a la ventana del fondo y gira a la derecha: el alien prisionero, encima de una caja."
+    ],
+    [
+     "CC",
+     "Empuja la caja roja, salta el muro y sube a la mesa más cercana; la carta está en la siguiente."
+    ],
+    [
+     "CC",
+     "Debajo de la tercera mesa."
+    ],
+    [
+     "CC",
+     "Debajo de la mesa pegada al muro que barren los focos del helicóptero."
+    ],
+    [
+     "CC",
+     "En la esquina del fondo, cerca de donde está Ham: en el suelo, pasada la rampa."
+    ],
+    [
+     "CC",
+     "Colgado de los alféizares camino del interruptor de Ham: el interruptor queda a la izquierda, la carta a la derecha."
+    ],
+    [
+     "CC",
+     "Planta baja del interruptor de Slinky: pasados los focos, en una estantería a tu izquierda."
+    ],
+    [
+     "CC",
+     "Con Jessie, ve hacia Rex entre los focos, sube los dardos y salta de pared; a la derecha, pasado el interruptor rojo, en un estante pequeño."
+    ],
+    [
+     "AM",
+     "Vuelve al estante anterior y salta a la lámpara de techo de tu izquierda."
+    ],
+    [
+     "SP",
+     "Doble salto recto a la siguiente lámpara."
+    ]
+   ]
+  },
+  {
+   "es": "El desguace",
+   "en": "Junkyard · Trash Thrash",
+   "items": [
+    [
+     "AM",
+     "Tras salvar a los aliens, Woody rompe la rejilla, sube la cornisa y se balancea con [□] en la manija hasta el saliente de arriba.",
+     {
+      "trophy": "Recuerdos"
+     }
+    ],
+    [
+     "CC",
+     "La primera vez que cambias a Jessie, antes de romper el ventilador, date la vuelta y corre a la izquierda."
+    ],
+    [
+     "CC",
+     "Sube a la caja que tiró Buzz y de ahí al saliente alto."
+    ],
+    [
+     "SP",
+     "Doble salto por debajo del saliente de Buzz, gira a la izquierda y salta el hueco."
+    ],
+    [
+     "CC",
+     "Con Woody: tubería amarilla y negra, esquiva la electricidad, sube 4 tuberías, pulsa el botón rojo de la izquierda y salta al conducto de la derecha. Está al fondo."
+    ],
+    [
+     "AL",
+     "Jessie salta al botón que suelta electricidad (salto + [□]). Buzz sube por el pasillo, coge una caja y la tira por el borde del fondo. Jessie sube a la caja y salta a la izquierda: alien Zurg."
+    ],
+    [
+     "CC",
+     "Tras parar las prensas, con Woody, arriba a la derecha del conducto que queda al descubierto."
+    ],
+    [
+     "CC",
+     "Cruzando el suelo azul hacia la pantalla, justo en el borde."
+    ],
+    [
+     "CC",
+     "Con Jessie, salta las tuberías en llamas, pisa la válvula y salta al saliente."
+    ],
+    [
+     "CC",
+     "Con Woody, cruza por la manija a la siguiente plataforma."
+    ],
+    [
+     "CC",
+     "Cuando Buzz pulse el interruptor rojo, Woody cruza las plataformas oscilantes y la manija del final."
+    ]
+   ]
+  },
+  {
+   "es": "La pastelería embrujada",
+   "en": "Haunted Bakery · Muffin to Fear",
+   "items": [
+    [
+     "SP",
+     "Desde el inicio, baja por la calle a la izquierda hasta el andamio del fondo: roca, saliente y arriba del todo.",
+     {
+      "trophy": "Las cartas sobre la mesa"
+     }
+    ],
+    [
+     "CC",
+     "Mirando a la tarta desde el inicio, el edificio más cercano a ella por la izquierda (Sastre): último piso de los restos."
+    ],
+    [
+     "CC",
+     "Segunda casa a la izquierda (Periódico): segundo piso."
+    ],
+    [
+     "CC",
+     "Enfrente, a la derecha (Saloon): segundo piso."
+    ],
+    [
+     "CC",
+     "Primer edificio de la derecha (Cárcel), ya en ruinas: arriba del todo."
+    ],
+    [
+     "CC",
+     "De espaldas a la tarta desde el inicio, el edificio que tienes delante (Tienda): segundo piso."
+    ],
+    [
+     "CC",
+     "El edificio destruido de la izquierda (Barbería): basta con saltar."
+    ],
+    [
+     "CC",
+     "Deja que las burbujas verdes destruyan el último de la derecha (Banco): arriba."
+    ],
+    [
+     "AL",
+     "En el jefe final, destruye por completo todos los edificios de las 2 calles principales (disparos, burbujas de las brujas o el cañón). El último alien aparece en el cruce en «T».",
+     {
+      "trophy": "Sin ganchos + Coleccionista"
+     }
+    ]
+   ]
+  }
+ ],
+ "TROPHIES": [
+  [
+   "Train Catcher",
+   "Habitual del tren",
+   82.4,
+   "Completa \"Locomotoras locas\".",
+   "Nivel 1 de la historia; no se puede perder.",
+   "story"
+  ],
+  [
+   "Off the Hook",
+   "Descuelgue",
+   52.2,
+   "Completa \"En espera\".",
+   "Nivel 2, la casa de Andy (no el Toy Box). Para volver a la historia: Start › Salir al tablero.",
+   "story"
+  ],
+  [
+   "Defeat Zurg",
+   "Derrota a Zurg",
+   42.1,
+   "Completa \"Hasta el infinito y más allá\".",
+   "Nivel 3 de la historia; no se puede perder.",
+   "story"
+  ],
+  [
+   "Carnival Conqueror",
+   "Maestría total",
+   31.5,
+   "Completa \"Juego limpio\".",
+   "Nivel 4. Saca al menos bronce en los 3 minijuegos y luego habla con Lotso, el oso rosa.",
+   "story"
+  ],
+  [
+   "Rocket Launcher",
+   "Lanzacohetes",
+   26.8,
+   "Completa \"¡Que viene la bruja!\".",
+   "Nivel 5 de la historia; no se puede perder.",
+   "story"
+  ],
+  [
+   "Making a break for it",
+   "Tocata y fuga",
+   23.5,
+   "Completa \"Escóndete que te pillo\".",
+   "Nivel 6. Salta al rescatar al tercer preso (Rex, Ham y Slinky).",
+   "story"
+  ],
+  [
+   "Mashing the Masher",
+   "Aplasta al aplastador",
+   21.2,
+   "Completa \"Triturador de basuras\".",
+   "Nivel 7 de la historia; no se puede perder.",
+   "story"
+  ],
+  [
+   "Muffin Massacre",
+   "Masacre de magdalenas",
+   19.9,
+   "Completa \"La panadería de los horrores\".",
+   "Jefe final: sube la cuesta hacia la pastelería, porque la onda de la magdalena grande no sube pendientes. Después alterna el cañón láser (brujas pequeñas) y el cañón de vacas (bruja grande), y recoge munición y vida entre fases.",
+   "story"
+  ],
+  [
+   "No Toy Left Behind",
+   "Ni un juguete abandonado",
+   79.4,
+   "Rescata a todos los huérfanos del tren.",
+   "Nivel 1. Son 6 y están en el camino: acércate y pulsa [□] para que Buzz se los lleve.",
+   "story"
+  ],
+  [
+   "Space Ranger Elite",
+   "Guardia espacial de élite",
+   6.2,
+   "Llega a la base de Zurg sin perder toda tu salud.",
+   "Nivel 3. Haz el intento sin coleccionables. Usa los géiseres para saltarte peleas, mata primero a las arañas y ve con calma en las plataformas que se mueven (puedes planear).",
+   "story"
+  ],
+  [
+   "True Carny",
+   "As del juego",
+   26.3,
+   "Consigue el oro en todos los juegos.",
+   "Nivel 4: Twitch (globos), Sparks (Teeny Racer) y Chunk (Alley Throw). Te dan además 3 cartas.",
+   "story",
+   {
+    "link": "historia"
+   }
+  ],
+  [
+   "Sneaky Sneaky",
+   "Sigilo total",
+   5.2,
+   "Completa la fuga de la cárcel sin activar ni una sola alarma.",
+   "Nivel 6. Antes de moverte, cambia a Buzz para ver dónde vigila. Ve de mesa en mesa entre focos y fíjate en el patrón de las 4 luces del techo. La guía original trae la ruta paso a paso.",
+   "story"
+  ],
+  [
+   "Mapnipulator",
+   "Mapanipulación",
+   10.5,
+   "Explora todos los objetos del mapa.",
+   "En el tablero, pon la cera encima y pulsa [X] en los 7 objetos: dados, barco amarillo, fichas de damas, pez, cañón, cofre y pieza de ajedrez.",
+   "story"
+  ],
+  [
+   "The Collector",
+   "Coleccionista",
+   8.5,
+   "Consigue todos los objetos del juego.",
+   "Solo cuenta el modo historia, no el Toy Box.",
+   "coll",
+   {
+    "prog": "story",
+    "link": "historia"
+   }
+  ],
+  [
+   "Holding all the cards",
+   "As en la manga",
+   8.7,
+   "Encuentra todas las cartas normales.",
+   "",
+   "coll",
+   {
+    "prog": "story:CC",
+    "link": "historia"
+   }
+  ],
+  [
+   "Really holding all the cards",
+   "Las cartas sobre la mesa",
+   9.4,
+   "Encuentra todas las cartas especiales.",
+   "",
+   "coll",
+   {
+    "prog": "story:SP",
+    "link": "historia"
+   }
+  ],
+  [
+   "Townspeople Hunter",
+   "Caza de ciudadanos",
+   11.3,
+   "Encuentra a todos los ciudadanos escondidos.",
+   "Woody (nivel 1), Jessie (2), Buzz (3), figura de la guardería (4) y Blue Dog (5).",
+   "coll",
+   {
+    "prog": "story:TP",
+    "link": "historia"
+   }
+  ],
+  [
+   "Memories",
+   "Recuerdos",
+   11.7,
+   "Consigue todos los objetos de recuerdo de Andy.",
+   "",
+   "coll",
+   {
+    "prog": "story:AM",
+    "link": "historia"
+   }
+  ],
+  [
+   "We can rebuild him",
+   "La reconstrucción",
+   21.2,
+   "Consigue todas las piezas de Zurg.",
+   "Las 4 están en el nivel 4: cabeza, cuerpo, capa y pistola.",
+   "coll",
+   {
+    "prog": "story:ZP",
+    "link": "historia"
+   }
+  ],
+  [
+   "No Claw Required",
+   "Sin ganchos",
+   11.2,
+   "Encuentra a todos los alienígenas escondidos.",
+   "Alien preso (nivel 6), alien Zurg (7) y alien bruja (8).",
+   "coll",
+   {
+    "prog": "story:AL",
+    "link": "historia"
+   }
+  ],
+  [
+   "Welcome to Town",
+   "La ciudad te da la bienvenida",
+   72,
+   "Completa los tutoriales del rodeo de Woody.",
+   "Sigue a Ham: destruye la cabaña vieja, rompe 3 cabañas más, ponle un sombrero a un alien, pinta un edificio, habla con Stinky Pete y pica tu primera veta de oro.",
+   "box"
+  ],
+  [
+   "First Sale",
+   "Primera venta",
+   69.9,
+   "Compra un juguete en la juguetería.",
+   "La juguetería es la máquina del pollo de Al's Toy Barn. Lo normal es comprar a Bullseye (1.000 $).",
+   "box"
+  ],
+  [
+   "Toy Collector",
+   "Coleccionista de juguetes",
+   5.3,
+   "Compra todos los objetos de la juguetería.",
+   "Unos 50.000 $ en total. Las vetas de oro reaparecen, así que no te faltará dinero. El cañón de vacas y la pistola OVNI se desbloquean completando sets de cartas de la historia.",
+   "box",
+   {}
+  ],
+  [
+   "Pack Collector",
+   "Coleccionista de paquetes",
+   34.7,
+   "Compra todos los paquetes de personalización de la juguetería.",
+   "Exclusivo de la Complete Edition: las guías de PS3 en las que se basa esta herramienta no lo cubren. Revisa en la juguetería la sección de paquetes de personalización.",
+   "box"
+  ],
+  [
+   "Gold Super Star",
+   "Superestrella de oro",
+   1.9,
+   "Consigue todas las estrellas de oro.",
+   "103 estrellas. Muchas salen solas jugando; el menú de pausa muestra cuáles te faltan.",
+   "box",
+   {
+    "prog": "stars",
+    "link": "estrellas",
+    "glitch": true
+   }
+  ],
+  [
+   "Pict-O-Amateur",
+   "Pict-O-Aprendiz",
+   5.9,
+   "Completa un disco de las misiones del Pict-O-Matic.",
+   "",
+   "box",
+   {
+    "link": "pictomatic"
+   }
+  ],
+  [
+   "Pict-O-Collector",
+   "Pict-O-Leccionista",
+   11.7,
+   "Encuentra los seis discos de misiones del Pict-O-Matic.",
+   "Dónde está cada disco: pestaña Pict-O-Matic.",
+   "box",
+   {
+    "prog": "discs",
+    "link": "pictomatic",
+    "glitch": true
+   }
+  ],
+  [
+   "Pict-O-Master",
+   "Pict-O-Maestro",
+   2.7,
+   "Completa todas las misiones del Pict-O-Matic.",
+   "40 misiones. Hazlas cuando tengas casi todas las cápsulas, así no dudas de qué pieza usar.",
+   "box",
+   {
+    "prog": "picto",
+    "link": "pictomatic",
+    "glitch": true
+   }
+  ],
+  [
+   "Spooky Town",
+   "Ciudad siniestra",
+   33.5,
+   "Compra la casa encantada de Sid.",
+   "5.000 $ en la juguetería.",
+   "box"
+  ],
+  [
+   "Cuddly Town",
+   "Ciudad achuchable",
+   27.2,
+   "Compra el valle encantado de Lotso.",
+   "5.000 $ en la juguetería.",
+   "box"
+  ],
+  [
+   "To Infinity…",
+   "Hasta el infinito...",
+   28.3,
+   "Compra el puerto espacial de Zurg.",
+   "5.000 $ en la juguetería.",
+   "box"
+  ],
+  [
+   "The Emperor's Clothes",
+   "El traje del Emperador",
+   22.4,
+   "Transfórmate en el Emperador Zurg.",
+   "No sale en las guías de PS3. Según otra guía, aparece una cápsula de Zurg en el corral de Slinky: entra en ella y sales convertido en Zurg (sin confirmar).",
+   "box"
+  ],
+  [
+   "Emperor Zurg Missions",
+   "El malvado Emperador Zurg",
+   5.3,
+   "Completa todas las misiones de Zurg.",
+   "Son las misiones del puerto espacial que da Zurg; al terminarlas, Stinky Pete tiene una más. Coincide con la estrella Sheriff of the Future.",
+   "box",
+   {
+    "link": "estrellas"
+   }
+  ],
+  [
+   "Airborn Ranger",
+   "Por los aires",
+   16,
+   "Haz blanco en 15 paracaidistas.",
+   "Compra los paracaidistas (1.500 $). Busca círculos verdes con estrella en lugares altos, lanza al soldado, ajusta con el stick y suéltalo con [○].",
+   "box"
+  ],
+  [
+   "First Bronze",
+   "Primer bronce",
+   27.3,
+   "Gana una medalla de bronce en un reto de vehículos.",
+   "Mira «Primer oro».",
+   "box"
+  ],
+  [
+   "First Silver",
+   "Primera plata",
+   39.8,
+   "Gana una medalla de plata en un reto de vehículos.",
+   "Mira «Primer oro».",
+   "box"
+  ],
+  [
+   "First Gold",
+   "Primer oro",
+   27.5,
+   "Gana una medalla de oro en un reto de vehículos.",
+   "Ring Rally Race con Bullseye: desde el cruce en T mirando al reloj, ve a la derecha hasta el final de la calle. Oro con 40 s o menos acelerando toda la carrera. Los tres logros salen en la misma carrera.",
+   "box"
+  ],
+  [
+   "Photojournalist",
+   "Periodista gráfico",
+   7,
+   "Completa todas las misiones de la cámara de juguete.",
+   "Solo cuentan las de Wheezy, el pingüino.",
+   "box"
+  ],
+  [
+   "No swimming",
+   "Prohibido nadar",
+   null,
+   "Vuela la presa y amplía tu ciudad.",
+   "Misión de Ham tras «Mayoral Election» y «Build the Bank». Bordea hasta la dinamita del final y lánzale una bola.",
+   "secret"
+  ],
+  [
+   "Rescue Space Ranger",
+   "Rescue Space Ranger",
+   null,
+   "Rescata al alcalde Ham de los bandidos.",
+   "Tras volar la presa. Destruye las 5 cabañas con barriles de TNT. Para llegar: desde la granja, junto a la entrada del Stunt Park, sigue la pasarela de madera de la izquierda, salta entre paredes, baja en vagoneta, trepa, y la puerta de los bandidos queda a la derecha.",
+   "secret",
+   {
+    "guessName": true
+   }
+  ],
+  [
+   "Give Me My Gold Back",
+   "Give Me My Gold Back",
+   null,
+   "Derrota al alcalde Ham en la batalla final del rodeo de Woody.",
+   "Sale tras «Marble Sculptor». Coge un barril de TNT junto al puente al puerto espacial y lánzalo al tornado cuando la nave abra la panza. Hacen falta 3.",
+   "secret",
+   {
+    "guessName": true
+   }
+  ]
+ ],
+ "TROPHY_GROUPS": {
+  "story": "Modo historia",
+  "coll": "Coleccionables de la historia",
+  "box": "Toy Box",
+  "secret": "Ocultos en Steam"
+ },
+ "STAR_GROUPS": [
+  {
+   "key": "trucos",
+   "title": "Trucos con coche",
+   "intro": "Todas en la zona de «ramp races» del Stunt Park. Usa la rampa azul con cajas azules del centro y entra por una esquina sin tocar las cajas. Al aterrizar, atraviesa el mural para volver arriba. Vuelta lateral: [□] + izquierda/derecha. Giro: [X] + izquierda/derecha. Mortal: [X] + arriba/abajo. Suena un aviso por cada movimiento y todo debe salir antes de tocar suelo.",
+   "items": [
+    [
+     "Barrel Buster",
+     "Haz el truco Barrel Buster.",
+     "2 vueltas laterales + 1 giro."
+    ],
+    [
+     "Bone Orchard",
+     "Haz el truco Bone Orchard.",
+     "2 giros + 1 vuelta lateral."
+    ],
+    [
+     "Hang Time",
+     "Haz el truco Hang Time.",
+     "Salta desde una rampa a toda velocidad; suele salir solo."
+    ],
+    [
+     "High Roller",
+     "Haz el truco High Roller.",
+     "3 vueltas laterales seguidas."
+    ],
+    [
+     "Lariat",
+     "Haz el truco Lariat.",
+     "2 mortales + 1 giro."
+    ],
+    [
+     "Palomino",
+     "Haz el truco Palomino.",
+     "2 vueltas laterales + 1 mortal."
+    ],
+    [
+     "Quick Draw",
+     "Haz el truco Quick Draw.",
+     "1 mortal + 1 giro."
+    ],
+    [
+     "Rodeo Wrangler",
+     "Haz el truco Rodeo Wrangler.",
+     "2 mortales + 1 vuelta lateral."
+    ],
+    [
+     "Saddle Blanket",
+     "Haz el truco Saddle Blanket.",
+     "2 giros + 1 mortal."
+    ],
+    [
+     "Spinner",
+     "Haz el truco Spinner.",
+     "2 giros."
+    ],
+    [
+     "Triple Flipper",
+     "Haz el truco Triple Flipper.",
+     "3 mortales."
+    ],
+    [
+     "Rolly Polly",
+     "Haz 40 vueltas laterales con un vehículo.",
+     "Se acumulan: déjala para el final, tras los demás trucos."
+    ]
+   ]
+  },
+  {
+   "key": "monturas",
+   "title": "Monturas, carreras y viajes",
+   "intro": "",
+   "items": [
+    [
+     "Dragon Rally",
+     "Completa todas las carreras del dragón.",
+     "12 carreras, mínimo bronce. Salidas (balizas rosas): junto al oso rosa del bosque, en el cruce en T del pueblo y en el puerto espacial. Cada salida va pasando a la siguiente carrera al ganar; para cuando vuelvas a la primera."
+    ],
+    [
+     "Engine of Destruction",
+     "Destruye 50 objetos con el dragón.",
+     "Dispara a cajas y barriles."
+    ],
+    [
+     "Saddle the Dragon",
+     "Recorre una gran distancia con el dragón.",
+     "Sale sola."
+    ],
+    [
+     "Jumpin' Jackrabits",
+     "Haz un salto largo con Bullseye.",
+     "Sale sola."
+    ],
+    [
+     "Ridin' the Range",
+     "Recorre una gran distancia con Bullseye.",
+     "Sale sola."
+    ],
+    [
+     "Winner's Circle",
+     "Intenta 20 carreras de Bullseye.",
+     "Repite la Ring Rally Race: dura unos 40 s."
+    ],
+    [
+     "Long Haul",
+     "Explora en un vehículo.",
+     "Sale sola."
+    ],
+    [
+     "Riding the Rails",
+     "Deslízate una gran distancia por los raíles.",
+     "Los raíles de las vagonetas; sale sola."
+    ],
+    [
+     "Gone Wanderin'",
+     "Recorre una gran distancia a pie.",
+     "Sale sola."
+    ]
+   ]
+  },
+  {
+   "key": "paracaidas",
+   "title": "Paracaidistas",
+   "intro": "Compra los paracaidistas en la tienda (1.500 $).",
+   "items": [
+    [
+     "Parachute King",
+     "Acierta en 15 dianas de paracaidista.",
+     "Va junto con el logro Por los aires."
+    ],
+    [
+     "Moving Target",
+     "Haz aterrizar un paracaidista en la diligencia.",
+     ""
+    ],
+    [
+     "Operation Well",
+     "Haz aterrizar un paracaidista en un pozo.",
+     ""
+    ]
+   ]
+  },
+  {
+   "key": "pueblo",
+   "title": "Habitantes y travesuras",
+   "intro": "",
+   "items": [
+    [
+     "Amateur Kicker",
+     "Patea a 5 habitantes.",
+     "Cógelo con [□], salta y pulsa [□] otra vez en el aire."
+    ],
+    [
+     "Pro Kicker",
+     "Patea a 10 habitantes.",
+     ""
+    ],
+    [
+     "Cow in the Well",
+     "Tira una vaca al pozo.",
+     ""
+    ],
+    [
+     "Farmer in the Well",
+     "Tira todos los animales de granja al pozo.",
+     "Una vaca, un cerdo y una gallina."
+    ],
+    [
+     "Make a Wish",
+     "Tira a un habitante al pozo.",
+     ""
+    ],
+    [
+     "Cow Tipper",
+     "Embiste a 10 vacas.",
+     "Embestida: [△] mientras corres."
+    ],
+    [
+     "Knock It Off",
+     "Embiste 10 veces a gente que da misiones.",
+     "Ham o Stinky Pete sirven."
+    ],
+    [
+     "Demolitions Expert",
+     "Asusta a 20 habitantes con TNT.",
+     "Lanza barriles a grupos de gente; con 5 o 6 basta."
+    ],
+    [
+     "Having a Ball",
+     "Golpea 30 cosas con la bola.",
+     "Parece que solo cuentan los habitantes."
+    ],
+    [
+     "Swimming Lessons",
+     "Tira a 5 habitantes al agua.",
+     ""
+    ],
+    [
+     "Under the Sea",
+     "Salta al agua 10 veces.",
+     ""
+    ],
+    [
+     "Strongman",
+     "Lleva algo pesado una gran distancia.",
+     "Coge una vaca y camina."
+    ],
+    [
+     "Pricky Pear",
+     "Choca con un cactus.",
+     ""
+    ],
+    [
+     "Porcupine",
+     "Recibe 10 golpes de cactus.",
+     "Embiste un cactus con muelle y deja que te devuelva el golpe."
+    ],
+    [
+     "Master Grower",
+     "Agranda 10 cosas.",
+     "Lanza baba verde a los habitantes."
+    ],
+    [
+     "Master Shrinker",
+     "Encoge 10 cosas.",
+     "Lanza baba morada a los habitantes."
+    ],
+    [
+     "Stylist",
+     "Haz 10 cortes de pelo.",
+     "Sale con las misiones Pict-O-Matic."
+    ],
+    [
+     "Wand Waver",
+     "Pon alas a 10 cosas.",
+     "Varita de hada + [R2] sobre la gente."
+    ],
+    [
+     "Welcome Wagon",
+     "Ten 5 aliens en el pueblo.",
+     "Sale sola."
+    ],
+    [
+     "Breaking Boards",
+     "Rompe 25 cajas o barriles.",
+     ""
+    ],
+    [
+     "Jailer",
+     "Mete a 15 bandidos en la cárcel.",
+     ""
+    ],
+    [
+     "Junior Quick-Draw",
+     "Dispara a 3 habitantes con la pistola láser.",
+     "La pistola se consigue al recorrer el puerto espacial por primera vez."
+    ],
+    [
+     "Quick Draw Artist",
+     "Dispara a 10 habitantes con la pistola láser.",
+     ""
+    ],
+    [
+     "Space Deputy",
+     "Dispara a 5 bandidos con la pistola láser.",
+     ""
+    ],
+    [
+     "Space Sheriff",
+     "Dispara a 10 bandidos con la pistola láser.",
+     ""
+    ],
+    [
+     "Zurg Bot Smasher",
+     "Destruye 3 robots de Zurg.",
+     ""
+    ],
+    [
+     "Zurg Bot Destroyer",
+     "Destruye 10 robots de Zurg.",
+     ""
+    ]
+   ]
+  },
+  {
+   "key": "sid",
+   "title": "Casa encantada de Sid",
+   "intro": "",
+   "items": [
+    [
+     "Amateur Ghost Sucker",
+     "Atrapa 3 fantasmas con el pararrayos.",
+     ""
+    ],
+    [
+     "Master Ghost Sucker",
+     "Atrapa 10 fantasmas con el pararrayos.",
+     "Va junto con Master Haunter."
+    ],
+    [
+     "Amateur Haunter",
+     "Posee a 3 habitantes.",
+     ""
+    ],
+    [
+     "Master Haunter",
+     "Posee a 10 habitantes.",
+     "Atrapa un fantasma y dispáralo a un habitante. Repite."
+    ],
+    [
+     "Junior Monster Slayer",
+     "Destruye 5 gárgolas.",
+     ""
+    ],
+    [
+     "Master Monster Slayer",
+     "Destruye 10 gárgolas.",
+     "Un toque de pararrayos las destruye."
+    ],
+    [
+     "Junior Sculptor",
+     "Libera a 3 habitantes de la piedra.",
+     ""
+    ],
+    [
+     "Master Sculptor",
+     "Libera a 10 habitantes de la piedra.",
+     "Cuando Rex avise de un ataque, tarda en volver: el pueblo estará petrificado. Usa el pararrayos con [R2]."
+    ],
+    [
+     "Sculpture Garden",
+     "Deja que 10 habitantes se conviertan en piedra.",
+     "Sale con el mismo ataque."
+    ],
+    [
+     "Junior Re-animator",
+     "Crea 3 habitantes zombi.",
+     ""
+    ],
+    [
+     "Master Re-animator",
+     "Crea 10 habitantes zombi.",
+     "Con las cápsulas de los dos trajes zombi, vístelos en la sastrería."
+    ],
+    [
+     "Pumpkin Smashing",
+     "Aplasta todas las calabazas.",
+     "Están en la zona de Sid; pásales por encima."
+    ],
+    [
+     "Triple Flusher",
+     "Tira de la cadena del retrete 3 veces.",
+     "El retrete azul a la izquierda de la casa, pasada la cripta. Pulsa el interruptor 3 veces."
+    ],
+    [
+     "Haunted Explorer",
+     "Encuentra todas las cápsulas de la casa de Sid.",
+     "",
+     {
+      "link": "capsulas"
+     }
+    ],
+    [
+     "Spooky Customizer",
+     "Consigue todas las personalizaciones de la casa encantada.",
+     "Incluye romper los 5 caballeros de ajedrez.",
+     {
+      "link": "capsulas"
+     }
+    ],
+    [
+     "Spooky Sheriff",
+     "Completa todas las misiones de la casa de Sid.",
+     "Las misiones de Rex. También hace falta la foto del abominable hombre de las nieves."
+    ]
+   ]
+  },
+  {
+   "key": "bosque",
+   "title": "Bosque encantado",
+   "intro": "",
+   "items": [
+    [
+     "Amateur Bug Collector",
+     "Rescata 3 orugas.",
+     ""
+    ],
+    [
+     "Master Bug Collector",
+     "Rescata 10 orugas.",
+     "Cuando el oso rosa avise de un ataque, tarda en volver y usa la varita con [R2]. También puedes repetir la misión del árbol grande: cada pasada son 4 orugas."
+    ],
+    [
+     "Junior Pixie Slayer",
+     "Derrota a 3 hadas.",
+     ""
+    ],
+    [
+     "Master Pixie Slayer",
+     "Derrota a 10 hadas.",
+     ""
+    ],
+    [
+     "Junior Pixie Torcher",
+     "Quema 5 hadas con el dragón.",
+     ""
+    ],
+    [
+     "Master Pixie Torcher",
+     "Quema 10 hadas con el dragón.",
+     "Sale poco después de conseguir el dragón."
+    ],
+    [
+     "Enchanted Customizer",
+     "Consigue todas las personalizaciones del bosque.",
+     "Incluye romper los 3 cofres arcoíris.",
+     {
+      "link": "capsulas"
+     }
+    ],
+    [
+     "Enchanted Sheriff",
+     "Completa todas las misiones del bosque.",
+     "Las del oso rosa. Hace falta crear a Merlín y hacer al menos su primera misión."
+    ],
+    [
+     "Master Sorcerer",
+     "Completa todas las misiones del mago.",
+     "Merlín tiene dos: «Lost Book of Spells» y «Miss Spelled»."
+    ],
+    [
+     "Woodland Explorer",
+     "Encuentra todas las cápsulas del bosque.",
+     "",
+     {
+      "link": "capsulas"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "zurg",
+   "title": "Puerto espacial de Zurg",
+   "intro": "",
+   "items": [
+    [
+     "Customizer of the Future",
+     "Consigue todas las personalizaciones del puerto espacial.",
+     "Incluye romper las 3 cajas Zurg.",
+     {
+      "link": "capsulas"
+     }
+    ],
+    [
+     "Sheriff of the Future",
+     "Completa todas las misiones del puerto espacial.",
+     "Las de Zurg y, al final, una más de Stinky Pete."
+    ],
+    [
+     "Space Explorer",
+     "Encuentra todas las cápsulas del puerto espacial.",
+     "",
+     {
+      "link": "capsulas"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "construir",
+   "title": "Pueblo, dinero y misiones",
+   "intro": "",
+   "items": [
+    [
+     "Apprentice Painter",
+     "Pinta 3 edificios.",
+     ""
+    ],
+    [
+     "Master Painter",
+     "Pinta 19 edificios.",
+     ""
+    ],
+    [
+     "Master Builder",
+     "Construye 10 edificios.",
+     "Compra edificios en la tienda y colócalos de uno en uno."
+    ],
+    [
+     "Engine City",
+     "Pon el tejado de motor en 5 edificios.",
+     "La cápsula Hot Rod Engine está en el Stunt Park. Sirven: barbería, granero, sombrerería, cárcel, tienda de muffins, correos y saloon."
+    ],
+    [
+     "Totally Interactive",
+     "Pulsa todos los botones de todos los edificios.",
+     "Barbería, ayuntamiento, aserradero, floristería, sombrerería, periódico, saloon, banco, sastrería, herrería, tienda de golosinas, escuela, hotel, correos y tienda de muffins."
+    ],
+    [
+     "Green Thumb",
+     "Cultiva una verdura de cada tipo.",
+     "Compra el huerto (1.000 $) y juega al minijuego de los topos."
+    ],
+    [
+     "Grow Your Own Gold",
+     "Haz crecer y pica una veta de oro.",
+     "Compra la máquina de baba (2.500 $), lanza baba verde a una veta y pícala con [□]."
+    ],
+    [
+     "Miner 49er",
+     "Pica 15 vetas de oro.",
+     ""
+    ],
+    [
+     "Big Spender",
+     "Gasta 30.000 de oro.",
+     ""
+    ],
+    [
+     "Saving Up",
+     "Gana 30.000 de oro.",
+     "Sale sola."
+    ],
+    [
+     "Power Shopper",
+     "Compra 10 cosas en la tienda.",
+     ""
+    ],
+    [
+     "On a Mission",
+     "Completa 10 misiones.",
+     ""
+    ],
+    [
+     "Mission Master",
+     "Completa 50 misiones.",
+     "Cualquier misión vale."
+    ]
+   ]
+  },
+  {
+   "key": "coleccion",
+   "title": "Cápsulas, Pict-O-Matic y cámara",
+   "intro": "",
+   "items": [
+    [
+     "Prize Capsule Collector",
+     "Recoge 15 cápsulas.",
+     "",
+     {
+      "link": "capsulas"
+     }
+    ],
+    [
+     "Prize Capsule Enthusiast",
+     "Recoge 40 cápsulas.",
+     "",
+     {
+      "link": "capsulas"
+     }
+    ],
+    [
+     "Western Collector",
+     "Recoge todas las cápsulas del Toy Box.",
+     "Todas las cápsulas de todas las zonas, incluida la tienda de golosinas.",
+     {
+      "link": "capsulas"
+     }
+    ],
+    [
+     "Picto-Collector",
+     "Consigue todos los discos Pict-O-Matic.",
+     "",
+     {
+      "link": "pictomatic"
+     }
+    ],
+    [
+     "Picto-Amateur",
+     "Completa 3 misiones Pict-O-Matic.",
+     "",
+     {
+      "link": "pictomatic"
+     }
+    ],
+    [
+     "Picto-Enthusiast",
+     "Completa 10 misiones Pict-O-Matic.",
+     "",
+     {
+      "link": "pictomatic"
+     }
+    ],
+    [
+     "Picto-Veteran",
+     "Completa las misiones Pict-O-Matic de Sid, el bosque y el puerto espacial.",
+     "",
+     {
+      "link": "pictomatic"
+     }
+    ],
+    [
+     "Picto-Master",
+     "Completa todas las misiones Pict-O-Matic.",
+     "",
+     {
+      "link": "pictomatic"
+     }
+    ],
+    [
+     "Amateur Photographer",
+     "Haz fotos por valor de 1.000 puntos.",
+     ""
+    ],
+    [
+     "Professional Photographer",
+     "Haz fotos por valor de 5.000 puntos.",
+     "Sale con las misiones de Wheezy."
+    ]
+   ]
+  }
+ ],
+ "DISCS": [
+  {
+   "where": "Lo da la misión «Lost and Found» (un vaquero del pueblo): está en una colina.",
+   "missions": [
+    [
+     "Pirate's Treasure",
+     "3 habitantes con sombrero pirata con parche {START} y traje pirata {CP7}."
+    ],
+    [
+     "Cactus Field Goal",
+     "Coge a alguien y patéalo entre el cactus con forma de portería. Mirando al ayuntamiento, ve a la derecha calle abajo; está a la izquierda."
+    ],
+    [
+     "Twins",
+     "2 habitantes con Spikey Hair {CP6} y Gold Suit {CP47}."
+    ],
+    [
+     "Scruffy Lady",
+     "1 habitante con Scruffy Lady Hair {CP10} y Scruffy Lady Outfit {CP20}."
+    ],
+    [
+     "Viking Horde",
+     "3 habitantes con Viking Hat {CP30}. Solo importa el sombrero."
+    ],
+    [
+     "Barber Shop Quartet",
+     "4 barberos: corte con bigote {START} y traje de barbero {START}. El barbero original cuenta."
+    ],
+    [
+     "Petting Zoo",
+     "Lanza al corral de abajo de la granja al granjero (sombrero vaquero blanco), una vaca, una gallina y un cerdo."
+    ]
+   ]
+  },
+  {
+   "where": "En la herrería, junto a la granja de Slinky.",
+   "missions": [
+    [
+     "Jailhouse Jamboree",
+     "Mete a 5 bandidos en la cárcel. Suele salir sola."
+    ],
+    [
+     "Mariachi Band",
+     "3 habitantes con sombrero mexicano {START} y traje de mariachi {START}."
+    ],
+    [
+     "Alien Hero Team",
+     "3 aliens con antifaz azul {START} y traje de superhéroe {START}. El Super Alien original cuenta."
+    ],
+    [
+     "Disco Fest",
+     "1 alien con Renegade Hair {CP94} y traje de cantante blanco {START}. Lánzalo al granero de Slinky."
+    ],
+    [
+     "Balloon Hat Party",
+     "2 habitantes con Balloons Hat {CP8}."
+    ],
+    [
+     "Pot Pan Pandemic",
+     "3 habitantes con Pot Hat {CP21}."
+    ]
+   ]
+  },
+  {
+   "where": "En el tejado del hotel, en el pueblo nuevo (tras volar la presa y construir el hotel).",
+   "missions": [
+    [
+     "Propeller Head",
+     "3 habitantes con Propeller Hat {CP23}."
+    ],
+    [
+     "Clowning Around",
+     "3 aliens con Clown Hat {CP232} y traje de payaso {CP247}."
+    ],
+    [
+     "Plumbers Helpers",
+     "3 habitantes con Plunger Hat {CP13}."
+    ],
+    [
+     "Here Comes the Bride",
+     "1 habitante con Bride Hat {CP15} y Bride Outfit {CP55}."
+    ]
+   ]
+  },
+  {
+   "where": "Junto al pozo del puerto espacial de Zurg.",
+   "missions": [
+    [
+     "Intergalactic Law",
+     "1 alien con Space Deputy Outfit {CP102} y Space Deputy Hat {CP85}; otro con sombrero de Indiana Jones {START} y traje de sheriff {START}."
+    ],
+    [
+     "Hair Do from Outer Space",
+     "1 alien con Spiked Hair {CP80}. Lánzalo a la barbería."
+    ],
+    [
+     "Space Ranger Trainee",
+     "1 habitante con casco de Buzz {START} y Space Ranger Outfit {CP91}."
+    ],
+    [
+     "It's Huge",
+     "1 alien con Pilot Hat {CP236} y Pilot Outfit {CP246}. Agrándalo con baba verde."
+    ],
+    [
+     "Cyborg Swordsman",
+     "1 habitante con Cyborg Outfit {CP89}. Lánzalo al saloon."
+    ],
+    [
+     "Lounge Lizards",
+     "1 alien con traje de cantante blanco {START} y otro con Lounge Singer Outfit {CP90}. Los dos al saloon."
+    ]
+   ]
+  },
+  {
+   "where": "En el cementerio de la casa encantada de Sid.",
+   "missions": [
+    [
+     "Create the Pirate Ghost",
+     "Habitante con Pirate Outfit {CP7} y Pirate Hat {CP124}; trae un fantasma de la casa de Sid y poséelo. Luego te da «X Marks the Spot»: cava con [□] junto a los huesos de animal de la colina, al fondo a la izquierda de la casa."
+    ],
+    [
+     "Deadly Squash",
+     "Posee a alguien en la granja, cultiva una calabaza en el huerto (topos), agrándala con baba verde, saca el fantasma con el pararrayos y dispáralo a la calabaza."
+    ],
+    [
+     "Creature Chaos",
+     "Frankenstein {CP155} + {CP154}; vampiro {CP141} + {CP128}; alien hombre lobo {CP132}; alien momia {CP144}."
+    ],
+    [
+     "Ghoul School",
+     "Bruja {CP139} + {CP170}, esqueleto {CP164} y alien zombi {CP145}. Lánzalos a la escuela. Si no sale, ponle también pelo verde a la bruja."
+    ],
+    [
+     "Zombie Horde",
+     "Zombi chica {CP138} + {CP140}, zombi chico {CP135} y alien zombi {CP145}."
+    ],
+    [
+     "The Coven",
+     "3 brujas: Witch's hat {CP139} y Witch Outfit {CP170}."
+    ],
+    [
+     "Happy Haunted Couple",
+     "Novia de Frankenstein {CP127} + {CP129} y Frankenstein {CP155} + {CP154}."
+    ],
+    [
+     "Party Zombie",
+     "1 habitante con Zombie Boy Outfit {CP135} y Milk Bottle Hat {CP2}."
+    ],
+    [
+     "Take Us To Your Leader",
+     "2 aliens con el traje de cara de calabaza {SHOP}."
+    ]
+   ]
+  },
+  {
+   "where": "En el Bosque encantado, al final del puente colgante.",
+   "missions": [
+    [
+     "Enchanted Town Hall",
+     "Pinta el ayuntamiento con Lotso Walls {CP175}. Por si acaso, pon un arcoíris con la máquina del tiempo junto al cerdo rosa."
+    ],
+    [
+     "Giant Dragon Attack",
+     "Invoca al dragón en la tienda, agrándalo con baba verde y llévalo volando al centro del puente colgante."
+    ],
+    [
+     "Leapin' Leprechauns",
+     "3 habitantes con Leprechaun hat {CP57}."
+    ],
+    [
+     "Merlin",
+     "1 habitante con Merlin Hat {CP198} y Merlin Outfit {CP184}. Después te da 2 misiones."
+    ],
+    [
+     "Royal Family",
+     "Rey {CP185} + {CP191}, reina {CP186} + {CP202} y princesa {CP187} + {CP203}."
+    ],
+    [
+     "Wizards Duel",
+     "Crea un segundo Merlín."
+    ],
+    [
+     "Berry Bonanza",
+     "1 alien con Blueberries Hat {CP176} y Blueberries Outfit {CP181}; otro con Strawberry Outfit {CP172}."
+    ],
+    [
+     "Big Bad Wolf",
+     "1 alien con Red Cape Outfit {CP174} y otro con Werewolf Outfit {CP132}."
+    ]
+   ]
+  }
+ ],
+ "AREAS": [
+  [
+   "town",
+   "Pueblo principal",
+   "Empieza aquí tras el tutorial de Ham. Algunas cápsulas solo aparecen al volver más tarde, cuando hay más edificios construidos."
+  ],
+  [
+   "farm",
+   "Granja de Slinky",
+   "Incluye la herrería y la zona minera. Vuelves varias veces durante la partida."
+  ],
+  [
+   "newtown",
+   "Presa y pueblo nuevo",
+   "Se abre con la misión «Blow up the Dam» de Ham."
+  ],
+  [
+   "zurg",
+   "Puerto espacial de Zurg",
+   "Una que se suele escapar: en la misión de la base, en la sala de mando circular, camina por la barandilla exterior por detrás del cañón."
+  ],
+  [
+   "sid",
+   "Casa encantada de Sid",
+   "Dos que se suelen escapar: tras la primera puerta de 3 cerrojos, en el pasillo, agarra la manija de la pared derecha pasado el primer hueco y empuja la pared; y en la sala de la escalera junto al comedor, el interruptor del suelo abre un armario."
+  ],
+  [
+   "glen",
+   "Bosque encantado",
+   ""
+  ],
+  [
+   "stunt",
+   "Stunt Park",
+   "Requiere comprar el Stunt Park (5.000 $). Entra en coche desde la granja; los murales te devuelven arriba. La bolera solo aparece con todas las cartas de la historia. Dos difíciles: pasado el unicornio Buttercup, por la abertura de su derecha; y, casi al final de la pista, sube despacio por el lado derecho de la rampa de tierra en U."
+  ],
+  [
+   "candy",
+   "Tienda de golosinas",
+   "Lanza bolas al botón de arriba de la tienda hasta que solo salgan monedas. Si el botón se atasca, pulsa el de otro edificio y vuelve."
+  ]
+ ],
+ "CAPS": [
+  [
+   "CP1",
+   "Dragon Windows",
+   "Ventanas",
+   "",
+   "town"
+  ],
+  [
+   "CP2",
+   "Milk Bottle Hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "CP3",
+   "Ship Captains hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "CP4",
+   "Curlers Hair",
+   "Peinado",
+   "",
+   "town"
+  ],
+  [
+   "CP5",
+   "Tiki Mask Hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "CP6",
+   "Spikey Hair",
+   "Peinado",
+   "",
+   "town"
+  ],
+  [
+   "CP7",
+   "Pirate Outfit",
+   "Traje",
+   "",
+   "town"
+  ],
+  [
+   "CP8",
+   "Balloons Hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "RC1",
+   "Rainbow Outfit",
+   "Traje alien",
+   "",
+   "town"
+  ],
+  [
+   "CP9",
+   "Finding Nemo Hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "CP10",
+   "Scruffy Lady Hair",
+   "Peinado",
+   "",
+   "town"
+  ],
+  [
+   "CP11",
+   "Striped Walls",
+   "Pintura",
+   "",
+   "town"
+  ],
+  [
+   "CP12",
+   "Finding Nemo Outfit",
+   "Traje",
+   "",
+   "town"
+  ],
+  [
+   "CP13",
+   "Plunger Hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "CP14",
+   "Conrad Outfit",
+   "Traje",
+   "Slingshot kid",
+   "town"
+  ],
+  [
+   "CP15",
+   "Bride Hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "CP16",
+   "Small flower pot",
+   "Porche",
+   "",
+   "town"
+  ],
+  [
+   "CP17",
+   "Goo Trashcan",
+   "Tejado",
+   "",
+   "town"
+  ],
+  [
+   "ZB1",
+   "Zurg Fro Hair",
+   "Peinado",
+   "Purple hair dome w/ lightning bolts",
+   "town"
+  ],
+  [
+   "CP18",
+   "Basketball Player Outfit",
+   "Traje",
+   "",
+   "town"
+  ],
+  [
+   "CP19",
+   "Small Planter Box",
+   "Porche",
+   "",
+   "town"
+  ],
+  [
+   "KN1",
+   "Gothic Girl Hair",
+   "Peinado",
+   "Black hair w/bat clip on side",
+   "town"
+  ],
+  [
+   "CP20",
+   "Scruffy Lady Outfit",
+   "Traje",
+   "",
+   "town"
+  ],
+  [
+   "CP21",
+   "Pot Hat",
+   "Sombrero",
+   "",
+   "town"
+  ],
+  [
+   "CP22",
+   "Blue Cowboy Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP23",
+   "Propeller Hat",
+   "Sombrero",
+   "",
+   "farm"
+  ],
+  [
+   "CP24",
+   "Baby Outfit",
+   "Traje",
+   "Purple jumpsuit with polka dots",
+   "farm"
+  ],
+  [
+   "CP25",
+   "Ballerina Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP26",
+   "Pink Cowgirl Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP27",
+   "Colorful Fro Hair",
+   "Peinado",
+   "Orange/Yellow/White afro",
+   "farm"
+  ],
+  [
+   "ZB2",
+   "Star Soldier Outfit",
+   "Traje alien",
+   "Purple suit",
+   "farm"
+  ],
+  [
+   "CP28",
+   "Colorful Suit Outfit",
+   "Traje",
+   "Plunger hat guy",
+   "farm"
+  ],
+  [
+   "CP29",
+   "White Cowboy Hat",
+   "Sombrero",
+   "",
+   "farm"
+  ],
+  [
+   "CP30",
+   "Viking Hat",
+   "Sombrero",
+   "",
+   "farm"
+  ],
+  [
+   "CP31",
+   "Parted Hair",
+   "Peinado",
+   "Alfalfa cut",
+   "farm"
+  ],
+  [
+   "RC2",
+   "Mushroom Hat",
+   "Sombrero",
+   "",
+   "farm"
+  ],
+  [
+   "CP32",
+   "Pink Cowgirl Hat",
+   "Sombrero",
+   "it’s really a bow",
+   "farm"
+  ],
+  [
+   "KN2",
+   "Skeleton Outfit",
+   "Traje alien",
+   "",
+   "farm"
+  ],
+  [
+   "RC3",
+   "Mushroom Outfit",
+   "Traje",
+   "White with spots",
+   "farm"
+  ],
+  [
+   "CP33",
+   "Wall-E Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP34",
+   "Syndrome Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP35",
+   "Viking Hat",
+   "Sombrero alien",
+   "",
+   "farm"
+  ],
+  [
+   "CP36",
+   "Viking Outfit",
+   "Traje alien",
+   "",
+   "farm"
+  ],
+  [
+   "CP37",
+   "Mrs Incredible Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP38",
+   "Nemo Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "KN3",
+   "Iron Maiden Windows",
+   "Ventanas",
+   "White trim with 2 dark squares",
+   "farm"
+  ],
+  [
+   "CP39",
+   "Dory Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP40",
+   "EVE Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP42",
+   "Dash",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP41",
+   "Jack-Jack",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP44",
+   "Sulley Outfit",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP43",
+   "Violet",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP45",
+   "Mr Incredible",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP46",
+   "Mike",
+   "Traje",
+   "",
+   "farm"
+  ],
+  [
+   "CP47",
+   "Gold Suit Outfit",
+   "Traje",
+   "",
+   "town"
+  ],
+  [
+   "CP48",
+   "Finding Nemo Chest",
+   "Jardín",
+   "",
+   "town"
+  ],
+  [
+   "CP49",
+   "Finding Nemo Windows",
+   "Ventanas",
+   "Green frames",
+   "town"
+  ],
+  [
+   "CP52",
+   "Finding Nemo Walls",
+   "Pintura",
+   "",
+   "town"
+  ],
+  [
+   "CP50",
+   "Finding Nemo Coral",
+   "Jardín",
+   "",
+   "town"
+  ],
+  [
+   "CP51",
+   "Finding Nemo Fins",
+   "Laterales",
+   "",
+   "town"
+  ],
+  [
+   "CP53",
+   "Finding Nemo Reef",
+   "Tejado",
+   "",
+   "town"
+  ],
+  [
+   "CP54",
+   "Finding Nemo Doors",
+   "Puertas",
+   "Green door",
+   "town"
+  ],
+  [
+   "CP55",
+   "Bride Outfit",
+   "Traje",
+   "",
+   "newtown"
+  ],
+  [
+   "ZB3",
+   "Zurg Helmet Hat",
+   "Sombrero",
+   "",
+   "newtown"
+  ],
+  [
+   "CP56",
+   "Dragon Doors",
+   "Puertas",
+   "",
+   "newtown"
+  ],
+  [
+   "CP57",
+   "Leprechaun hat",
+   "Sombrero",
+   "",
+   "newtown"
+  ],
+  [
+   "CP58",
+   "Beehive Hair",
+   "Peinado",
+   "",
+   "newtown"
+  ],
+  [
+   "CP59",
+   "Goo Windows",
+   "Ventanas",
+   "Window w/ green sheet inside",
+   "newtown"
+  ],
+  [
+   "CP60",
+   "Afro Hair",
+   "Peinado alien",
+   "",
+   "newtown"
+  ],
+  [
+   "CP61",
+   "Ballerina Hair",
+   "Peinado",
+   "Blonde hair w/ ball ponytail",
+   "newtown"
+  ],
+  [
+   "CP62",
+   "Afro Hair",
+   "Peinado",
+   "",
+   "newtown"
+  ],
+  [
+   "KN4",
+   "Gothic Girl Outfit",
+   "Traje",
+   "with cape",
+   "newtown"
+  ],
+  [
+   "CP63",
+   "Pink Camouflage Walls",
+   "Pintura",
+   "",
+   "newtown"
+  ],
+  [
+   "CP64",
+   "School Boy Outfit",
+   "Traje",
+   "",
+   "newtown"
+  ],
+  [
+   "CP65",
+   "Dodgeball Hat",
+   "Sombrero",
+   "Yellow headband",
+   "newtown"
+  ],
+  [
+   "CP66",
+   "Butterfly Hair",
+   "Peinado",
+   "Pink hair with big yellow bow",
+   "newtown"
+  ],
+  [
+   "KN5",
+   "Iron Maiden Doors",
+   "Puertas",
+   "Metal plate door",
+   "newtown"
+  ],
+  [
+   "CP67",
+   "School Girl Outfit",
+   "Traje",
+   "",
+   "newtown"
+  ],
+  [
+   "CP68",
+   "Doctor Outfit",
+   "Traje",
+   "",
+   "newtown"
+  ],
+  [
+   "CP69",
+   "Dodgeball Outfit",
+   "Traje",
+   "",
+   "newtown"
+  ],
+  [
+   "CP70",
+   "Mohawk Hair",
+   "Peinado",
+   "Green",
+   "farm"
+  ],
+  [
+   "CP71",
+   "Greaser Hair",
+   "Peinado",
+   "",
+   "farm"
+  ],
+  [
+   "CP72",
+   "Monster’s Inc Hat",
+   "Sombrero",
+   "horns",
+   "farm"
+  ],
+  [
+   "CP73",
+   "Dodgeball Hat",
+   "Sombrero alien",
+   "blue headband",
+   "farm"
+  ],
+  [
+   "CP74",
+   "Volcano Walls",
+   "Pintura",
+   "",
+   "farm"
+  ],
+  [
+   "CP75",
+   "Dodgeball Outfit",
+   "Traje alien",
+   "",
+   "farm"
+  ],
+  [
+   "CP76",
+   "Party Hat",
+   "Sombrero",
+   "yellow and blue",
+   "farm"
+  ],
+  [
+   "CP77",
+   "Conductor Outfit",
+   "Traje alien",
+   "Multi-colored suit",
+   "farm"
+  ],
+  [
+   "CP78",
+   "Mullet Hair",
+   "Peinado",
+   "",
+   "farm"
+  ],
+  [
+   "CP79",
+   "Conductor Hat",
+   "Sombrero alien",
+   "Yellow and orange top hat",
+   "farm"
+  ],
+  [
+   "CP80",
+   "Spiked Hair",
+   "Peinado alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP81",
+   "Stealth Suit",
+   "Traje alien",
+   "Black and grey suit",
+   "zurg"
+  ],
+  [
+   "CP82",
+   "Zurg Claw Hat",
+   "Sombrero",
+   "It is a red thing with 4 points coming out of a round ball. The bottom is flat and purple.",
+   "zurg"
+  ],
+  [
+   "CP83",
+   "Zurg Cap Hat",
+   "Sombrero",
+   "",
+   "zurg"
+  ],
+  [
+   "CP84",
+   "Commando Hat",
+   "Sombrero alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP85",
+   "Space Deputy Hat",
+   "Sombrero alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP86",
+   "Stealth Suit Hat",
+   "Sombrero alien",
+   "Clear visor",
+   "zurg"
+  ],
+  [
+   "CP87",
+   "Astronomy Walls",
+   "Pintura",
+   "",
+   "zurg"
+  ],
+  [
+   "CP88",
+   "Spaceport Walls",
+   "Pintura",
+   "",
+   "zurg"
+  ],
+  [
+   "CP89",
+   "Cyborg Outfit",
+   "Traje",
+   "",
+   "zurg"
+  ],
+  [
+   "CP90",
+   "Lounge Singer Outfit",
+   "Traje alien",
+   "black",
+   "zurg"
+  ],
+  [
+   "CP91",
+   "Space Ranger Outfit",
+   "Traje",
+   "",
+   "zurg"
+  ],
+  [
+   "CP92",
+   "Tin foil Hat",
+   "Sombrero",
+   "",
+   "zurg"
+  ],
+  [
+   "CP93",
+   "Alien T-shirt",
+   "Traje",
+   "",
+   "zurg"
+  ],
+  [
+   "CP94",
+   "Renegade Hair",
+   "Peinado alien",
+   "Lounge singer cut",
+   "zurg"
+  ],
+  [
+   "CP95",
+   "Astronomy Space Ships",
+   "Laterales",
+   "",
+   "zurg"
+  ],
+  [
+   "CP96",
+   "Space Suit Helmet",
+   "Sombrero alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP97",
+   "Zurg Commander Outfit",
+   "Traje alien",
+   "purple suit w/ black top and stripe",
+   "zurg"
+  ],
+  [
+   "CP99",
+   "Astronomy Electric Orb",
+   "Jardín",
+   "",
+   "zurg"
+  ],
+  [
+   "CP98",
+   "Astronomy Planets",
+   "Tejado",
+   "",
+   "zurg"
+  ],
+  [
+   "CP100",
+   "Astronomy Globe",
+   "Jardín",
+   "",
+   "zurg"
+  ],
+  [
+   "CP101",
+   "Zurg Trooper Outfit",
+   "Traje alien",
+   "purple suit w/ black top",
+   "zurg"
+  ],
+  [
+   "CP102",
+   "Space Deputy Outfit",
+   "Traje alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP103",
+   "Spaceport Structure",
+   "Jardín",
+   "",
+   "zurg"
+  ],
+  [
+   "CP104",
+   "Zurg Hair Doo",
+   "Peinado",
+   "Purple swirl with red stripe",
+   "zurg"
+  ],
+  [
+   "CP105",
+   "Commando Outfit",
+   "Traje alien",
+   "Black top and blue pants",
+   "zurg"
+  ],
+  [
+   "CP106",
+   "Renegade Outfit",
+   "Traje alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP107",
+   "Spaceport Doors",
+   "Puertas",
+   "",
+   "zurg"
+  ],
+  [
+   "CP108",
+   "Contamination Suit",
+   "Traje alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP109",
+   "Spaceport Windows",
+   "Ventanas",
+   "",
+   "zurg"
+  ],
+  [
+   "CP110",
+   "Astronomy Doors",
+   "Puertas",
+   "White door w/ yellow trim",
+   "zurg"
+  ],
+  [
+   "CP111",
+   "Zurg Commander Helmet",
+   "Sombrero alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP112",
+   "Zurg Pony Tail Hair",
+   "Peinado",
+   "Red hair w/ lightning bolts",
+   "zurg"
+  ],
+  [
+   "CP113",
+   "Zurg Trooper Hat",
+   "Sombrero alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP114",
+   "Spaceport Tower",
+   "Tejado",
+   "",
+   "zurg"
+  ],
+  [
+   "CP116",
+   "Zurg Sentry Outfit",
+   "Traje alien",
+   "plain purple suit",
+   "zurg"
+  ],
+  [
+   "CP115",
+   "Spaceport Antennae",
+   "Laterales",
+   "",
+   "zurg"
+  ],
+  [
+   "CP117",
+   "Zurg Fan Outfit",
+   "Traje",
+   "",
+   "zurg"
+  ],
+  [
+   "CP118",
+   "Astronomy Windows",
+   "Ventanas",
+   "White trim purple glass",
+   "zurg"
+  ],
+  [
+   "CP119",
+   "Zurg Sentry Hat",
+   "Sombrero alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP120",
+   "Space Cadet Suit",
+   "Traje alien",
+   "Blue and black suit with red and yellow buttons",
+   "zurg"
+  ],
+  [
+   "CP121",
+   "Space Explorer Outfit",
+   "Traje",
+   "Futuristic robot",
+   "zurg"
+  ],
+  [
+   "CP122",
+   "Space Suit Outfit",
+   "Traje alien",
+   "",
+   "zurg"
+  ],
+  [
+   "CP123",
+   "Goo Doors",
+   "Puertas",
+   "Caution door w/ green circle",
+   "zurg"
+  ],
+  [
+   "CP124",
+   "Pirate hat",
+   "Sombrero",
+   "",
+   "sid"
+  ],
+  [
+   "CP125",
+   "Mummy Hat",
+   "Sombrero",
+   "",
+   "sid"
+  ],
+  [
+   "CP126",
+   "Scarecrow Hat",
+   "Sombrero",
+   "Green gardening hat",
+   "sid"
+  ],
+  [
+   "CP127",
+   "Haunted Woman Outfit",
+   "Traje",
+   "Bride of Frankenstein",
+   "sid"
+  ],
+  [
+   "CP128",
+   "Vampire Outfit",
+   "Traje",
+   "",
+   "sid"
+  ],
+  [
+   "CP129",
+   "Haunted Woman Hair",
+   "Peinado",
+   "High purple stacked hair",
+   "sid"
+  ],
+  [
+   "CP130",
+   "Scarecrow Outfit",
+   "Traje",
+   "",
+   "sid"
+  ],
+  [
+   "CP131",
+   "Mummy Outfit",
+   "Traje",
+   "",
+   "sid"
+  ],
+  [
+   "CP132",
+   "Werewolf Outfit",
+   "Traje alien",
+   "",
+   "sid"
+  ],
+  [
+   "CP134",
+   "Pirate Hair",
+   "Peinado",
+   "White hair and beard",
+   "sid"
+  ],
+  [
+   "CP133",
+   "Mad Scientist Outfit",
+   "Traje alien",
+   "Lab coat and tie",
+   "sid"
+  ],
+  [
+   "CP137",
+   "Scarecrow Hair",
+   "Peinado",
+   "Yellow shaggy hair",
+   "sid"
+  ],
+  [
+   "CP136",
+   "Witch Hair",
+   "Peinado",
+   "Generic green cut",
+   "sid"
+  ],
+  [
+   "CP135",
+   "Zombie Boy Outfit",
+   "Traje",
+   "",
+   "sid"
+  ],
+  [
+   "CP138",
+   "Zombie Girl Outfit",
+   "Traje",
+   "",
+   "sid"
+  ],
+  [
+   "CP139",
+   "Witch’s hat",
+   "Sombrero",
+   "",
+   "sid"
+  ],
+  [
+   "CP140",
+   "Zombie Girl Hair",
+   "Peinado",
+   "Pink pig-tail on top",
+   "sid"
+  ],
+  [
+   "CP141",
+   "Vampire Hair",
+   "Peinado",
+   "",
+   "sid"
+  ],
+  [
+   "CP142",
+   "Skull Walls",
+   "Pintura",
+   "",
+   "sid"
+  ],
+  [
+   "CP143",
+   "Doll Arm",
+   "Tejado",
+   "",
+   "sid"
+  ],
+  [
+   "CP144",
+   "Mummy",
+   "Traje alien",
+   "",
+   "sid"
+  ],
+  [
+   "CP145",
+   "Scary Zombie Outfit",
+   "Traje alien",
+   "",
+   "sid"
+  ],
+  [
+   "CP146",
+   "Broken Fist",
+   "Jardín",
+   "",
+   "sid"
+  ],
+  [
+   "CP147",
+   "Haunted Lamp",
+   "Jardín",
+   "Lava lamp",
+   "sid"
+  ],
+  [
+   "CP148",
+   "Antler-O-Lantern",
+   "Porche",
+   "",
+   "sid"
+  ],
+  [
+   "CP150",
+   "Haunted Deputy Outfit",
+   "Traje alien",
+   "",
+   "sid"
+  ],
+  [
+   "CP149",
+   "Haunted Army Toy",
+   "Porche",
+   "Nails",
+   "sid"
+  ],
+  [
+   "CP152",
+   "Mad Scientist Hair",
+   "Peinado alien",
+   "Small purple patch",
+   "sid"
+  ],
+  [
+   "CP151",
+   "Coffin Doors",
+   "Puertas",
+   "Monster eyes door",
+   "sid"
+  ],
+  [
+   "CP153",
+   "Invisible Alien Hat",
+   "Sombrero alien",
+   "Hat w/feather and sunglasses",
+   "sid"
+  ],
+  [
+   "CP154",
+   "Haunted Man Hair",
+   "Peinado",
+   "Frankenstein cut",
+   "sid"
+  ],
+  [
+   "CP155",
+   "Haunted Man Outfit",
+   "Traje",
+   "Frankenstein",
+   "sid"
+  ],
+  [
+   "CP156",
+   "Haunted Deputy Hat",
+   "Sombrero alien",
+   "Brown cowboy hat",
+   "sid"
+  ],
+  [
+   "CP157",
+   "Poltergeist Outfit",
+   "Traje alien",
+   "Skull face and chains",
+   "sid"
+  ],
+  [
+   "CP159",
+   "Scary Sketch Walls",
+   "Pintura",
+   "",
+   "sid"
+  ],
+  [
+   "CP158",
+   "Bat Doors",
+   "Puertas",
+   "",
+   "sid"
+  ],
+  [
+   "CP161",
+   "Doll Parts",
+   "Laterales",
+   "",
+   "sid"
+  ],
+  [
+   "CP160",
+   "Coffin Windows",
+   "Ventanas",
+   "with bars",
+   "sid"
+  ],
+  [
+   "CP162",
+   "Invisible Alien Outfit",
+   "Traje alien",
+   "",
+   "sid"
+  ],
+  [
+   "CP163",
+   "Hand in Box",
+   "Tejado",
+   "",
+   "sid"
+  ],
+  [
+   "CP164",
+   "Skeleton Outfit",
+   "Traje",
+   "",
+   "sid"
+  ],
+  [
+   "CP165",
+   "Bat Windows",
+   "Ventanas",
+   "Dark brown squares with oval windows",
+   "sid"
+  ],
+  [
+   "CP166",
+   "Scary Eyeball",
+   "Jardín",
+   "",
+   "sid"
+  ],
+  [
+   "CP167",
+   "Gross Zombie Outfit",
+   "Traje alien",
+   "Patchwork zombie",
+   "sid"
+  ],
+  [
+   "CP168",
+   "Spider Outfit",
+   "Traje alien",
+   "Six armed alien",
+   "sid"
+  ],
+  [
+   "CP169",
+   "Vampire Outfit",
+   "Traje alien",
+   "",
+   "sid"
+  ],
+  [
+   "CP170",
+   "Witch Outfit",
+   "Traje",
+   "",
+   "sid"
+  ],
+  [
+   "CP171",
+   "Hand Eyeball",
+   "Jardín",
+   "",
+   "sid"
+  ],
+  [
+   "CP172",
+   "Strawberry Outfit",
+   "Traje alien",
+   "",
+   "glen"
+  ],
+  [
+   "CP173",
+   "Mushroom Walls",
+   "Pintura",
+   "Purple w/yellow spots",
+   "glen"
+  ],
+  [
+   "CP174",
+   "Red Cape Outfit",
+   "Traje alien",
+   "",
+   "glen"
+  ],
+  [
+   "CP175",
+   "Lotso Walls",
+   "Pintura",
+   "Pink enchanted",
+   "glen"
+  ],
+  [
+   "CP176",
+   "Blueberries Hat",
+   "Sombrero alien",
+   "",
+   "glen"
+  ],
+  [
+   "CP177",
+   "Pony Outfit",
+   "Traje alien",
+   "Heart and tail",
+   "glen"
+  ],
+  [
+   "CP179",
+   "Enchanted Walls",
+   "Pintura",
+   "Large brown stone",
+   "glen"
+  ],
+  [
+   "CP178",
+   "Enchanted Flowers",
+   "Laterales",
+   "",
+   "glen"
+  ],
+  [
+   "CP181",
+   "Blueberries Outfit",
+   "Traje alien",
+   "",
+   "glen"
+  ],
+  [
+   "CP180",
+   "Enchanted Deputy Outfit",
+   "Traje alien",
+   "",
+   "glen"
+  ],
+  [
+   "CP182",
+   "Enchanted Deputy Hat",
+   "Sombrero alien",
+   "Brown curved hat w/flower",
+   "glen"
+  ],
+  [
+   "CP183",
+   "Ogre Outfit",
+   "Traje alien",
+   "Tattered ghoul with fang",
+   "glen"
+  ],
+  [
+   "CP185",
+   "King Outfit",
+   "Traje",
+   "",
+   "glen"
+  ],
+  [
+   "CP184",
+   "Merlin Outfit",
+   "Traje",
+   "",
+   "glen"
+  ],
+  [
+   "CP186",
+   "Queen Outfit",
+   "Traje",
+   "",
+   "glen"
+  ],
+  [
+   "CP187",
+   "Princess Outfit",
+   "Traje",
+   "",
+   "glen"
+  ],
+  [
+   "CP188",
+   "Pauper Hair",
+   "Peinado",
+   "Blonde prince cut",
+   "glen"
+  ],
+  [
+   "CP189",
+   "Pauper Outfit",
+   "Traje",
+   "",
+   "glen"
+  ],
+  [
+   "CP190",
+   "Flower Girl Hat",
+   "Sombrero",
+   "looks like a flower flipped upside down with the petals draping slightly over the head)",
+   "glen"
+  ],
+  [
+   "CP191",
+   "King Hat",
+   "Sombrero",
+   "Gold crown",
+   "glen"
+  ],
+  [
+   "CP192",
+   "Merlin Hair",
+   "Peinado",
+   "",
+   "glen"
+  ],
+  [
+   "CP193",
+   "Enchanted Rainbow",
+   "Tejado",
+   "",
+   "glen"
+  ],
+  [
+   "CP194",
+   "Enchanted Strawberries",
+   "Tejado",
+   "",
+   "glen"
+  ],
+  [
+   "CP195",
+   "Flower Girl Hair",
+   "Peinado",
+   "Short red hair",
+   "glen"
+  ],
+  [
+   "CP196",
+   "King Hair",
+   "Peinado",
+   "Purple hair w/ goatee",
+   "glen"
+  ],
+  [
+   "CP197",
+   "Enchanted Windows",
+   "Ventanas",
+   "Confetti",
+   "glen"
+  ],
+  [
+   "CP198",
+   "Merlin Hat",
+   "Sombrero",
+   "",
+   "glen"
+  ],
+  [
+   "CP199",
+   "Enchanted Flamingo Bush",
+   "Jardín",
+   "",
+   "glen"
+  ],
+  [
+   "CP200",
+   "Enchanted Mushrooms",
+   "Porche",
+   "",
+   "glen"
+  ],
+  [
+   "CP201",
+   "Enchanted strawberries",
+   "Porche",
+   "",
+   "glen"
+  ],
+  [
+   "CP202",
+   "Queen Hat",
+   "Sombrero",
+   "Purple crown",
+   "glen"
+  ],
+  [
+   "CP203",
+   "Princess hat",
+   "Sombrero",
+   "yellow and white stripes with flowing yellow ribbon",
+   "glen"
+  ],
+  [
+   "CP204",
+   "Enchanted Doors",
+   "Puertas",
+   "heart door",
+   "glen"
+  ],
+  [
+   "CP205",
+   "Flower Girl Outfit",
+   "Traje",
+   "Short yellow dress",
+   "glen"
+  ],
+  [
+   "CP206",
+   "Crazy Suit Hair",
+   "Peinado",
+   "Short brown hair w/ mustache",
+   "farm"
+  ],
+  [
+   "CP207",
+   "Crazy Suit Outfit",
+   "Traje",
+   "Ugly checkers w/ multi colored tie red shoes",
+   "farm"
+  ],
+  [
+   "CP208",
+   "Antlered Gnome",
+   "Jardín",
+   "",
+   "farm"
+  ],
+  [
+   "CP209",
+   "Muscle-O-Lantern",
+   "Jardín",
+   "",
+   "farm"
+  ],
+  [
+   "CP210",
+   "Dart-O-Lantern",
+   "Jardín",
+   "",
+   "farm"
+  ],
+  [
+   "CP211",
+   "Fist-O-Lantern",
+   "Porche",
+   "",
+   "farm"
+  ],
+  [
+   "CP212",
+   "Incredibles Hair",
+   "Peinado",
+   "Short blonde hair (a little more wavy)",
+   "stunt"
+  ],
+  [
+   "CP213",
+   "Ring Leader Hat",
+   "Sombrero",
+   "Formal black top hat w/ red stripe",
+   "stunt"
+  ],
+  [
+   "CP214",
+   "Incredibles Outfit",
+   "Traje",
+   "",
+   "stunt"
+  ],
+  [
+   "CP215",
+   "Ringleader Outfit",
+   "Traje",
+   "",
+   "stunt"
+  ],
+  [
+   "CP216",
+   "Cheerleader Outfit",
+   "Traje",
+   "",
+   "stunt"
+  ],
+  [
+   "CP217",
+   "Monsters Inc Screamer",
+   "Jardín",
+   "",
+   "stunt"
+  ],
+  [
+   "CP218",
+   "Hot Rod Exhaust Pipes",
+   "Laterales",
+   "",
+   "stunt"
+  ],
+  [
+   "CP219",
+   "Mohawk Hair",
+   "Peinado alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP220",
+   "Monsters Inc Eyeballs",
+   "Tejado",
+   "On tentacles",
+   "stunt"
+  ],
+  [
+   "CP221",
+   "Hot Rod Engine",
+   "Tejado",
+   "",
+   "stunt"
+  ],
+  [
+   "CP222",
+   "Hot Rod Flags",
+   "Jardín",
+   "checkered flag",
+   "stunt"
+  ],
+  [
+   "CP223",
+   "Monsters Inc Tentacles",
+   "Laterales",
+   "",
+   "stunt"
+  ],
+  [
+   "CP224",
+   "Rock-n-Roll Hair",
+   "Peinado alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP225",
+   "Hot Rod Wheels",
+   "Jardín",
+   "",
+   "stunt"
+  ],
+  [
+   "CP226",
+   "Porthole Doors",
+   "Puertas",
+   "Submarine door",
+   "stunt"
+  ],
+  [
+   "CP227",
+   "Hot Rod Doors",
+   "Puertas",
+   "Checkered flag door",
+   "stunt"
+  ],
+  [
+   "CP228",
+   "Tourist Outfit",
+   "Traje alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP229",
+   "Mad Scientist Hat",
+   "Sombrero",
+   "Doctor headpiece",
+   "stunt"
+  ],
+  [
+   "CP230",
+   "Pageant Queen Outfit",
+   "Traje alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP231",
+   "Trapeze Artist Hat",
+   "Sombrero",
+   "a pink fairy-like hat with a small yellow bottom and a pink flat broccoli like top",
+   "stunt"
+  ],
+  [
+   "CP232",
+   "Clown Hat",
+   "Sombrero alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP233",
+   "Monsters Inc Walls",
+   "Pintura",
+   "Sulley",
+   "stunt"
+  ],
+  [
+   "CP234",
+   "Panama Hat",
+   "Sombrero alien",
+   "Fishing hat",
+   "stunt"
+  ],
+  [
+   "CP235",
+   "Hot Rod Walls",
+   "Pintura",
+   "Flames",
+   "stunt"
+  ],
+  [
+   "CP236",
+   "Pilot Hat",
+   "Sombrero alien",
+   "Stunt cap and visor",
+   "stunt"
+  ],
+  [
+   "CP238",
+   "Mad Scientist Outfit",
+   "Traje",
+   "",
+   "stunt"
+  ],
+  [
+   "CP237",
+   "Porthole Windows",
+   "Ventanas",
+   "Metal w/ circle in the middle",
+   "stunt"
+  ],
+  [
+   "CP239",
+   "Doctor Outfit",
+   "Traje alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP240",
+   "Monsters Inc Screamers",
+   "Jardín",
+   "",
+   "stunt"
+  ],
+  [
+   "CP241",
+   "Pageant Queen Hat",
+   "Sombrero alien",
+   "Tiara",
+   "stunt"
+  ],
+  [
+   "CP242",
+   "Monsters Inc Windows",
+   "Ventanas",
+   "Black with black trim",
+   "stunt"
+  ],
+  [
+   "CP243",
+   "Monsters Inc Doors",
+   "Puertas",
+   "Boo’s door",
+   "stunt"
+  ],
+  [
+   "CP245",
+   "Trapeze Artist Outfit",
+   "Traje",
+   "Pink suit from the future",
+   "stunt"
+  ],
+  [
+   "CP246",
+   "Pilot Outfit",
+   "Traje alien",
+   "Orange suit",
+   "stunt"
+  ],
+  [
+   "CP244",
+   "Hot Rod Windows",
+   "Ventanas",
+   "Black with white trim",
+   "stunt"
+  ],
+  [
+   "CP247",
+   "Clown",
+   "Traje alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP248",
+   "Doctor Hat",
+   "Sombrero alien",
+   "",
+   "stunt"
+  ],
+  [
+   "CP249",
+   "Goo Walls",
+   "Pintura",
+   "",
+   "town"
+  ]
+ ],
+ "CANDY": [
+  [
+   "Corn Hat",
+   "Sombrero",
+   "Duck hat"
+  ],
+  [
+   "Leaf Boy Hat",
+   "Sombrero",
+   "Corn hat"
+  ],
+  [
+   "Groom Hat",
+   "Sombrero",
+   "Formal white top hat w/ blue stripe"
+  ],
+  [
+   "Cactus Hair",
+   "Peinado",
+   "Pink gumdrop hat"
+  ],
+  [
+   "Strongman Hair",
+   "Peinado",
+   "Turkish hat w/mustache"
+  ],
+  [
+   "Red Braids Hair",
+   "Peinado",
+   "Two side pigtails"
+  ],
+  [
+   "Cloudy Hair",
+   "Peinado",
+   "Clouds and rainbow hair"
+  ],
+  [
+   "Snake Hair",
+   "Peinado",
+   ""
+  ],
+  [
+   "Blue Tree Man Hair",
+   "Peinado",
+   "Green mountain man hair"
+  ],
+  [
+   "Mermaid Hair",
+   "Peinado",
+   "Blonde female hair w/flower"
+  ],
+  [
+   "Blue Curls Wig",
+   "Peinado",
+   "Short blue hair"
+  ],
+  [
+   "Elf Boy Hair",
+   "Peinado",
+   "Orange hair"
+  ],
+  [
+   "Cactus",
+   "Traje",
+   ""
+  ],
+  [
+   "Corn Outfit",
+   "Traje",
+   ""
+  ],
+  [
+   "Groom Outfit",
+   "Traje",
+   ""
+  ],
+  [
+   "Strongman Outfit",
+   "Traje",
+   ""
+  ],
+  [
+   "Mermaid Outfit",
+   "Traje",
+   ""
+  ],
+  [
+   "Mortician",
+   "Traje",
+   ""
+  ],
+  [
+   "Potato Sack Outfit",
+   "Traje",
+   "Dirty shirt w/ red arrow and what looks like a bean on it"
+  ],
+  [
+   "Bunny hat",
+   "Sombrero alien",
+   ""
+  ],
+  [
+   "Chef hat",
+   "Sombrero alien",
+   ""
+  ],
+  [
+   "Lederhosen Hat",
+   "Sombrero alien",
+   "Small green hat"
+  ],
+  [
+   "Crazy Braids Hair",
+   "Peinado alien",
+   "2 side pig-tails"
+  ],
+  [
+   "Bunny Outfit",
+   "Traje alien",
+   "Pink PJ’s"
+  ],
+  [
+   "Chef",
+   "Traje alien",
+   ""
+  ],
+  [
+   "Lederhosen Outfit",
+   "Traje alien",
+   ""
+  ],
+  [
+   "Pumpkin face",
+   "Traje alien",
+   ""
+  ],
+  [
+   "Rex Walls",
+   "Pintura",
+   ""
+  ],
+  [
+   "Spaceport Monolith",
+   "Jardín",
+   ""
+  ]
+ ],
+ "PISTAS": {
+  "CP1": "Pueblo: balcón del saloon (a la izquierda mirando al ayuntamiento); doble salto.",
+  "CP2": "Pueblo: tejado del saloon, subiendo desde el balcón.",
+  "CP3": "Pueblo: tejadillo del balcón trasero de la tienda general, frente al saloon.",
+  "CP4": "Pueblo: tejado de la tienda general; sube usando la caja.",
+  "CP5": "Pueblo: detrás del ayuntamiento.",
+  "CP6": "Pueblo: junto a la torre de agua, camino del cerdo rosa del lado de Stinky Pete.",
+  "CP7": "Pueblo: justo a la derecha del cerdo rosa, subiendo el camino.",
+  "CP8": "Pueblo: pasado el cerdo rosa, tras el arco, junto al primer disco Pict-O-Matic.",
+  "RC1": "Cofre arcoíris pasado el arco del cerdo rosa (junto al primer disco). Ábrelo con la varita de hada.",
+  "CP9": "Pueblo: desde lo alto del arco del cerdo rosa, mira abajo a la derecha.",
+  "CP10": "Pueblo: en mitad del camino que sigue tras el arco.",
+  "CP11": "Pueblo: antes de cruzar el puente, déjate caer por el borde izquierdo.",
+  "CP12": "Pueblo: hacia la cascada, al saltar la tercera roca del agua.",
+  "CP13": "Pueblo: debajo del puente, girando a la derecha tras las rocas del agua.",
+  "CP14": "Pasado el puente de la puerta de Zurg: túnel de mina, desvío izquierdo.",
+  "CP15": "Túnel de mina: a la izquierda bajando la cuesta, tras CP14.",
+  "CP16": "Al final del túnel de mina, en la entrada a la granja de Slinky.",
+  "CP17": "Túnel de mina: desvío derecho, rodeando la colina.",
+  "ZB1": "Caja Zurg morada junto a la pared de la montaña, a la izquierda de la entrada de la diligencia. Rómpela con la pistola láser.",
+  "CP18": "Siguiendo la pared de la montaña pasada la caja Zurg morada.",
+  "CP19": "En lo alto de la cuesta de tierra junto a la pasarela de madera, al lado de un «?».",
+  "KN1": "Caballero de ajedrez junto a la veta de oro bajo la cuesta de CP19. Rómpelo con el pararrayos.",
+  "CP20": "En un saliente junto al caballero de ajedrez KN1.",
+  "CP21": "Justo delante al volver al pueblo desde la zona de la montaña.",
+  "CP47": "Pueblo: aparece cerca de Stinky Pete al comprar al pionero (misión «Populate the Town»).",
+  "CP48": "Dentro del pozo del pueblo, la primera a tu izquierda.",
+  "CP49": "Dentro del pozo del pueblo, recorriéndolo en sentido horario.",
+  "CP50": "Dentro del pozo del pueblo, recorriéndolo en sentido horario.",
+  "CP51": "Dentro del pozo del pueblo, recorriéndolo en sentido horario.",
+  "CP52": "Dentro del pozo del pueblo, recorriéndolo en sentido horario.",
+  "CP53": "Dentro del pozo del pueblo: sube por los raíles de vagoneta.",
+  "CP54": "Dentro del pozo del pueblo: al final de los raíles de vagoneta.",
+  "CP249": "Pulsa el botón de la pared trasera de la sombrerería, corre al frente y cuélgate del cartel: te lanza a la cápsula.",
+  "CP22": "Granja: en el saliente a la derecha del cerdo rosa.",
+  "CP23": "Granja: delante del pozo de la zona minera.",
+  "CP24": "Granja: encima del edificio minero, subiendo la rampa.",
+  "CP25": "Granja: detrás de la herrería, junto al segundo disco Pict-O-Matic.",
+  "CP26": "Granja: arriba de la ladera, junto a la valla de madera y los cactus.",
+  "CP27": "Granja: por la abertura junto a la rampa cubierta; abajo, junto a una caja Zurg.",
+  "ZB2": "Caja Zurg morada en la cueva junto a CP27. Rómpela con la pistola láser.",
+  "CP28": "Granja: a la derecha de CP27, dentro de la misma cueva.",
+  "CP29": "Corral de arriba (sube las dos paredes de tablas): a la derecha.",
+  "CP30": "Corral de arriba: al fondo, a la izquierda.",
+  "CP31": "Granja: en la cuesta que lleva a la puerta con la cara de Bullseye.",
+  "RC2": "Cofre arcoíris tras la valla, a la derecha de la puerta de Bullseye. Ábrelo con la varita de hada.",
+  "CP32": "Granja: siguiendo la vuelta tras la puerta de Bullseye, junto a un caballero.",
+  "KN2": "Caballero de ajedrez junto a CP32. Rómpelo con el pararrayos.",
+  "RC3": "Cofre arcoíris en la pasarela de madera a la izquierda de la puerta de la bandera a cuadros. Ábrelo con la varita de hada.",
+  "CP33": "Pasarela alta a la izquierda de la puerta de la bandera a cuadros, tras el segundo salto.",
+  "CP34": "Pasarela alta: en la zona de saltos entre paredes.",
+  "CP35": "Arriba de los saltos entre paredes, en la esquina izquierda.",
+  "CP36": "Deslizándote por los raíles de vagoneta tras los saltos entre paredes.",
+  "CP37": "En los mismos raíles, justo después de CP36.",
+  "CP38": "Al salir del túnel de los raíles, justo delante.",
+  "KN3": "Caballero de ajedrez arriba de la pared de tablas tras CP38. Rómpelo con el pararrayos.",
+  "CP39": "Por la abertura izquierda junto a la puerta trasera: arriba de los saltos entre paredes.",
+  "CP40": "Arriba de los mismos saltos entre paredes que CP39.",
+  "CP41": "Arriba de los mismos saltos entre paredes que CP39.",
+  "CP42": "Arriba de los mismos saltos entre paredes que CP39.",
+  "CP43": "En los raíles de vagoneta junto al caballero KN3.",
+  "CP44": "Dentro del túnel de esos raíles.",
+  "CP45": "Al salir del túnel, salta a la izquierda.",
+  "CP46": "Déjate caer a la derecha tras CP45.",
+  "CP70": "Recompensa: cabaña de bandidos nº 1 en la misión de rescatar al alcalde Ham.",
+  "CP71": "Recompensa: cabaña de bandidos nº 1 en la misión de rescatar al alcalde Ham.",
+  "CP72": "Recompensa: cabaña de bandidos nº 2 en la misión de rescatar al alcalde Ham.",
+  "CP73": "Recompensa: cabaña de bandidos nº 2 en la misión de rescatar al alcalde Ham.",
+  "CP74": "Recompensa: cabaña de bandidos nº 3 en la misión de rescatar al alcalde Ham.",
+  "CP75": "Recompensa: cabaña de bandidos nº 3 en la misión de rescatar al alcalde Ham.",
+  "CP76": "Recompensa: cabaña de bandidos nº 4 (al otro lado del hueco); la cápsula viene sola hacia ti.",
+  "CP77": "Recompensa: cabaña de bandidos nº 4 (al otro lado del hueco); la cápsula viene sola hacia ti.",
+  "CP78": "Recompensa: última cabaña de bandidos, bajando por el túnel.",
+  "CP79": "Recompensa: última cabaña de bandidos, bajando por el túnel.",
+  "CP206": "Con Bullseye, puerta junto al pozo de la granja: rampa a la izquierda y salta las piedras.",
+  "CP207": "Junto a CP206, en las mismas piedras.",
+  "CP208": "Con Bullseye: al salir del pozo de la mina, por las rampas de la derecha.",
+  "CP209": "Con Bullseye: déjate caer al hueco de vuelta a la granja y baja el sendero alejándote del pueblo.",
+  "CP210": "Con Bullseye: en la siguiente curva del mismo sendero, tras CP209.",
+  "CP211": "Con Bullseye: en la curva siguiente bájate y trepa al saliente de la derecha.",
+  "CP55": "Presa: sube los escalones junto al pequeño cartel a la izquierda del túnel.",
+  "ZB3": "Caja Zurg en lo alto de los saltos entre paredes de la presa. Rómpela con la pistola láser.",
+  "CP56": "Presa: arriba de los saltos entre paredes, a la izquierda de la caja Zurg.",
+  "CP57": "Presa: asómate al borde desde CP56 y déjate caer.",
+  "CP58": "Presa: cae por el borde derecho y gira a la izquierda.",
+  "CP59": "Presa: junto a CP58.",
+  "CP60": "Presa: sube dos paredes de madera; en los raíles de abajo.",
+  "CP61": "Presa: salta desde los raíles de abajo mientras avanzas.",
+  "CP62": "Presa: cruza el puente pasada la cabaña pequeña; está a un salto.",
+  "KN4": "Caballero de ajedrez en la parte baja de la zona del burro, bajando unas escaleras. Rómpelo con el pararrayos.",
+  "CP63": "Presa: en un saliente bajo a la izquierda, junto a un soldadito, volviendo a los saltos entre paredes.",
+  "CP64": "Presa: por el sendero a ras del agua; al final, déjate caer.",
+  "CP65": "Presa: tras bajar dos plataformas con dianas, de frente.",
+  "CP66": "Presa: junto a CP65.",
+  "KN5": "Caballero de ajedrez al fondo, junto a los saltos entre paredes de la presa. Rómpelo con el pararrayos.",
+  "CP67": "Presa: arriba de los saltos entre paredes junto al caballero KN5.",
+  "CP68": "Pueblo nuevo: junto al cerdo rosa de la zona.",
+  "CP69": "Pueblo nuevo: flota junto al pozo. Pulsa el botón al pie del hotel y súbete a la cama, o lánzale un soldadito.",
+  "CP80": "Puerto espacial: nada más salir del túnel de entrada.",
+  "CP81": "Puerto espacial: junto a CP80, a la salida del túnel.",
+  "CP82": "Puerto espacial: vuelta en sentido horario empezando por la izquierda.",
+  "CP83": "Puerto espacial: vuelta en sentido horario, cerca del cuarto disco Pict-O-Matic.",
+  "CP84": "Puerto espacial: vuelta exterior en sentido horario.",
+  "CP85": "Puerto espacial: vuelta exterior en sentido horario.",
+  "CP86": "Puerto espacial: vuelta exterior en sentido horario.",
+  "CP87": "Puerto espacial: vuelta exterior en sentido horario, antes del pozo.",
+  "CP88": "Puerto espacial: vuelta exterior en sentido horario, antes del pozo.",
+  "CP89": "Puerto espacial: sigue en sentido horario por el nivel de Zurg tras fotografiarlo.",
+  "CP90": "Torre (misión de la pistola láser): antes de las plataformas flotantes.",
+  "CP91": "Arriba de la torre: rodea el borde exterior antes de coger la pistola láser.",
+  "CP92": "Arriba de la torre: borde exterior, antes de coger la pistola láser.",
+  "CP93": "Arriba de la torre: borde exterior, antes de coger la pistola láser.",
+  "CP94": "Arriba de la torre: borde exterior, antes de coger la pistola láser.",
+  "CP95": "Base de Zurg: en la celda de al lado de donde empiezas.",
+  "CP96": "Base de Zurg: en plataformas flotantes al salir por la única puerta.",
+  "CP97": "Base de Zurg: al fondo a la izquierda del siguiente saliente.",
+  "CP98": "Base de Zurg: en la esquina derecha de la sala del primer cañón.",
+  "CP99": "Base de Zurg: subiendo los salientes de la pared derecha, sala del primer cañón.",
+  "CP100": "Base de Zurg: por la abertura de la izquierda, bajando, tras el primer cañón.",
+  "CP101": "Base de Zurg: subiendo la rampa del fondo antes de las plataformas.",
+  "CP102": "Base de Zurg: montado en las plataformas giratorias.",
+  "CP103": "Base de Zurg: al llegar a tierra tras las plataformas giratorias.",
+  "CP104": "Base de Zurg: cruzando las plataformas tras la puerta y el robot.",
+  "CP105": "Base de Zurg: siguiendo el camino, antes del teletransporte a la sala de mando.",
+  "CP106": "Sala de mando: subiendo las escaleras tras las tres oleadas.",
+  "CP107": "Sala de mando: delante del cañón.",
+  "CP108": "Base de Zurg: en mitad del túnel al salir de la sala de mando.",
+  "CP109": "Base de Zurg: en las plataformas flotantes de fuera, antes de la puerta derecha.",
+  "CP110": "Sala de plataformas de colores: verde, rojo, azul, cápsula, y repite.",
+  "CP111": "Sala de plataformas de colores: en la pasarela tras disparar a la diana.",
+  "CP112": "Base de Zurg: bajando la rampa tras el robot, después de las plataformas de colores.",
+  "CP113": "Base de Zurg: tras el teletransporte del centro, antes del hangar.",
+  "CP114": "Hangar de lanzaderas: a la derecha.",
+  "CP115": "Hangar de lanzaderas: a la izquierda.",
+  "CP116": "Hangar de lanzaderas: esquina del fondo a la derecha.",
+  "CP117": "Hangar de lanzaderas: rodeando el cañón. Otra que se suele escapar: por la barandilla exterior detrás del cañón.",
+  "CP118": "Base de Zurg: déjate caer por el agujero del hangar; aterrizas al lado.",
+  "CP119": "Base de Zurg: pequeña sala de reparación de robots a la izquierda del pasillo.",
+  "CP120": "Base de Zurg: al salir, baja la rampa y rodea la salida por la izquierda.",
+  "CP121": "Base de Zurg: rodeando la salida por la izquierda, junto a CP120.",
+  "CP122": "Base de Zurg: rodeando la salida por la izquierda, junto a CP120.",
+  "CP123": "Desde el pueblo: trepa la pared de tablas, sigue los raíles hasta la vía de vagonetas; en el túnel.",
+  "CP124": "Casa de Sid: subiendo la colina tras la verja de entrada.",
+  "CP125": "Casa de Sid: más arriba en la misma cuesta.",
+  "CP126": "Casa de Sid: primera de la vuelta en sentido antihorario.",
+  "CP127": "Casa de Sid: vuelta antihoraria, tras CP126.",
+  "CP128": "Casa de Sid: un poco a la izquierda, pasado el gnomo de jardín.",
+  "CP129": "Cementerio: en la entrada.",
+  "CP130": "Cementerio: detrás del árbol.",
+  "CP131": "Cementerio: al fondo, junto al quinto disco Pict-O-Matic.",
+  "CP132": "Cementerio: al fondo, junto al quinto disco Pict-O-Matic.",
+  "CP133": "Casa de Sid: junto a un árbol grande, siguiendo la vuelta.",
+  "CP134": "Casa de Sid: siguiendo la vuelta tras CP133.",
+  "CP135": "Casa de Sid: siguiendo la vuelta tras CP134.",
+  "CP136": "Casa de Sid: siguiendo la vuelta, antes de la máquina del cielo.",
+  "CP137": "Casa de Sid: junto a la máquina que cambia el cielo.",
+  "CP138": "Casa de Sid: en una abertura a la derecha que se pasa durante la vuelta.",
+  "CP139": "Casa de Sid: subiendo la rampa hacia el pozo.",
+  "CP140": "Casa de Sid: junto al pozo.",
+  "CP141": "Casa de Sid: detrás de un árbol a la derecha, subiendo la siguiente cuesta.",
+  "CP142": "Cripta de piedra gris camino del frente de la casa: rompe la puerta y baja.",
+  "CP143": "Dentro de la cripta, junto a CP142.",
+  "CP144": "Recompensa: pulsa el botón de la tumba dentro de la cripta.",
+  "CP145": "Recompensa: cava la tumba recién hecha delante de la casa, pasado Rex.",
+  "CP146": "Casa de Sid: en el porche trasero.",
+  "CP147": "Casa de Sid: en el sótano abierto junto al porche trasero.",
+  "CP148": "Tejado de la casa: tejado del medio, entre la aguja y la mano gigante.",
+  "CP149": "Interior de Sid: al empezar, gira la cámara a la derecha.",
+  "CP150": "Interior de Sid: al empezar, a la derecha, junto a CP149.",
+  "CP151": "Interior: botón morado del suelo junto a la armadura abre la librería.",
+  "CP152": "Interior: en la misma librería que CP151.",
+  "CP153": "Interior: interruptor rosa de la esquina abre otra librería.",
+  "CP154": "Interior: en la misma librería que CP153.",
+  "CP155": "Interior: tercer interruptor del suelo.",
+  "CP156": "Interior: con el tercer interruptor del suelo, junto a CP155.",
+  "CP157": "Pasillo tras la puerta de las llaves: pasado el primer hueco, agarra la manija de la pared derecha y empújala.",
+  "CP158": "Sala de la chimenea: en una esquina.",
+  "CP159": "Sala de la chimenea: junto a la chimenea.",
+  "CP160": "Comedor (a la derecha de la chimenea): en una esquina.",
+  "CP161": "Comedor: en otra esquina.",
+  "CP162": "Antes de subir la escalera: interruptor del suelo a la izquierda (abre un armario).",
+  "CP163": "Arriba de la escalera: sigue de largo pasada la puerta que se abre.",
+  "CP164": "Tras esa puerta: pisa el interruptor rosa del suelo.",
+  "CP165": "Cruzando el brazo y los dos ataúdes.",
+  "CP166": "Cruzando el brazo y los dos ataúdes, junto a CP165.",
+  "CP167": "Laboratorio del profesor: en la esquina de los tubos de ensayo.",
+  "CP168": "Bajando las escaleras tras la gárgola, junto a la primera máquina.",
+  "CP169": "Subiendo la rampa tras activar las tres máquinas.",
+  "CP170": "Montado en el raíl de vuelta al inicio de la sección.",
+  "CP171": "En el ascensor tras dar energía a la última máquina.",
+  "CP172": "Bosque: nada más entrar por las puertas marrones.",
+  "CP173": "Bosque: junto a CP172, en la entrada.",
+  "CP174": "Bosque: al salir del túnel, a la derecha bajando la colina.",
+  "CP175": "Bosque: junto al pozo.",
+  "CP176": "Bosque: detrás de Lotso, un poco a la izquierda.",
+  "CP177": "Bosque: cruzando el arroyo pequeño a la izquierda de Lotso.",
+  "CP178": "Bosque: nivel bajo, en sentido horario.",
+  "CP179": "Bosque: nivel bajo, en sentido horario.",
+  "CP180": "Bosque: nivel bajo, en sentido horario.",
+  "CP181": "Bosque: nivel bajo, en sentido horario.",
+  "CP182": "Bosque: sube los salientes de hierba a la izquierda de Lotso y las setas.",
+  "CP183": "Bosque: cruzando el puente, junto al sexto disco Pict-O-Matic.",
+  "CP184": "Árbol grande: primer puente arcoíris.",
+  "CP185": "Árbol grande: primer puente arcoíris.",
+  "CP186": "Árbol grande: segundo puente arcoíris.",
+  "CP187": "Árbol grande: segundo puente arcoíris.",
+  "CP188": "Árbol grande: tercer puente arcoíris, pasada la varita (no la cojas aún).",
+  "CP189": "Árbol grande: tercer puente arcoíris, pasada la varita.",
+  "CP190": "Cueva de las orugas: justo detrás de ti al llegar.",
+  "CP191": "Cueva de las orugas: en sentido horario.",
+  "CP192": "Cueva de las orugas: en sentido horario.",
+  "CP193": "Cueva de las orugas: en sentido horario.",
+  "CP194": "Con el dragón: tras la primera antorcha, baja y rodea la rampa.",
+  "CP195": "Con el dragón: junto a la cascada (zona de la tercera antorcha).",
+  "CP196": "Con el dragón: junto a la tercera antorcha.",
+  "CP197": "Con el dragón: esquina del fondo de la zona de la tercera antorcha.",
+  "CP198": "Con el dragón: junto a la cuarta antorcha.",
+  "CP199": "Con el dragón: junto a la cuarta antorcha.",
+  "CP200": "Con el dragón: pared izquierda tras la quinta antorcha.",
+  "CP201": "Con el dragón: junto a la sexta antorcha.",
+  "CP202": "Con el dragón: abajo, junto a la novena antorcha del fondo.",
+  "CP203": "Con el dragón: escalones de piedra a la derecha de donde caíste.",
+  "CP204": "Con el dragón: sobre la seta tras la décima antorcha.",
+  "CP205": "Con el dragón: saliente de la pared del fondo, tras los tocones.",
+  "CP212": "Skate park: en lo alto de la primera rampa azul a la izquierda del triceratops.",
+  "CP213": "Skate park: siguiente rampa, pasada la máquina de personalizar.",
+  "CP214": "Skate park: rampa siguiente, pasada la máquina de baba verde.",
+  "CP215": "Skate park: en el aire sobre las rampas centrales; salta con velocidad.",
+  "CP216": "Skate park: en el aire entre los aros morado y verde; usa una de las dos rampas grandes.",
+  "CP217": "Stunt Jump Challenge (inicia la prueba junto a Buttercup): carril izquierdo, en el aire.",
+  "CP218": "Stunt Jump Challenge: salto grande del carril derecho.",
+  "CP219": "Stunt Jump Challenge: carril central.",
+  "CP220": "Stunt Jump Challenge: tras el rizo y la rampa azul, abajo al otro lado.",
+  "CP221": "Por la abertura a la derecha de Buttercup: nada más pasar el arco, a la derecha.",
+  "CP222": "En la bifurcación: sube la colina de tierra de la derecha y salta por el centro.",
+  "CP223": "Conduce por encima del arco izquierdo; está en lo alto del otro arco.",
+  "CP224": "En la bifurcación: rampa azul de la izquierda.",
+  "CP225": "Tras aterrizar, baja y sube marcha atrás la rampa de tu derecha.",
+  "CP226": "Rampa de tierra en U: en el aire, en el centro.",
+  "CP227": "Rampa en U: sube despacio por el lado derecho hasta las rocas naranjas; tras la colina.",
+  "CP228": "En el centro del siguiente salto, ya en la parte baja.",
+  "CP229": "Rampa de skate (columna de luz azul abajo): coge impulso y salta.",
+  "CP230": "Rampa de skate: junto a CP229, saltando alto.",
+  "CP231": "Camino de tierra de vuelta arriba: pasado el primer acelerador, cae por el borde izquierdo.",
+  "CP232": "Al salir del túnel azul, a la izquierda.",
+  "CP233": "Minijuego de bolos (pasada la portería de fútbol): baja por el lado izquierdo.",
+  "CP234": "Minijuego de bolos: baja por el lado derecho.",
+  "CP235": "Rizo rojo grande: entra abajo, sube la rampa azul de la izquierda y cae por el borde.",
+  "CP236": "Rampa azul grande de vuelta arriba: por el centro.",
+  "CP237": "Big Loop Challenge (a la derecha de Buttercup): rampa central.",
+  "CP238": "Big Loop Challenge: dentro del rizo, por el centro.",
+  "CP239": "Big Loop Challenge: en el túnel tras la rampa amarilla.",
+  "CP240": "Rampa azul con cajas azules: salta por el centro.",
+  "CP241": "Misma rampa de cajas: déjate caer despacio a la plataforma intermedia.",
+  "CP242": "Desde la plataforma intermedia, a la derecha.",
+  "CP243": "Colina de tierra de la derecha: justo tras el tercer acelerador.",
+  "CP244": "Big Ramp Challenge: salto derecho, túnel de arriba a la derecha.",
+  "CP245": "Big Ramp Challenge: salto derecho, túnel de arriba a la derecha.",
+  "CP246": "Big Ramp Challenge: salto derecho, túnel de arriba a la derecha.",
+  "CP247": "Big Ramp Challenge: salto central, túnel de abajo.",
+  "CP248": "Big Ramp Challenge: salto izquierdo, túnel de arriba."
+ }
+}

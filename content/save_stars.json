@@ -1,0 +1,1847 @@
+[
+ {
+  "interno": "JuniorReanimator",
+  "guia": "Junior Re-animator",
+  "id": "g-junior-re-animator",
+  "condicion": {
+   "Data": {
+    "CuteValue": 0,
+    "FunnyValue": 0,
+    "ImpressiveValue": 0,
+    "MatchCount": 3,
+    "RepulsiveValue": 200,
+    "ScaryValue": 0
+   },
+   "Type": "Eval_CustomizationMoodMatch"
+  }
+ },
+ {
+  "interno": "MasterReanimator",
+  "guia": "Master Re-animator",
+  "id": "g-master-re-animator",
+  "condicion": {
+   "Data": {
+    "CuteValue": 0,
+    "FunnyValue": 0,
+    "ImpressiveValue": 0,
+    "MatchCount": 10,
+    "RepulsiveValue": 200,
+    "ScaryValue": 0
+   },
+   "Type": "Eval_CustomizationMoodMatch"
+  }
+ },
+ {
+  "interno": "AllDragon",
+  "guia": "Dragon Rally",
+  "id": "g-dragon-rally",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_DRAGON_MISSIONS",
+    "TriggerFail": "false",
+    "Value": 12
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterSorcer",
+  "guia": "Master Sorcerer",
+  "id": "g-master-sorcerer",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "ChallengeTag": "Merlin",
+       "QueryMode": 2
+      },
+      "Type": "EvalFetch_ChallengeTag"
+     },
+     {
+      "Data": {
+       "Value": 100
+      },
+      "Type": "EvalFetch_Number"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "MOREOREQUAL",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "ModifierViewmaster",
+  "guia": "Picto-Veteran",
+  "id": "g-picto-veteran",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "ChallengeTag": "Modifier",
+       "QueryMode": 2
+      },
+      "Type": "EvalFetch_ChallengeTag"
+     },
+     {
+      "Data": {
+       "Value": 100
+      },
+      "Type": "EvalFetch_Number"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "MOREOREQUAL",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "SpookyCustomizer",
+  "guia": "Spooky Customizer",
+  "id": "g-spooky-customizer",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "Modifier": "Haunted",
+       "QueryMode": 2
+      },
+      "Type": "EvalFetch_Locks"
+     },
+     {
+      "Data": {
+       "Value": 100
+      },
+      "Type": "EvalFetch_Number"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "MOREOREQUAL",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "EnchantedCustomizer",
+  "guia": "Enchanted Customizer",
+  "id": "g-enchanted-customizer",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "Modifier": "Enchanted",
+       "QueryMode": 2
+      },
+      "Type": "EvalFetch_Locks"
+     },
+     {
+      "Data": {
+       "Value": 100
+      },
+      "Type": "EvalFetch_Number"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "MOREOREQUAL",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "SpaceCustomizer",
+  "guia": "Customizer of the Future",
+  "id": "g-customizer-of-the-future",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "Modifier": "Space",
+       "QueryMode": 2
+      },
+      "Type": "EvalFetch_Locks"
+     },
+     {
+      "Data": {
+       "Value": 100
+      },
+      "Type": "EvalFetch_Number"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "MOREOREQUAL",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "SpookySheriff",
+  "guia": "Spooky Sheriff",
+  "id": "g-spooky-sheriff",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "HAUNTED_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     },
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "HAUNTED_COMPLETED_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "EQUALNONZERO",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "EnchantedSheriff",
+  "guia": "Enchanted Sheriff",
+  "id": "g-enchanted-sheriff",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "ENCHANTED_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     },
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "ENCHANTED_COMPLETED_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "EQUALNONZERO",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "SheriffoftheFuture",
+  "guia": "Sheriff of the Future",
+  "id": "g-sheriff-of-the-future",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "SPACE_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     },
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "SPACE_COMPLETED_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "EQUALNONZERO",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "AllPicto",
+  "guia": "Picto-Master",
+  "id": "g-picto-master",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "PICTO_COMPLETED_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     },
+     {
+      "Data": {
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "PICTO_CHALLENGE_COUNT"
+      },
+      "Type": "EvalFetch_Stat"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "EQUALNONZERO",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "ThreePicto",
+  "guia": "Picto-Amateur",
+  "id": "g-picto-amateur",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "PICTO_COMPLETED_CHALLENGE_COUNT",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "TenPicto",
+  "guia": "Picto-Enthusiast",
+  "id": "g-picto-enthusiast",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "PICTO_COMPLETED_CHALLENGE_COUNT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "AllPictoUnlocked",
+  "guia": "Picto-Collector",
+  "id": "g-picto-collector",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_ALL_PICTO",
+    "TriggerFail": "false",
+    "Value": 6
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "AmateurPunter",
+  "guia": "Amateur Kicker",
+  "id": "g-amateur-kicker",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "PLAYER_KICK_BLOCKHEAD_COUNT",
+    "TriggerFail": "false",
+    "Value": 5
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "ProPunter",
+  "guia": "Pro Kicker",
+  "id": "g-pro-kicker",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "PLAYER_KICK_BLOCKHEAD_COUNT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterGrower",
+  "guia": "Master Grower",
+  "id": "g-master-grower",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_OBJECTS_GROW",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterShrinker",
+  "guia": "Master Shrinker",
+  "id": "g-master-shrinker",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_OBJECTS_SHRINK",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "CowTipper",
+  "guia": "Cow Tipper",
+  "id": "g-cow-tipper",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_SHOULDER_COWS",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "CowinWell",
+  "guia": "Cow in the Well",
+  "id": "g-cow-in-the-well",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_INWELL_COW",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Miner49er",
+  "guia": "Miner 49er",
+  "id": "g-miner-49er",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_GOLD_MINED",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Stylist",
+  "guia": "Stylist",
+  "id": "g-stylist",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "LP_HAIR_CUSTOMIZE_TOTAL",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "OnAMission",
+  "guia": "On a Mission",
+  "id": "g-on-a-mission",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "COMPLETED_CHALLENGE_COUNT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MissionImpossible",
+  "guia": "Mission Master",
+  "id": "g-mission-master",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "COMPLETED_CHALLENGE_COUNT",
+    "TriggerFail": "false",
+    "Value": 50
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Wingman",
+  "guia": "Wand Waver",
+  "id": "g-wand-waver",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_FAIRY_WINGS",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "AirbourneRanger",
+  "guia": "Parachute King",
+  "id": "g-parachute-king",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "PARATROOPERS_LANDED_UNIQUE",
+    "TriggerFail": "false",
+    "Value": 15
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Jailor",
+  "guia": "Jailer",
+  "id": "g-jailer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "BENDITOS_CAPTURED",
+    "TriggerFail": "false",
+    "Value": 15
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "CapsuleEnthusiast",
+  "guia": "Prize Capsule Collector",
+  "id": "g-prize-capsule-collector",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_CAP_COLLECTED",
+    "TriggerFail": "false",
+    "Value": 15
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "CapsuleCollector",
+  "guia": "Prize Capsule Enthusiast",
+  "id": "g-prize-capsule-enthusiast",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_CAP_COLLECTED",
+    "TriggerFail": "false",
+    "Value": 40
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "UndertheSea",
+  "guia": "Under the Sea",
+  "id": "g-under-the-sea",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_AVATAR_SWIM",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "SwimmingLessons",
+  "guia": "Swimming Lessons",
+  "id": "g-swimming-lessons",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_LP_SWIM",
+    "TriggerFail": "false",
+    "Value": 5
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "IPBaller",
+  "guia": "Having a Ball",
+  "id": "g-having-a-ball",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_PIXAR_LP",
+    "TriggerFail": "false",
+    "Value": 30
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterBuilder",
+  "guia": "Master Builder",
+  "id": "g-master-builder",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "BUILDING_COUNT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MotorCity",
+  "guia": "Engine City",
+  "id": "g-engine-city",
+  "condicion": {
+   "Data": {
+    "MatchCount": 5,
+    "TargetPrebuilt": "BL_Motor"
+   },
+   "Type": "Eval_PrebuiltMatch"
+  }
+ },
+ {
+  "interno": "BigSpender",
+  "guia": "Big Spender",
+  "id": "g-big-spender",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_MONEY_SPENT",
+    "TriggerFail": "false",
+    "Value": 30000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "DaddyWarbucks",
+  "guia": "Saving Up",
+  "id": "g-saving-up",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "GOLD_COLLECTED",
+    "TriggerFail": "false",
+    "Value": 30000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "KnockitOff",
+  "guia": "Knock It Off",
+  "id": "g-knock-it-off",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_SHOULDER_GIVERS",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "LongHaul",
+  "guia": "Long Haul",
+  "id": "g-long-haul",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_CAR_DIST",
+    "TriggerFail": "false",
+    "Value": 10000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Invaders",
+  "guia": "Welcome Wagon",
+  "id": "g-welcome-wagon",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_ALIEN_COUNT",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "ApprenticePainter",
+  "guia": "Apprentice Painter",
+  "id": "g-apprentice-painter",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "BD_CUSTOMIZE_BUILDING_COUNT",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterPainter",
+  "guia": "Master Painter",
+  "id": "g-master-painter",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "BD_CUSTOMIZE_BUILDING_COUNT",
+    "TriggerFail": "false",
+    "Value": 20
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "DemolitionsExpert",
+  "guia": "Demolitions Expert",
+  "id": "g-demolitions-expert",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_TNT_LP",
+    "TriggerFail": "false",
+    "Value": 20
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "RidintheRange",
+  "guia": "Ridin' the Range",
+  "id": "g-ridin-the-range",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BULLSEYE_DIST",
+    "TriggerFail": "false",
+    "Value": 10000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "BootsMadeforWalkin",
+  "guia": "Gone Wanderin'",
+  "id": "g-gone-wanderin",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_AVATAR_DIST",
+    "TriggerFail": "false",
+    "Value": 10000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Dragonrider",
+  "guia": "Saddle the Dragon",
+  "id": "g-saddle-the-dragon",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_DRAGON_DIST",
+    "TriggerFail": "false",
+    "Value": 5000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Strongman",
+  "guia": "Strongman",
+  "id": "g-strongman",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_HEAVY_DIST",
+    "TriggerFail": "false",
+    "Value": 50
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "RidingtheRails",
+  "guia": "Riding the Rails",
+  "id": "g-riding-the-rails",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_RAIL_DIST",
+    "TriggerFail": "false",
+    "Value": 200
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "EngineofDestruction",
+  "guia": "Engine of Destruction",
+  "id": "g-engine-of-destruction",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_DRAGON_DESTROY",
+    "TriggerFail": "false",
+    "Value": 50
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "YeeHaw",
+  "guia": "Jumpin' Jackrabits",
+  "id": "g-jumpin-jackrabits",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BULLSEYE_JUMP_DIST",
+    "TriggerFail": "false",
+    "Value": 15
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "GreenThumb",
+  "guia": "Green Thumb",
+  "id": "g-green-thumb",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "Operator": "MOREOREQUAL",
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "MIS_CROP_CARROT",
+       "TriggerFail": "false",
+       "Value": 1
+      },
+      "Type": "Eval_Stat"
+     },
+     {
+      "Data": {
+       "Operator": "MOREOREQUAL",
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "MIS_CROP_CORN",
+       "TriggerFail": "false",
+       "Value": 1
+      },
+      "Type": "Eval_Stat"
+     },
+     {
+      "Data": {
+       "Operator": "MOREOREQUAL",
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "MIS_CROP_PUMPKIN",
+       "TriggerFail": "false",
+       "Value": 1
+      },
+      "Type": "Eval_Stat"
+     },
+     {
+      "Data": {
+       "Operator": "MOREOREQUAL",
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "MIS_CROP_TOMATO",
+       "TriggerFail": "false",
+       "Value": 1
+      },
+      "Type": "Eval_Stat"
+     }
+    ]
+   },
+   "Type": "Eval_LogicAND"
+  }
+ },
+ {
+  "interno": "AmateurPhotographer",
+  "guia": "Amateur Photographer",
+  "id": "g-amateur-photographer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_PHOTO_POINTS",
+    "TriggerFail": "false",
+    "Value": 1000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "ProfessionalPhotographer",
+  "guia": "Professional Photographer",
+  "id": "g-professional-photographer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_PHOTO_POINTS",
+    "TriggerFail": "false",
+    "Value": 5000
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "RollyPolly",
+  "guia": "Rolly Polly",
+  "id": "g-rolly-polly",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BARREL_ROLL",
+    "TriggerFail": "false",
+    "Value": 40
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "PricklyPear",
+  "guia": "Pricky Pear",
+  "id": "g-pricky-pear",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_SHOULDER_CACTI",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Porcupine",
+  "guia": "Porcupine",
+  "id": "g-porcupine",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_HIT_CACTI",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "BarrelsAndCrates",
+  "guia": "Breaking Boards",
+  "id": "g-breaking-boards",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_SHOULDER_CRATE",
+    "TriggerFail": "false",
+    "Value": 25
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "TotallyInteractive",
+  "guia": "Totally Interactive",
+  "id": "g-totally-interactive",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BUILDING_BUTTONS",
+    "TriggerFail": "false",
+    "Value": 15
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "PowerShopper",
+  "guia": "Power Shopper",
+  "id": "g-power-shopper",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_ITEMS_BOUGHT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "PumpkinSmashing",
+  "guia": "Pumpkin Smashing",
+  "id": "g-pumpkin-smashing",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_SHOULDER_PUMPKIN",
+    "TriggerFail": "false",
+    "Value": 15
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "FarmerInTheWell",
+  "guia": "Farmer in the Well",
+  "id": "g-farmer-in-the-well",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "Operator": "MOREOREQUAL",
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "MIS_INWELL_COW",
+       "TriggerFail": "false",
+       "Value": 1
+      },
+      "Type": "Eval_Stat"
+     },
+     {
+      "Data": {
+       "Operator": "MOREOREQUAL",
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "MIS_INWELL_PIG",
+       "TriggerFail": "false",
+       "Value": 1
+      },
+      "Type": "Eval_Stat"
+     },
+     {
+      "Data": {
+       "Operator": "MOREOREQUAL",
+       "QueryMode": 0,
+       "ResetStat": 0,
+       "Stat": "MIS_INWELL_CHICKEN",
+       "TriggerFail": "false",
+       "Value": 1
+      },
+      "Type": "Eval_Stat"
+     }
+    ]
+   },
+   "Type": "Eval_LogicAND"
+  }
+ },
+ {
+  "interno": "MakeAWish",
+  "guia": "Make a Wish",
+  "id": "g-make-a-wish",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_INWELL_LP",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "NavySEALS",
+  "guia": "Operation Well",
+  "id": "g-operation-well",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_INWELL_PARATROOPER",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "WinnersCircle",
+  "guia": "Winner's Circle",
+  "id": "g-winner-s-circle",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BULLSEYE_RACES",
+    "TriggerFail": "false",
+    "Value": 20
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "AmateurExorcist",
+  "guia": "Amateur Haunter",
+  "id": "g-amateur-haunter",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "LP_POSSESSED_COUNT",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterExorcist",
+  "guia": "Master Haunter",
+  "id": "g-master-haunter",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "LP_POSSESSED_COUNT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "GardenGnome",
+  "guia": "Sculpture Garden",
+  "id": "g-sculpture-garden",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "LP_STONED_COUNT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "JuniorMonsterSlayer",
+  "guia": "Junior Monster Slayer",
+  "id": "g-junior-monster-slayer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "GARGOYLES_DESTORYED",
+    "TriggerFail": "false",
+    "Value": 5
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterMonsterSlayer",
+  "guia": "Master Monster Slayer",
+  "id": "g-master-monster-slayer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "GARGOYLES_DESTORYED",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "AmateurGhostSucker",
+  "guia": "Amateur Ghost Sucker",
+  "id": "g-amateur-ghost-sucker",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "GHOSTS_CAPTURED",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterGhostSucker",
+  "guia": "Master Ghost Sucker",
+  "id": "g-master-ghost-sucker",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "GHOSTS_CAPTURED",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "JuniorSculptor",
+  "guia": "Junior Sculptor",
+  "id": "g-junior-sculptor",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "LP_UNSTONED_COUNT",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterSculptor",
+  "guia": "Master Sculptor",
+  "id": "g-master-sculptor",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "LP_UNSTONED_COUNT",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "TripleFlusher",
+  "guia": "Triple Flusher",
+  "id": "g-triple-flusher",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_OUTHOUSE_FLUSHED",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "AmatureBugCollector",
+  "guia": "Amateur Bug Collector",
+  "id": "g-amateur-bug-collector",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "CATERPILLARS_RESCUED",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterBugCollector",
+  "guia": "Master Bug Collector",
+  "id": "g-master-bug-collector",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "CATERPILLARS_RESCUED",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "ThreeFairieDefeat",
+  "guia": "Junior Pixie Slayer",
+  "id": "g-junior-pixie-slayer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "FAIRIES_DESTORYED",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "TenFairieDefeat",
+  "guia": "Master Pixie Slayer",
+  "id": "g-master-pixie-slayer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "FAIRIES_DESTORYED",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "FiveFairieTorched",
+  "guia": "Junior Pixie Torcher",
+  "id": "g-junior-pixie-torcher",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "FAIRIES_BURNED",
+    "TriggerFail": "false",
+    "Value": 5
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "TenFairieTorched",
+  "guia": "Master Pixie Torcher",
+  "id": "g-master-pixie-torcher",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "FAIRIES_BURNED",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "AmateurTerminator",
+  "guia": "Zurg Bot Smasher",
+  "id": "g-zurg-bot-smasher",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "ZURGBOTS_DESTORYED",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterTerminator",
+  "guia": "Zurg Bot Destroyer",
+  "id": "g-zurg-bot-destroyer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "ZURGBOTS_DESTORYED",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "JuniorQuickDraw",
+  "guia": "Junior Quick-Draw",
+  "id": "g-junior-quick-draw",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_LASER_LP",
+    "TriggerFail": "false",
+    "Value": 3
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MasterQuickDraw",
+  "guia": "Quick Draw Artist",
+  "id": "g-quick-draw-artist",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_LASER_LP",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "SpaceDeputy",
+  "guia": "Space Deputy",
+  "id": "g-space-deputy",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_LASER_BENDITO",
+    "TriggerFail": "false",
+    "Value": 5
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "SpaceSheriff",
+  "guia": "Space Sheriff",
+  "id": "g-space-sheriff",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_LASER_BENDITO",
+    "TriggerFail": "false",
+    "Value": 10
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MovingTarget",
+  "guia": "Moving Target",
+  "id": "g-moving-target",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_TROOPER_ON_COACH",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "MotherMotherlode",
+  "guia": "Grow Your Own Gold",
+  "id": "g-grow-your-own-gold",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_MOTHERLOAD",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "SpookyCollector",
+  "guia": "Haunted Explorer",
+  "id": "g-haunted-explorer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_HAUNTED_CAPSULES",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "EnchantedCollector",
+  "guia": "Woodland Explorer",
+  "id": "g-woodland-explorer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_ENCHANTED_CAPSULES",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "SpaceCollector",
+  "guia": "Space Explorer",
+  "id": "g-space-explorer",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_SPACE_CAPSULES",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "WesternCollector",
+  "guia": "Western Collector",
+  "id": "g-western-collector",
+  "condicion": {
+   "Data": {
+    "Children": [
+     {
+      "Data": {
+       "Modifier": "Western",
+       "QueryMode": 2
+      },
+      "Type": "EvalFetch_Locks"
+     },
+     {
+      "Data": {
+       "Value": 100
+      },
+      "Type": "EvalFetch_Number"
+     }
+    ],
+    "FormatString": "",
+    "Operator": "MOREOREQUAL",
+    "TriggerFail": "false"
+   },
+   "Type": "Eval_NumericCompare"
+  }
+ },
+ {
+  "interno": "TripleFlipper",
+  "guia": "Triple Flipper",
+  "id": "g-triple-flipper",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_TRIPLE_FLIP",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "HighRoller",
+  "guia": "High Roller",
+  "id": "g-high-roller",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_HIGH_ROLLER",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Spinner",
+  "guia": "Spinner",
+  "id": "g-spinner",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_SPINNER",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "QuickDraw",
+  "guia": "Quick Draw",
+  "id": "g-quick-draw",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_QUICK_DRAW",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "HangTime",
+  "guia": "Hang Time",
+  "id": "g-hang-time",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_HANG_TIME",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "RodeoWrangler",
+  "guia": "Rodeo Wrangler",
+  "id": "g-rodeo-wrangler",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_RODEO_WRANGLER",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Lariat",
+  "guia": "Lariat",
+  "id": "g-lariat",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_LARIAT",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "BarrleBuster",
+  "guia": "Barrel Buster",
+  "id": "g-barrel-buster",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BARREL_BUSTER",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "Palomino",
+  "guia": "Palomino",
+  "id": "g-palomino",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_PALOMINO",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "BoneOrchard",
+  "guia": "Bone Orchard",
+  "id": "g-bone-orchard",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BONE_ORCHARD",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ },
+ {
+  "interno": "SaddleBlanket",
+  "guia": "Saddle Blanket",
+  "id": "g-saddle-blanket",
+  "condicion": {
+   "Data": {
+    "Operator": "MOREOREQUAL",
+    "QueryMode": 0,
+    "ResetStat": 0,
+    "Stat": "MIS_BONE_ORCHARD",
+    "TriggerFail": "false",
+    "Value": 1
+   },
+   "Type": "Eval_Stat"
+  }
+ }
+]

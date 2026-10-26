@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toy Story 3 Companion</title>
+<meta name="description" content="Unofficial 100% companion for Toy Story 3 (PC/Steam): achievements, collectibles, capsules, gold stars and Pict-O-Matic, with save-file sync.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="theme-color" content="#c9e3f6">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <div class="eyebrow" id="eyebrow"></div>
+      <h1 id="title"></h1>
+    </div>
+    <div class="hero-tools">
+      <section class="card sync-card" aria-labelledby="sync-title">
+        <div class="sync-txt"><b id="sync-title"></b><span class="status" id="sync-status"></span></div>
+        <button type="button" class="btn primary" id="sync-now" hidden></button>
+        <button type="button" class="btn primary" id="load-save"></button>
+        <button type="button" class="btn primary" id="pick-save" hidden></button>
+        <input type="file" id="save-file" hidden>
+      </section>
+      <button type="button" class="icon-btn" id="settings-open"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path fill-rule="evenodd" d="M10.22 4.30L10.46 1.71L13.54 1.71L13.78 4.30A7.9 7.9 0 0 1 16.19 5.30L16.19 5.30L18.19 3.64L20.36 5.81L18.70 7.81A7.9 7.9 0 0 1 19.70 10.22L19.70 10.22L22.29 10.46L22.29 13.54L19.70 13.78A7.9 7.9 0 0 1 18.70 16.19L18.70 16.19L20.36 18.19L18.19 20.36L16.19 18.70A7.9 7.9 0 0 1 13.78 19.70L13.78 19.70L13.54 22.29L10.46 22.29L10.22 19.70A7.9 7.9 0 0 1 7.81 18.70L7.81 18.70L5.81 20.36L3.64 18.19L5.30 16.19A7.9 7.9 0 0 1 4.30 13.78L4.30 13.78L1.71 13.54L1.71 10.46L4.30 10.22A7.9 7.9 0 0 1 5.30 7.81L5.30 7.81L3.64 5.81L5.81 3.64L7.81 5.30A7.9 7.9 0 0 1 10.22 4.30ZM8.70 12a3.3 3.3 0 1 0 6.6 0a3.3 3.3 0 1 0 -6.6 0Z"/></svg></button>
+    </div>
+  </header>
+
+  <div class="card top" style="margin-top:14px">
+    <nav class="tabs" id="tabs" role="tablist"></nav>
+    <div class="secbar" id="secbar" hidden>
+      <div class="total"><span id="sec-n">0</span><small> / <span id="sec-d">0</span></small></div>
+      <div class="meter"><i id="sec-fill"></i></div>
+      <div class="pct" id="sec-pct">0%</div>
+    </div>
+  </div>
+
+  <main id="view"></main>
+
+  <footer id="footer"></footer>
+</div>
+<div class="card toast" id="toast" role="status" popover="manual"></div>
+<dialog class="sheet" id="settings" aria-labelledby="settings-title">
+  <div class="sheet-in">
+    <div class="sheet-head"><h2 id="settings-title"></h2>
+      <button type="button" class="icon-btn" id="settings-close"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button></div>
+    <div class="sheet-body" id="settings-body"></div>
+    <input type="file" id="import-file" accept=".json,application/json" hidden>
+  </div>
+</dialog>
+<script src="save.js"></script>
+<script src="pad-icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
