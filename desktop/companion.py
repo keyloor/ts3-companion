@@ -8,16 +8,18 @@ El progreso se guarda en %APPDATA%\\TS3Companion\\progress.json.
 
 Uso: TS3Companion.exe [--save RUTA] [--port N] [--browser] [--no-window]
 """
-import argparse, glob, http.server, json, os, socketserver, struct, subprocess, sys, threading, time, urllib.request, webbrowser
-from urllib.parse import parse_qs, urlparse
+import argparse, glob, http.server, json, os, shutil, socketserver, struct, subprocess, sys, threading, time, urllib.request, webbrowser
+from urllib.parse import urlparse
 
 APP = 'ts3-companion'
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 BASE = getattr(sys, '_MEIPASS', os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 WEB = os.path.join(BASE, 'app')
 DATA_DIR = os.path.join(os.environ.get('APPDATA', os.path.expanduser('~')), 'TS3Companion')
 CONFIG = os.path.join(DATA_DIR, 'config.json')
 PROGRESS = os.path.join(DATA_DIR, 'progress.json')
+BACKUP = PROGRESS + '.bak'          # versión anterior, por si progress.json se estropea
+PROGRESS_LOCK = threading.Lock()
 PROFILE = os.path.join(DATA_DIR, 'window-profile')
 MAX_BODY = 512 * 1024
 DEFAULT_PORT = 47317
@@ -42,6 +44,29 @@ def save_config(cfg):
     tmp = CONFIG + '.tmp'
     json.dump(cfg, open(tmp, 'w', encoding='utf-8'), indent=1)
     os.replace(tmp, CONFIG)
+
+
+def read_progress():
+    """Progreso guardado: progress.json, o su copia anterior si está dañado. corrupt=True si no se pudo leer ninguno."""
+    exists = os.path.isfile(PROGRESS)
+    for path in (PROGRESS, BACKUP):
+        try:
+            ids = json.load(open(path, encoding='utf-8'))['checked']
+            if isinstance(ids, list):
+                return [str(x) for x in ids], False
+        except (OSError, ValueError, KeyError, TypeError):
+            continue
+    return [], exists
+
+
+def write_progress(ids):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    tmp = PROGRESS + '.tmp'
+    with open(tmp, 'w', encoding='utf-8') as f:
+        json.dump({'checked': ids, 'updated': time.strftime('%Y-%m-%dT%H:%M:%S')}, f)
+    if os.path.isfile(PROGRESS) and not read_progress()[1]:
+        shutil.copyfile(PROGRESS, BACKUP)
+    os.replace(tmp, PROGRESS)
 
 
 def is_save(path):
@@ -175,6 +200,12 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a):
         pass
 
+    def end_headers(self):
+        # Que la ventana siempre pida la interfaz al servidor: al actualizar el exe no se queda con la versión vieja
+        if not self.path.startswith('/api/'):
+            self.send_header('Cache-Control', 'no-cache')
+        super().end_headers()
+
     def send_json(self, obj, code=200):
         body = json.dumps(obj).encode()
         self.send_response(code)
@@ -183,6 +214,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Content-Length', str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def read_json(self):
+        """Cuerpo JSON de la petición, o None si el tamaño o el contenido no son válidos."""
+        try:
+            n = int(self.headers.get('Content-Length') or 0)
+        except ValueError:
+            return None
+        if n < 0 or n > MAX_BODY:
+            return None
+        try:
+            body = json.loads(self.rfile.read(n) or b'{}')
+        except ValueError:
+            return None
+        return body if isinstance(body, dict) else None
 
     def host_ok(self):
         """Solo acepta peticiones dirigidas a esta máquina (evita ataques de DNS rebinding desde otras webs)."""
@@ -215,14 +260,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return self.send_json({'found': got is not None, 'unlocked': got or []})
         if path == '/api/ping':
             return self.send_json({'ok': True})
-        if path == '/api/open':
-            # Abre un enlace de la interfaz en el navegador normal; solo la propia app y sitios conocidos
-            u = (parse_qs(urlparse(self.path).query).get('u') or [''])[0]
-            own = 'http://127.0.0.1:%d/' % self.server.server_address[1]
-            if not u.startswith((own, 'https://github.com/', 'https://www.nexusmods.com/')):
-                return self.send_json({'error': 'not-allowed'}, 403)
-            webbrowser.open(u)
-            return self.send_json({'ok': True})
         if path == '/api/save':
             p = Handler.save_path or find_save(Handler.explicit)
             if not p:
@@ -236,10 +273,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(data)
             return
         if path == '/api/progress':
-            try:
-                return self.send_json(json.load(open(PROGRESS, encoding='utf-8')))
-            except (OSError, ValueError):
-                return self.send_json({'checked': []})
+            ids, corrupt = read_progress()
+            return self.send_json({'checked': ids, 'corrupt': corrupt})
         return super().do_GET()
 
     def do_POST(self):
@@ -250,6 +285,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if self.headers.get('Origin') not in ('http://127.0.0.1:%d' % port, 'http://localhost:%d' % port):
             return self.send_json({'error': 'bad-origin'}, 403)
         path = urlparse(self.path).path
+        if path == '/api/open':
+            # Abre un enlace de la interfaz en el navegador normal; solo la propia app y sitios conocidos
+            u = str((self.read_json() or {}).get('u', ''))
+            own = ('http://127.0.0.1:%d/' % port, 'http://localhost:%d/' % port)
+            if not u.startswith(own + ('https://github.com/', 'https://www.nexusmods.com/')):
+                return self.send_json({'error': 'not-allowed'}, 403)
+            webbrowser.open(u)
+            return self.send_json({'ok': True})
         if path == '/api/pick-save':
             chosen = pick_file('Toy Story 3 - Saved Game')
             if not chosen:
@@ -269,19 +312,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if urlparse(self.path).path != '/api/progress':
             return self.send_json({'error': 'not-found'}, 404)
         Handler.last_ping = time.time()
-        n = int(self.headers.get('Content-Length') or 0)
-        if n <= 0 or n > MAX_BODY:
-            return self.send_json({'error': 'bad-size'}, 400)
-        try:
-            body = json.loads(self.rfile.read(n))
-            ids = [str(x) for x in body.get('checked', [])][:5000]
-        except (ValueError, AttributeError):
-            return self.send_json({'error': 'bad-json'}, 400)
-        os.makedirs(DATA_DIR, exist_ok=True)
-        tmp = PROGRESS + '.tmp'
-        json.dump({'checked': ids, 'updated': body.get('updated')}, open(tmp, 'w', encoding='utf-8'))
-        os.replace(tmp, PROGRESS)
-        return self.send_json({'ok': True})
+        body = self.read_json()
+        if body is None:
+            return self.send_json({'error': 'bad-request'}, 400)
+        clean = lambda key: [str(x) for x in body.get(key) or [] if isinstance(x, str)][:5000]
+        with PROGRESS_LOCK:
+            if 'checked' in body:          # lista completa (versiones anteriores)
+                ids = clean('checked')
+            else:                          # cambios de una ventana: no pisan los de otras
+                ids = read_progress()[0]
+                remove = set(clean('remove'))
+                ids = [x for x in ids if x not in remove] + [x for x in clean('add') if x not in set(ids)]
+                ids = list(dict.fromkeys(ids))
+            write_progress(sorted(ids))
+        return self.send_json({'ok': True, 'checked': sorted(ids)})
 
 
 class Server(socketserver.ThreadingMixIn, http.server.HTTPServer):

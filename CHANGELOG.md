@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.1 — 2026-10-26
+
+- Sync messages show what was added ("+3 capsules · +1 gold star"). Auto-sync only shows a message when something is new, and also runs when the app opens.
+- Army men: the paratrooper targets you have (x/30) appear on the Airborn Ranger achievement and the Parachute King gold star.
+- Two windows or tabs open at once no longer overwrite each other's progress. The desktop app keeps a backup of the progress file and recovers from it.
+- Clearer error when importing a file that is not a backup. The app window always loads the latest interface after an update.
+- Hardening of the local server (link opening and malformed requests).
+
 ## 1.0.0 — 2026-10-26
 
 First public release.

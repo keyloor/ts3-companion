@@ -1,6 +1,8 @@
 """Combina los textos (es/en) y los datos de la partida en app/data/content.json y app/data/savemap.json.
 
 Uso: python -I -X utf8 tools/build_content.py
+La versión se toma de VERSION en desktop/companion.py (único sitio donde se cambia) y se copia a content.json
+y al recurso de versión del exe (desktop/version.txt).
 """
 import json, os, re, unicodedata
 
@@ -8,6 +10,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = os.path.join(ROOT, 'content')
 OUT = os.path.join(ROOT, 'app', 'data')
 load = lambda n: json.load(open(os.path.join(C, n), encoding='utf-8'))
+VERSION = re.search(r"^VERSION = '([0-9.]+)'", open(os.path.join(ROOT, 'desktop', 'companion.py'), encoding='utf-8').read(), re.M).group(1)
 
 es = load('es_tracker.json')
 es_hints = load('es_hints.json')
@@ -94,7 +97,7 @@ for di, d in enumerate(es['DISCS']):
     discs.append({'n': di + 1, 'where': both(d['where'], en_picto['discs'][di]), 'missions': ms})
 assert sum(len(d['missions']) for d in discs) == 40
 
-content = {'achievementGroups': ach_groups, 'achievements': achievements, 'storyTypes': types, 'story': levels,
+content = {'version': VERSION, 'achievementGroups': ach_groups, 'achievements': achievements, 'storyTypes': types, 'story': levels,
            'capsules': areas, 'stars': star_groups, 'picto': {'intro': both(
                'El Pict-O-Matic lo consigues con la misión «Lost and Found». Selecciónalo con la cruceta y pulsa [□] para ver las escenas. Para vestir a alguien, cógelo y lánzalo a la sastrería, la sombrerería o la barbería. Los códigos de cápsula se ponen en verde cuando la tienes.',
                en_picto['intro']), 'discs': discs}}
@@ -112,10 +115,30 @@ for s in stars_rules:
 savemap['starTotalStat'] = 'GOLDSTAR_COLLECTED'
 savemap['pictoDoneStat'] = 'PICTO_COMPLETED_CHALLENGE_COUNT'
 savemap['story'] = load('save_story.json')   # generado por tools/make_story_map.py
+savemap['counters'] = {'para': {'stat': 'PARATROOPERS_LANDED_UNIQUE', 'total': 30}}   # army men: objetivos de paracaidistas del Toy Box
 assert len(savemap['capsules']) == 289 and len(savemap['stars']) == 103
 assert len(savemap['story']['items']) + sum(len(c['ids']) for c in savemap['story']['cards']) == 88
 
 os.makedirs(OUT, exist_ok=True)
 json.dump(content, open(os.path.join(OUT, 'content.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+
+# Recurso de versión del exe (lo lee PyInstaller desde el .spec)
+nums = ', '.join((VERSION.split('.') + ['0', '0', '0'])[:4])
+open(os.path.join(ROOT, 'desktop', 'version.txt'), 'w', encoding='utf-8', newline='\n').write("""VSVersionInfo(
+  ffi=FixedFileInfo(filevers=({n}), prodvers=({n}), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0)),
+  kids=[
+    StringFileInfo([StringTable('040904B0', [
+      StringStruct('CompanyName', 'Fan-made (unofficial)'),
+      StringStruct('FileDescription', 'Toy Story 3 Companion - unofficial 100% tracker'),
+      StringStruct('FileVersion', '{v}'),
+      StringStruct('InternalName', 'TS3Companion'),
+      StringStruct('LegalCopyright', 'MIT License. Not affiliated with Disney/Pixar.'),
+      StringStruct('OriginalFilename', 'TS3Companion.exe'),
+      StringStruct('ProductName', 'Toy Story 3 Companion'),
+      StringStruct('ProductVersion', '{v}')])]),
+    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+  ]
+)
+""".format(n=nums, v=VERSION))
 json.dump(savemap, open(os.path.join(OUT, 'savemap.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('content.json y savemap.json listos:', {k: len(v) if isinstance(v, list) else '' for k, v in content.items()})

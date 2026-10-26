@@ -1,4 +1,4 @@
-TOY STORY 3 COMPANION 1.0.0  (unofficial / no oficial)
+TOY STORY 3 COMPANION 1.0.1  (unofficial / no oficial)
 =======================================================
 
 EN

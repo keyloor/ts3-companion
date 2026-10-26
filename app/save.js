@@ -113,6 +113,7 @@
     return {
       capsules, discs, stars, story, storyCardsPartial, starsGame: total, starsChecked: total === stars.length,
       starsUnknown: total === stars.length ? [] : unknown, pictoDone: save.stat(savemap.pictoDoneStat),
+      counters: Object.fromEntries(Object.entries(savemap.counters || {}).map(([k, c]) => [k, save.stat(c.stat)])),
     };
   }
 

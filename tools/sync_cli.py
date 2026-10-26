@@ -1,4 +1,5 @@
 """Lee la partida de Toy Story 3 y muestra lo conseguido según app/data/savemap.json (misma lógica que app/save.js).
+Los logros de Steam no se leen aquí: los lee la app de escritorio.
 
 Uso: python -I -X utf8 tools/sync_cli.py [--save RUTA] [--json]
 """
@@ -64,11 +65,26 @@ def main():
     caps = [i for i, l in sm['capsules'].items() if s.lock(l) >= 5]
     discs = [i for i, l in sm['discs'].items() if s.lock(l) >= 5]
     stars = [i for i, c in sm['stars'].items() if s.evaluate(c)]
-    out = {'capsules': caps, 'discs': discs, 'stars': stars, 'starsGame': s.stat(sm['starTotalStat']), 'pictoDone': s.stat(sm['pictoDoneStat'])}
+    # Historia: objetos únicos uno a uno; las cartas de un nivel, todas juntas cuando están completas
+    story = [i for i, l in sm['story']['items'].items() if s.lock(l) >= 5]
+    partial = []
+    for lv in sm['story']['cards']:
+        have = sum(s.lock(l) >= 5 for l in lv['locks'])
+        if have == len(lv['locks']):
+            story += lv['ids']
+        elif have:
+            partial.append({'level': lv['level'], 'have': have, 'total': len(lv['locks'])})
+    counters = {k: s.stat(c['stat']) for k, c in sm.get('counters', {}).items()}
+    out = {'capsules': caps, 'discs': discs, 'stars': stars, 'story': story, 'storyCardsPartial': partial, 'counters': counters,
+           'starsGame': s.stat(sm['starTotalStat']), 'pictoDone': s.stat(sm['pictoDoneStat'])}
     if a.json:
         print(json.dumps(out))
     else:
-        print('Capsules %d/%d · discs %d/6 · gold stars %d (game: %s) · Pict-O scenes %s/40' % (len(caps), len(sm['capsules']), len(discs), len(stars), out['starsGame'], out['pictoDone']))
+        print('Capsules %d/%d · discs %d/6 · gold stars %d (game: %s) · story %d/88 · Pict-O scenes %s/40 · army men %s/%d' % (
+            len(caps), len(sm['capsules']), len(discs), len(stars), out['starsGame'], len(story), out['pictoDone'],
+            counters.get('para'), sm['counters']['para']['total']))
+        for p in partial:
+            print('  level %d: %d/%d cards' % (p['level'], p['have'], p['total']))
 
 
 if __name__ == '__main__':

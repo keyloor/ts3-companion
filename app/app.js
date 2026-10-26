@@ -15,19 +15,21 @@
       savePathHint: 'Está en %APPDATA%\\Disney\\Toy Story 3 Complete Edition\\savedata\\Saved Game',
       pickSave: 'Buscar partida…', changeSave: 'Cambiar…', autoSave: 'Ubicación automática', chosenByHand: 'Elegida a mano',
       notASave: 'Ese archivo no es una partida de Toy Story 3.', saveChosen: 'Partida guardada: la recordaré la próxima vez.',
-      backup: 'Copia de seguridad', exportBtn: 'Exportar', importBtn: 'Importar', imported: 'Progreso importado',
-      buttons: 'Botones', added: (n) => `Añadidos ${n} elementos nuevos.`, nothingNew: 'Nada nuevo desde la última sincronización.',
-      starsOk: (n) => `Estrellas: ${n}, igual que el juego.`, starsDiff: (a, b) => `Estrellas: ${a} calculadas, el juego dice ${b}.`,
-      pictoDone: (n) => `Escenas Pict-O-Matic hechas: ${n}/40 (márcalas a mano).`,
+      backup: 'Copia de seguridad', exportBtn: 'Exportar', importBtn: 'Importar', imported: 'Progreso importado', importErr: 'Ese archivo no es una copia de seguridad válida.',
+      buttons: 'Botones', nothingNew: 'Nada nuevo desde la última sincronización.',
+      units: { achievements: ['logro', 'logros'], story: ['coleccionable', 'coleccionables'], capsules: ['cápsula', 'cápsulas'], stars: ['estrella dorada', 'estrellas doradas'], discs: ['disco Pict-O-Matic', 'discos Pict-O-Matic'], picto: ['escena', 'escenas'] },
+      starsDiff: (a, b) => `Estrellas: ${a} calculadas, el juego dice ${b}.`,
+      pictoDone: (n, m) => `Pict-O-Matic: el juego dice ${n} escenas hechas y tienes ${m} marcadas; márcalas a mano.`,
+      paraLeft: (a, b) => `Army men: ${a}/${b} (la partida no dice cuáles faltan).`,
       storyCards: (lv, a, b) => `${lv}: ${a}/${b} cartas. Se marcan solas al completar el nivel; antes, márcalas a mano.`,
-      steamOk: (n) => `Logros de Steam: ${n}/41 desbloqueados.`, steamNone: 'No encuentro los logros de Steam en este PC.',
+      steamNone: 'No encuentro los logros de Steam en este PC.',
       steamRow: 'Logros de Steam', steamFound: 'Se leen de la caché local de Steam al sincronizar.', steamMissing: 'No encontrados. Abre Steam con tu cuenta y vuelve a sincronizar.',
       steamWeb: 'Solo en la app de escritorio. En la web, márcalos a mano.',
       progress: (a, b, l) => `Llevas ${a}/${b} ${l}`, goTo: (s) => `Ir a ${s} →`,
       src: { START: ['de inicio', 'Lo tienes desde el principio'], SHOP: ['tienda', 'Se compra en la tienda de golosinas'] },
       found: 'Encontrado', disc: 'Disco', discFound: 'Disco encontrado', scenes: (n) => `${n} escenas`,
       rarity: { G: 'Raro', S: 'Poco común', B: 'Común', P: 'Oculto en Steam' },
-      progLabel: { story: 'coleccionables', stars: 'estrellas', discs: 'discos', picto: 'escenas' },
+      progLabel: { story: 'coleccionables', stars: 'estrellas', discs: 'discos', picto: 'escenas', para: 'army men' },
       overall: 'total',
       routeSteps: [
         ['Modo historia', 'Los 8 niveles con todos sus coleccionables.', ['story', 'achievements']],
@@ -61,19 +63,21 @@
       savePathHint: 'It is at %APPDATA%\\Disney\\Toy Story 3 Complete Edition\\savedata\\Saved Game',
       pickSave: 'Find save…', changeSave: 'Change…', autoSave: 'Default location', chosenByHand: 'Picked by hand',
       notASave: 'That file is not a Toy Story 3 save.', saveChosen: 'Save set: it will be remembered next time.',
-      backup: 'Backup', exportBtn: 'Export', importBtn: 'Import', imported: 'Progress imported',
-      buttons: 'Buttons', added: (n) => `Added ${n} new items.`, nothingNew: 'Nothing new since the last sync.',
-      starsOk: (n) => `Gold stars: ${n}, same as the game.`, starsDiff: (a, b) => `Gold stars: ${a} computed, the game says ${b}.`,
-      pictoDone: (n) => `Pict-O-Matic scenes done: ${n}/40 (tick them by hand).`,
+      backup: 'Backup', exportBtn: 'Export', importBtn: 'Import', imported: 'Progress imported', importErr: 'That file is not a valid backup.',
+      buttons: 'Buttons', nothingNew: 'Nothing new since the last sync.',
+      units: { achievements: ['achievement', 'achievements'], story: ['collectible', 'collectibles'], capsules: ['capsule', 'capsules'], stars: ['gold star', 'gold stars'], discs: ['Pict-O-Matic disc', 'Pict-O-Matic discs'], picto: ['scene', 'scenes'] },
+      starsDiff: (a, b) => `Gold stars: ${a} computed, the game says ${b}.`,
+      pictoDone: (n, m) => `Pict-O-Matic: the game says ${n} scenes done and you have ${m} ticked; tick them by hand.`,
+      paraLeft: (a, b) => `Army men: ${a}/${b} (the save doesn't say which are left).`,
       storyCards: (lv, a, b) => `${lv}: ${a}/${b} cards. They tick themselves once the level is complete; until then, tick them by hand.`,
-      steamOk: (n) => `Steam achievements: ${n}/41 unlocked.`, steamNone: 'Could not find Steam achievements on this PC.',
+      steamNone: 'Could not find Steam achievements on this PC.',
       steamRow: 'Steam achievements', steamFound: 'Read from Steam\'s local cache when you sync.', steamMissing: 'Not found. Open Steam with your account and sync again.',
       steamWeb: 'Desktop app only. On the web, tick them by hand.',
       progress: (a, b, l) => `${a}/${b} ${l}`, goTo: (s) => `Go to ${s} →`,
       src: { START: ['starter', 'You have it from the start'], SHOP: ['candy shop', 'Bought at the candy shop'] },
       found: 'Found', disc: 'Disc', discFound: 'Disc found', scenes: (n) => `${n} scenes`,
       rarity: { G: 'Rare', S: 'Uncommon', B: 'Common', P: 'Hidden on Steam' },
-      progLabel: { story: 'collectibles', stars: 'stars', discs: 'discs', picto: 'scenes' },
+      progLabel: { story: 'collectibles', stars: 'stars', discs: 'discs', picto: 'scenes', para: 'army men' },
       overall: 'overall',
       routeSteps: [
         ['Story mode', 'All 8 levels with every collectible.', ['story', 'achievements']],
@@ -130,10 +134,10 @@
   const prefs = Object.assign({ lang: navigator.language && navigator.language.startsWith('es') ? 'es' : 'en', pad: 'xbox', tab: 'route', hide: false, types: [], cat: '', closed: [], auto: true, theme: 'system' }, LS.get('ts3c-prefs', {}));
   const savePrefs = () => LS.set('ts3c-prefs', prefs);
   let checked = new Set();
-  let C, SAVEMAP, SECTIONS = [], SEC = {}, INDEX = {};
+  let C, SAVEMAP, SECTIONS = [], SEC = {}, INDEX = {}, SECOF = {};
+  const counters = LS.get('ts3c-counters', {});   // totales que la partida no detalla (paracaidistas)
   let current = null;
   const query = {};
-  const VERSION = '1.0.0';
   const desktop = { on: false, mtime: null, found: null, path: null, steam: null, steamMtime: null };
   let lastSync = null;
   const t = () => UI[prefs.lang];
@@ -145,27 +149,69 @@
     .replace(/ \{(START|SHOP)\}/g, (_, k) => ` <span class="src ${k.toLowerCase()}" title="${esc(t().src[k][1])}">${esc(t().src[k][0])}</span>`);
 
   // ---------- almacenamiento: servidor local (ejecutable) o navegador ----------
+  // Cada ventana guarda solo sus cambios (lo que añadió y quitó) sobre la lista guardada y adopta el resultado:
+  // con dos ventanas o pestañas abiertas, una no borra las marcas de la otra.
+  const pending = { add: new Set(), remove: new Set() };
+  function mark(id, on) {
+    if (on) { checked.add(id); pending.add.add(id); pending.remove.delete(id); }
+    else { checked.delete(id); pending.remove.add(id); pending.add.delete(id); }
+  }
+  // Toma la lista guardada sin perder los cambios de esta ventana que aún no se han enviado
+  function adopt(list) {
+    const next = new Set(list);
+    pending.add.forEach(id => next.add(id));
+    pending.remove.forEach(id => next.delete(id));
+    const same = next.size === checked.size && [...next].every(id => checked.has(id));
+    if (!same) { checked = next; if (current) refresh(); }
+  }
   const store = {
+    recovered: false,
     async load() {
       if (desktop.on) {
-        try { const r = await fetch('/api/progress'); if (r.ok) return (await r.json()).checked || []; } catch {}
+        try {
+          const r = await fetch('/api/progress');
+          if (r.ok) {
+            const d = await r.json();
+            if (!d.corrupt) return d.checked || [];
+            this.recovered = true;   // archivo dañado: se usa la copia de esta ventana y se vuelve a guardar
+          }
+        } catch {}
       }
-      return LS.get('ts3c-progress', { checked: [] }).checked || [];
+      return (LS.get('ts3c-progress', null) || { checked: [] }).checked || [];
     },
     timer: null,
     save() {
-      const body = { checked: [...checked].sort(), updated: new Date().toISOString() };
-      LS.set('ts3c-progress', body);
-      if (!desktop.on) return;
       clearTimeout(this.timer);
-      this.timer = setTimeout(() => fetch('/api/progress', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).catch(() => {}), 400);
+      this.timer = setTimeout(() => this.flush(), desktop.on ? 300 : 0);
+    },
+    async flush() {
+      const add = [...pending.add], remove = [...pending.remove];
+      if (!add.length && !remove.length) return;
+      pending.add.clear(); pending.remove.clear();
+      if (!desktop.on) {
+        const saved = LS.get('ts3c-progress', null);
+        const base = new Set(saved ? saved.checked || [] : checked);
+        add.forEach(id => base.add(id)); remove.forEach(id => base.delete(id));
+        LS.set('ts3c-progress', { checked: [...base].sort(), updated: new Date().toISOString() });
+        return adopt(base);
+      }
+      try {
+        const r = await fetch('/api/progress', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ add, remove }) });
+        if (!r.ok) throw new Error(r.status);
+        adopt((await r.json()).checked || []);
+      } catch {
+        // Sin servidor: los cambios vuelven a la cola y se reintentan en el próximo guardado
+        add.forEach(id => !pending.remove.has(id) && pending.add.add(id));
+        remove.forEach(id => !pending.add.has(id) && pending.remove.add(id));
+      }
+      LS.set('ts3c-progress', { checked: [...checked].sort(), updated: new Date().toISOString() });   // copia de respaldo en la ventana
     },
   };
 
   // ---------- secciones a partir de content.json ----------
   function build() {
-    SECTIONS = []; INDEX = {};
-    const add = s => { SECTIONS.push(s); s.groups.forEach(g => g.items.forEach(it => INDEX[it.id] = it)); };
+    SECTIONS = []; INDEX = {}; SECOF = {};
+    const add = s => { SECTIONS.push(s); s.groups.forEach(g => g.items.forEach(it => { INDEX[it.id] = it; SECOF[it.id] = s.key; })); };
     add({ key: 'route', groups: [] });
     const rarity = p => p == null ? 'P' : p < 10 ? 'G' : p < 30 ? 'S' : 'B';
     add({
@@ -175,7 +221,7 @@
         items: C.achievements.filter(a => a.group === gk).map(a => ({
           id: a.id, lead: MEDAL.replace('class="medal"', `class="medal ${rarity(a.pct)}"`), title: a.name, sub: a.name.es !== a.name.en ? a.name : null,
           flags: [{ text: () => t().rarity[rarity(a.pct)] + (a.pct != null ? ' · ' + a.pct.toLocaleString(prefs.lang) + ' %' : '') }],
-          text: a.desc, tip: a.tip, prog: a.prog, link: a.link,
+          text: a.desc, tip: a.tip, prog: a.prog || (a.id === 't-airborn-ranger' ? 'para' : undefined), link: a.link,
         })),
       })),
     });
@@ -195,7 +241,7 @@
     });
     add({
       key: 'stars',
-      groups: C.stars.map(g => ({ key: g.key, title: g.title, intro: g.intro, icon: 'stars', items: g.items.map(s => ({ id: s.id, title: { es: s.name, en: s.name }, text: s.desc, tip: s.tip, link: s.link })) })),
+      groups: C.stars.map(g => ({ key: g.key, title: g.title, intro: g.intro, icon: 'stars', items: g.items.map(s => ({ id: s.id, title: { es: s.name, en: s.name }, text: s.desc, tip: s.tip, link: s.link, prog: s.id === 'g-parachute-king' ? 'para' : undefined })) })),
     });
     add({
       key: 'picto', intro: C.picto.intro,
@@ -211,6 +257,7 @@
   const items = key => SEC[key].groups.flatMap(g => g.items);
   const count = list => [list.filter(i => checked.has(i.id)).length, list.length];
   function progFor(p) {
+    if (p === 'para') { const n = SAVEMAP.counters.para.total; return counters.para == null ? null : [Math.min(counters.para, n), n]; }
     if (p === 'story') return count(items('story'));
     if (p && p.startsWith('story:')) return count(items('story').filter(i => i.type === p.slice(6)));
     if (p === 'stars') return count(items('stars'));
@@ -272,7 +319,7 @@
         ${row(u.resetAll, esc(u.resetAllDesc), `<span class="acts" id="reset-all-slot"><button type="button" class="btn danger" id="reset-all">${esc(u.resetAll)}</button></span>`)}
       </div></section>
       <section class="set-group"><h3>${esc(u.about)}</h3><div class="card set-list">
-        ${row(u.version, esc(VERSION))}
+        ${row(u.version, esc(C.version))}
         ${row(u.mode, esc(desktop.on ? u.modeDesktop : u.modeWeb))}
         <div class="set-row about-note">${esc(u.notice)}</div>
         <div class="set-row"><span class="acts"><a href="CREDITS.md" target="_blank" rel="noopener">${esc(u.sources)}</a> · <a href="https://github.com/keyloor/ts3-companion" target="_blank" rel="noopener">GitHub</a></span></div>
@@ -407,7 +454,9 @@
     });
     if (sec.typeFilter) Object.keys(C.storyTypes).forEach(k => { const e = document.querySelector(`[data-count="${k}"]`); if (e) { const [a, b] = progFor('story:' + k); e.textContent = `${a}/${b}`; } });
     document.querySelectorAll('[data-prog]').forEach(e => {
-      const p = e.dataset.prog, [a, b] = progFor(p);
+      const p = e.dataset.prog, pr = progFor(p);
+      if (!pr) return void (e.textContent = '');
+      const [a, b] = pr;
       const label = p.startsWith('story:') ? C.storyTypes[p.slice(6)][prefs.lang].name.toLowerCase() : t().progLabel[p];
       e.textContent = t().progress(a, b, label);
     });
@@ -434,7 +483,7 @@
   }
 
   function setChecked(ids, on) {
-    ids.forEach(id => on ? checked.add(id) : checked.delete(id));
+    ids.forEach(id => mark(id, on));
     store.save(); refresh();
   }
 
@@ -450,26 +499,35 @@
   let lastStatus = null;
   function setStatus(s, text) { lastStatus = [s, typeof text === 'function' ? text : () => text]; const el = $('sync-status'); el.dataset.s = s; el.textContent = lastStatus[1](); }
 
-  // buffer: la partida (o null si solo hay logros); steam: respuesta de /api/steam en la app de escritorio
-  async function syncFrom(buffer, steam) {
+  // buffer: la partida (o null si solo hay logros); steam: respuesta de /api/steam en la app de escritorio;
+  // quiet: sincronización automática, que solo avisa si hay algo nuevo
+  async function syncFrom(buffer, steam, quiet) {
     setStatus('busy', () => t().syncBusy);
     try {
       const r = buffer ? await TS3Save.readProgress(buffer, SAVEMAP) : null;
       const byName = Object.fromEntries(C.achievements.map(a => [a.name.en, a.id]));
       const ach = steam && steam.found ? steam.unlocked.map(n => byName[n]).filter(Boolean) : [];
-      const before = checked.size;
-      (r ? [...r.capsules, ...r.discs, ...r.stars, ...r.story] : []).concat(ach).forEach(id => checked.add(id));
-      const added = checked.size - before;
+      const before = new Set(checked);
+      (r ? [...r.capsules, ...r.discs, ...r.stars, ...r.story] : []).concat(ach).forEach(id => mark(id, true));
+      if (r) { Object.assign(counters, r.counters); LS.set('ts3c-counters', counters); }
       store.save(); refresh();
+      // «+3 cápsulas · +1 logro»: lo nuevo agrupado por tipo
+      const kind = id => SECOF[id] === 'picto' ? (INDEX[id].disc ? 'discs' : 'picto') : SECOF[id];
+      const tally = {};
+      checked.forEach(id => { if (!before.has(id)) tally[kind(id)] = (tally[kind(id)] || 0) + 1; });
+      const parts = ['achievements', 'story', 'capsules', 'stars', 'discs', 'picto'].filter(k => tally[k]).map(k => `+${tally[k]} ${t().units[k][tally[k] === 1 ? 0 : 1]}`);
       const level = n => L(C.story.find(l => l.n === n).name);
-      const lines = [added ? t().added(added) : t().nothingNew];
+      const lines = [parts.length ? parts.join(' · ') : t().nothingNew];
       if (r) {
-        lines.push(r.starsChecked ? t().starsOk(r.starsGame) : t().starsDiff(r.stars.length, r.starsGame));
+        if (!r.starsChecked) lines.push(t().starsDiff(r.stars.length, r.starsGame));
         r.storyCardsPartial.forEach(p => lines.push(t().storyCards(level(p.level), p.have, p.total)));
-        if (r.pictoDone != null) lines.push(t().pictoDone(r.pictoDone));
+        const ticked = items('picto').filter(i => !i.disc && checked.has(i.id)).length;
+        if (r.pictoDone > ticked) lines.push(t().pictoDone(r.pictoDone, ticked));
+        const para = SAVEMAP.counters.para.total;
+        if (r.counters.para != null && r.counters.para < para) lines.push(t().paraLeft(r.counters.para, para));
       }
-      if (steam) lines.push(steam.found ? t().steamOk(ach.length) : t().steamNone);
-      toast(lines.filter(Boolean).map(esc).join('<br>'));
+      if (steam && !steam.found) lines.push(t().steamNone);
+      if (!quiet || parts.length) toast(lines.filter(Boolean).map(esc).join('<br>'));
       const when = lastSync = new Date(); setStatus('ok', () => t().synced + ' · ' + when.toLocaleTimeString(prefs.lang));
       if ($('settings').open) renderSettings();
     } catch (e) {
@@ -478,13 +536,13 @@
     }
   }
 
-  async function syncDesktop() {
+  async function syncDesktop(quiet) {
     const [save, steam] = await Promise.all([
       fetch('/api/save').then(r => r.ok ? r.arrayBuffer() : null).catch(() => null),
       fetch('/api/steam').then(r => r.json()).catch(() => null),
     ]);
     if (!save && !(steam && steam.found)) return setStatus('err', () => t().syncNoSave);
-    await syncFrom(save, steam);
+    await syncFrom(save, steam, quiet);
   }
 
   // Diálogo de Windows para elegir la partida; el servidor recuerda la ruta en config.json
@@ -495,12 +553,13 @@
       if (r.error) return toast(esc(t().notASave));
       toast(esc(t().saveChosen));
       desktop.mtime = null; desktop.steamMtime = null;
-      await pollDesktop();
+      await pollDesktop(true);
       await syncDesktop();
     } catch {}
   }
 
-  async function pollDesktop() {
+  // skipAuto: no sincronizar aquí (quien llama ya lo hace)
+  async function pollDesktop(skipAuto) {
     try {
       const s = await (await fetch('/api/status')).json();
       if (s.found !== desktop.found || s.path !== desktop.path || s.steam !== desktop.steam || s.custom !== desktop.custom) {
@@ -513,7 +572,8 @@
       const changed = !first && (s.mtime !== desktop.mtime || s.steamMtime !== desktop.steamMtime);
       desktop.mtime = s.mtime; desktop.steamMtime = s.steamMtime;
       if (!s.found) { setStatus('err', () => t().syncNoSave); return; }
-      if (changed && prefs.auto) await syncDesktop();
+      // Al abrir la app también se sincroniza (por si jugaste con ella cerrada); en ambos casos sin avisos vacíos
+      if ((changed || first) && prefs.auto && !skipAuto) await syncDesktop(true);
       else if (first) setStatus('ok', () => t().syncDesktop);
     } catch {}
   }
@@ -527,7 +587,7 @@
     else if (el.id === 'auto') { prefs.auto = el.checked; savePrefs(); }
     else if (el.id === 'save-file' && el.files[0]) { el.files[0].arrayBuffer().then(syncFrom); el.value = ''; }
     else if (el.id === 'import-file' && el.files[0]) {
-      el.files[0].text().then(txt => { const d = JSON.parse(txt); (d.checked || []).forEach(id => INDEX[id] && checked.add(id)); store.save(); refresh(); toast(esc(t().imported)); }).catch(() => toast(esc(t().syncErr)));
+      el.files[0].text().then(txt => { const d = JSON.parse(txt); if (!d || !Array.isArray(d.checked)) throw new Error('bad'); d.checked.forEach(id => INDEX[id] && mark(id, true)); store.save(); refresh(); toast(esc(t().imported)); }).catch(() => toast(esc(t().importErr)));
       el.value = '';
     }
   });
@@ -572,7 +632,7 @@
     const a = e.target.closest('a[target="_blank"]');
     if (!a || !desktop.on) return;
     e.preventDefault();
-    fetch('/api/open?u=' + encodeURIComponent(a.href)).catch(() => {});
+    fetch('/api/open', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ u: a.href }) }).catch(() => {});
   });
 
   // ---------- arranque ----------
@@ -581,6 +641,12 @@
     [C, SAVEMAP] = await Promise.all([fetch('data/content.json').then(r => r.json()), fetch('data/savemap.json').then(r => r.json())]);
     try { const s = await fetch('/api/status'); desktop.on = s.ok && (await s.json()).app === 'ts3-companion'; } catch { desktop.on = false; }
     checked = new Set(await store.load());
+    if (store.recovered) { checked.forEach(id => pending.add.add(id)); store.save(); }
+    // Al volver a esta ventana (o si otra pestaña cambia el progreso) se toma la lista guardada más reciente
+    const reload = async () => adopt(await store.load());
+    window.addEventListener('focus', reload);
+    document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && reload());
+    window.addEventListener('storage', e => { if (e.key === 'ts3c-progress' && !desktop.on) reload(); });
     build();
     const h = location.hash.slice(1);
     show(SEC[h] ? h : prefs.tab);
