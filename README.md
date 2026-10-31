@@ -4,6 +4,7 @@ Unofficial 100% companion for **Toy Story 3 Complete Edition** on PC (Steam). Th
 
 - 41 Steam achievements, 88 story collectibles, 289 Toy Box capsules with location hints, 103 gold stars and the Pict-O-Matic
 - Reads your save (and Steam's achievement cache) to tick things off for you
+- The desktop app shows the game's own icons and collectible pictures, read from your installed copy (none are distributed)
 
 ## Desktop app (Windows)
 
@@ -37,4 +38,4 @@ python -m PyInstaller desktop/TS3Companion.spec
 
 ## License
 
-Code: MIT. Our own hints and tips: CC BY-NC 4.0. Game names and achievement texts belong to Disney/Pixar. Fonts: SIL OFL 1.1. Button icons: Kenney (CC0). Not affiliated with Disney/Pixar. See [CREDITS](app/CREDITS.md).
+Code: MIT. Our own hints and tips: CC BY-NC 4.0. Game names and achievement texts belong to Disney/Pixar. Fonts: SIL OFL 1.1. Button icons: Kenney (CC0). The desktop app shows game icons read from your own installed copy; none are distributed. Not affiliated with Disney/Pixar. See [CREDITS](app/CREDITS.md).

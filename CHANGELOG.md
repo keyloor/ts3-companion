@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 — 2026-10-30
+
+- Desktop app: game icons. Tabs, story collectible types, achievement trophies and capsule categories use the game's own icons, and the unique story collectibles (special cards, figures, memorabilia, Zurg parts, aliens) show their picture. They are read from your installed copy of the game (found through Steam) the first time they are needed and cached; none are shipped with the app. Without the game, or in the web version, the app keeps its own icons.
+
 ## 1.0.1 — 2026-10-26
 
 - Sync messages show what was added ("+3 capsules · +1 gold star"). Auto-sync only shows a message when something is new, and also runs when the app opens.

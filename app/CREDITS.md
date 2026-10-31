@@ -21,6 +21,12 @@ La ubicación de los coleccionables y los consejos de logros y estrellas se inve
 Achievement names, descriptions and rarity come from the game's public Steam achievement page. They, and all game names, belong to Disney/Pixar; the CC BY-NC licence of this project covers only its own hints and tips.
 Los nombres, descripciones y rareza de los logros vienen de la página pública de logros de Steam del juego. Esos textos y todos los nombres del juego son de Disney/Pixar; la licencia CC BY-NC del proyecto cubre solo sus propias pistas y consejos.
 
+## Game icons / Iconos del juego
+
+The desktop app shows icons and collectible pictures from **your own installed copy** of Toy Story 3 (`assets/ui` of the game folder). They are read on your PC and are not distributed with the Companion; they belong to Disney/Pixar.
+
+La app de escritorio muestra iconos e imágenes de coleccionables de **tu propia copia instalada** de Toy Story 3 (`assets/ui` de la carpeta del juego). Se leen en tu PC y no se reparten con el Companion; son de Disney/Pixar.
+
 ## Button icons / Iconos de botones
 
 Controller button icons: **Input Prompts** by **Kenney** (www.kenney.nl), released under Creative Commons Zero (CC0 1.0). Xbox and PlayStation are trademarks of Microsoft and Sony; the icons only show which button to press.

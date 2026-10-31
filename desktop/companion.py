@@ -2,17 +2,21 @@
 
 Sirve la interfaz web en http://127.0.0.1:47317 y la abre en una ventana propia (Edge o Chrome en modo app, sin
 barras del navegador). Encuentra la partida del juego y la expone a la interfaz para sincronizar con un botón o
-automáticamente al guardar en el juego. También lee los logros desbloqueados de la caché local de Steam.
+automáticamente al guardar en el juego. También lee los logros desbloqueados de la caché local de Steam, y los iconos
+del juego instalado (gameicons.py).
 Solo lee; nunca modifica la partida, el juego ni Steam. Se cierra al cerrar la ventana.
 El progreso se guarda en %APPDATA%\\TS3Companion\\progress.json.
 
 Uso: TS3Companion.exe [--save RUTA] [--port N] [--browser] [--no-window]
 """
-import argparse, glob, http.server, json, os, shutil, socketserver, struct, subprocess, sys, threading, time, urllib.request, webbrowser
+import argparse, glob, http.server, json, os, shutil, socketserver, struct, subprocess, sys, threading, time, urllib.request, webbrowser, zipfile
 from urllib.parse import urlparse
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import gameicons
+
 APP = 'ts3-companion'
-VERSION = '1.0.1'
+VERSION = '1.1.0'
 BASE = getattr(sys, '_MEIPASS', os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 WEB = os.path.join(BASE, 'app')
 DATA_DIR = os.path.join(os.environ.get('APPDATA', os.path.expanduser('~')), 'TS3Companion')
@@ -21,6 +25,7 @@ PROGRESS = os.path.join(DATA_DIR, 'progress.json')
 BACKUP = PROGRESS + '.bak'          # versión anterior, por si progress.json se estropea
 PROGRESS_LOCK = threading.Lock()
 PROFILE = os.path.join(DATA_DIR, 'window-profile')
+ICON_CACHE = os.path.join(DATA_DIR, 'icons')
 MAX_BODY = 512 * 1024
 DEFAULT_PORT = 47317
 IDLE_LIMIT = 120          # segundos sin señal de la interfaz antes de cerrarse (modo navegador)
@@ -145,19 +150,39 @@ def read_kv(data, i=0):
     return out, i
 
 
-def steam_files():
-    """Esquema y estadísticas de logros del usuario de Steam con sesión iniciada (o el más reciente)."""
+def steam_path():
     try:
         import winreg
         with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r'Software\Valve\Steam') as k:
-            steam = winreg.QueryValueEx(k, 'SteamPath')[0]
-        try:
-            with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r'Software\Valve\Steam\ActiveProcess') as k:
-                active = winreg.QueryValueEx(k, 'ActiveUser')[0]
-        except OSError:
-            active = 0
+            return winreg.QueryValueEx(k, 'SteamPath')[0]
     except (ImportError, OSError):
+        return None
+
+
+_icons = []
+def game_icons():
+    """Iconos del juego instalado (se busca una vez), o None si no se encuentra el juego."""
+    if not _icons:
+        steam = steam_path()
+        try:
+            game = steam and gameicons.find_game(steam, STEAM_APP)
+            _icons.append(game and gameicons.GameIcons(game, ICON_CACHE))
+        except OSError:   # sin iconos la app sigue igual, con los suyos
+            _icons.append(None)
+    return _icons[0]
+
+
+def steam_files():
+    """Esquema y estadísticas de logros del usuario de Steam con sesión iniciada (o el más reciente)."""
+    steam = steam_path()
+    if not steam:
         return None, None
+    try:
+        import winreg
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r'Software\Valve\Steam\ActiveProcess') as k:
+            active = winreg.QueryValueEx(k, 'ActiveUser')[0]
+    except OSError:
+        active = 0
     stats = os.path.join(steam, 'appcache', 'stats')
     schema = os.path.join(stats, 'UserGameStatsSchema_%d.bin' % STEAM_APP)
     mine = os.path.join(stats, 'UserGameStats_%d_%d.bin' % (active, STEAM_APP))
@@ -202,7 +227,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def end_headers(self):
         # Que la ventana siempre pida la interfaz al servidor: al actualizar el exe no se queda con la versión vieja
-        if not self.path.startswith('/api/'):
+        if self.path.startswith('/gameicons/'):
+            self.send_header('Cache-Control', 'max-age=3600')
+        elif not self.path.startswith('/api/'):
             self.send_header('Cache-Control', 'no-cache')
         super().end_headers()
 
@@ -251,7 +278,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return self.send_json({'app': APP, 'version': VERSION, 'found': bool(p), 'path': p,
                                    'custom': bool(load_config().get('save')),
                                    'mtime': st.st_mtime if st else None, 'size': st.st_size if st else None,
-                                   'steam': bool(steam), 'steamMtime': os.path.getmtime(steam) if steam else None})
+                                   'steam': bool(steam), 'steamMtime': os.path.getmtime(steam) if steam else None,
+                                   'icons': bool(game_icons())})
         if path == '/api/steam':
             try:
                 got = steam_achievements()
@@ -275,6 +303,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if path == '/api/progress':
             ids, corrupt = read_progress()
             return self.send_json({'checked': ids, 'corrupt': corrupt})
+        if path.startswith('/gameicons/') and path.endswith('.png'):
+            gi = game_icons()
+            try:
+                png = gi and gi.png(path[11:-4])
+            except (OSError, zipfile.BadZipFile, ValueError):
+                png = None
+            if not png:
+                return self.send_json({'error': 'not-found'}, 404)
+            self.send_response(200)
+            self.send_header('Content-Type', 'image/png')
+            self.send_header('Content-Length', str(len(png)))
+            self.end_headers()
+            self.wfile.write(png)
+            return
         return super().do_GET()
 
     def do_POST(self):

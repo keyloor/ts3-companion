@@ -97,7 +97,7 @@ h1 .star { color: var(--woody); }
 .top { position: sticky; top: 0; z-index: 5; overflow: hidden; }
 .tabs { display: flex; gap: 2px; overflow-x: auto; padding: 6px; }
 .tab { all: unset; box-sizing: border-box; cursor: pointer; flex: none; display: grid; grid-template-columns: auto auto; gap: 0 7px; align-items: center; padding: 7px 11px; border-radius: 11px; color: var(--ink-soft); }
-.tab svg { width: 18px; height: 18px; grid-row: span 2; }
+.tab svg, .tab .gi { width: 18px; height: 18px; grid-row: span 2; }
 .tab .tl { font-weight: 800; font-size: 13.5px; color: var(--ink); line-height: 1.2; }
 .tab .tc { font-size: 11.5px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.2; }
 .tab:hover { background: var(--paper-2); }
@@ -119,6 +119,7 @@ h1 .star { color: var(--woody); }
 .chip { --c: var(--ink-soft); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 99px; border: 1.5px solid color-mix(in srgb, var(--c) 35%, transparent); background: var(--paper); color: var(--ink); }
 .chip .ico { color: var(--c); display: inline-flex; }
 .chip svg, .badge svg { width: 15px; height: 15px; flex: none; }
+.chip .gi, .badge .gi { width: 18px; height: 18px; flex: none; margin: -2px 0; }
 .chip[aria-pressed="true"] { background: color-mix(in srgb, var(--c) 16%, var(--paper)); border-color: var(--c); }
 .chip .n { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 .toggle { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.5px; cursor: pointer; }
@@ -142,6 +143,7 @@ h1 .star { color: var(--woody); }
 .g-head { all: unset; box-sizing: border-box; cursor: pointer; width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 14px 16px; }
 .g-num { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-family: var(--display); font-size: 24px; color: var(--accent-ink); background: color-mix(in srgb, var(--accent) 12%, transparent); border: 2px solid color-mix(in srgb, var(--accent) 40%, transparent); }
 .g-num svg { width: 22px; height: 22px; }
+.g-num .gi { width: 32px; height: 32px; }
 .group.complete .g-num { background: var(--woody); color: #2a1d00; border-color: var(--woody); }
 .g-title { min-width: 0; display: grid; gap: 2px; }
 .g-name { font-family: var(--display); font-size: 21px; line-height: 1.1; }
@@ -171,6 +173,10 @@ ol.items { list-style: none; margin: 0; padding: 6px 8px 10px; display: grid; ga
 .num { font-weight: 800; color: var(--ink-soft); font-variant-numeric: tabular-nums; text-align: right; padding-top: 2px; min-width: 1.6ch; }
 .code { font: 800 12px/1 ui-monospace, Consolas, monospace; color: var(--ink-soft); padding-top: 6px; min-width: 5.2ch; }
 .medal { width: 26px; height: 26px; }
+.gi { display: block; object-fit: contain; user-select: none; }
+.gi.medal { width: 30px; height: 30px; margin-top: -3px; }
+.gi.art { width: 44px; height: 44px; margin-top: -4px; }
+.items:has(.gi.art) .num { min-width: 44px; text-align: center; }   /* el texto de las cartas alineado con el de las imágenes */
 .medal.B { color: var(--bronze); } .medal.S { color: var(--silver); } .medal.G { color: var(--gold); } .medal.P { color: var(--plat); }
 .main { min-width: 0; display: grid; gap: 3px; }
 .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }

@@ -1,4 +1,5 @@
-"""Genera content/save_story.json: qué lock de la partida corresponde a cada coleccionable de historia.
+"""Genera content/save_story.json: qué lock de la partida corresponde a cada coleccionable de historia, y
+content/story_icons.json: la imagen del juego (assets/ui/alscards) de cada coleccionable único.
 
 Uso: python tools/make_story_map.py RUTA_playerdb.tupa "RUTA_DEL_JUEGO"
 - playerdb.tupa sale de assets/data.zip; da el número de cada lock (SMC_*).
@@ -31,6 +32,7 @@ def main(playerdb, game):
     story = json.load(open(os.path.join(ROOT, 'app', 'data', 'content.json'), encoding='utf-8'))['story']
     hints = json.load(open(os.path.join(ROOT, 'content', 'en_story.json'), encoding='utf-8'))['hints']
     out = {'items': {}, 'cards': []}
+    icons = {}
     for lv in story:
         found = set()
         for w in WORLDS[lv['n']]:
@@ -53,12 +55,15 @@ def main(playerdb, game):
                 for i in ids:
                     part = next(v for k, v in ZURG.items() if re.search(r'\b%s\b' % k, hints[i], re.I))
                     out['items'][i] = lock['SMC_ZurgPiece_' + part]
+                    icons[i] = 'smc_zurgpiece_' + part.lower()
             else:
                 out['items'][ids[0]] = lock[by[t][0]]
+                icons[ids[0]] = by[t][0].lower()
     assert len(set(out['items'].values())) == len(out['items'])
     n = len(out['items']) + sum(len(c['ids']) for c in out['cards'])
     assert n == 88, n
     json.dump(out, open(os.path.join(ROOT, 'content', 'save_story.json'), 'w', encoding='utf-8'), indent=1)
+    json.dump(icons, open(os.path.join(ROOT, 'content', 'story_icons.json'), 'w', encoding='utf-8'), indent=1)
     print('content/save_story.json:', len(out['items']), 'objetos únicos +', n - len(out['items']), 'cartas en', len(out['cards']), 'niveles')
 
 

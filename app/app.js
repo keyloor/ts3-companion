@@ -122,6 +122,24 @@
   const CHECK = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const CHEV = '<svg class="chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
+  // Iconos del juego: solo en la app de escritorio, que los lee del juego instalado (no se reparten con la app).
+  // Sustituyen a los SVG de arriba; si alguno no carga, se vuelve a los SVG.
+  const GAME_ICONS = {
+    tab: { route: 'icon_compass', achievements: 'icon_trophygold', story: 'icon_collectcards', capsules: 'icon_gift', stars: 'icon_stargold', picto: 'icon_pictomatic' },
+    type: { CC: 'icon_collectcardsingle', SP: 'icon_collectspecialsingle', TP: 'icon_collectblockhead', AM: 'icon_collectandy', ZP: 'icon_collectzurg', AL: 'icon_collectlgm' },
+    rarity: { G: 'icon_trophygold', S: 'icon_trophysilver', B: 'icon_trophybronze', P: 'icon_trophynone' },
+    cat: { 'Outfit': 'icon_customizeblockheadclothes', 'Alien outfit': 'icon_customizeblockheadclothes', 'Hair': 'icon_customizeblockheadhair', 'Alien hair': 'icon_customizeblockheadhair',
+      'Hat': 'icon_customizeblockheadhat', 'Alien hat': 'icon_customizeblockheadhat', 'Yard': 'icon_customizelawnornament', 'Paint': 'icon_paintbrush',
+      'Windows': 'icon_customizewindows', 'Doors': 'icon_customizedoor', 'Roof': 'icon_customizetrim', 'Porch': 'icon_customizeattachments', 'Sides': 'icon_customizewalls' },
+  };
+  const SVG_ICONS = { tab: { ...TAB_ICONS }, type: { ...TYPE_ICONS } };
+  const gameImg = (name, cls = '') => `<img class="gi ${cls}" src="gameicons/${name}.png" alt="" draggable="false">`;
+  function useGameIcons(on) {
+    desktop.icons = on;
+    for (const [icons, kind] of [[TAB_ICONS, 'tab'], [TYPE_ICONS, 'type']])
+      for (const k in icons) icons[k] = on ? gameImg(GAME_ICONS[kind][k]) : SVG_ICONS[kind][k];
+  }
+
   // Los textos usan botones de PlayStation; se muestran según la preferencia: [icono, nombre accesible]
   const PADS = {
     xbox: { 'X': ['a', 'A'], '□': ['x', 'X'], '△': ['y', 'Y'], '○': ['b', 'B'], 'R1': ['rb', 'RB'], 'R2': ['rt', 'RT'], 'L1': ['lb', 'LB'], 'L2': ['lt', 'LT'] },
@@ -138,7 +156,7 @@
   const counters = LS.get('ts3c-counters', {});   // totales que la partida no detalla (paracaidistas)
   let current = null;
   const query = {};
-  const desktop = { on: false, mtime: null, found: null, path: null, steam: null, steamMtime: null };
+  const desktop = { on: false, mtime: null, found: null, path: null, steam: null, steamMtime: null, icons: false };
   let lastSync = null;
   const t = () => UI[prefs.lang];
   const L = (o) => (o && typeof o === 'object' && 'es' in o) ? o[prefs.lang] : o;
@@ -219,7 +237,7 @@
       groups: Object.keys(C.achievementGroups).map(gk => ({
         key: gk, title: C.achievementGroups[gk], icon: 'achievements',
         items: C.achievements.filter(a => a.group === gk).map(a => ({
-          id: a.id, lead: MEDAL.replace('class="medal"', `class="medal ${rarity(a.pct)}"`), title: a.name, sub: a.name.es !== a.name.en ? a.name : null,
+          id: a.id, lead: desktop.icons ? gameImg(GAME_ICONS.rarity[rarity(a.pct)], 'medal') : MEDAL.replace('class="medal"', `class="medal ${rarity(a.pct)}"`), title: a.name, sub: a.name.es !== a.name.en ? a.name : null,
           flags: [{ text: () => t().rarity[rarity(a.pct)] + (a.pct != null ? ' · ' + a.pct.toLocaleString(prefs.lang) + ' %' : '') }],
           text: a.desc, tip: a.tip, prog: a.prog || (a.id === 't-airborn-ranger' ? 'para' : undefined), link: a.link,
         })),
@@ -229,7 +247,7 @@
       key: 'story', typeFilter: true,
       groups: C.story.map(lv => ({
         key: 'l' + lv.n, num: lv.n, title: lv.name, sub: { es: lv.sub, en: lv.sub },
-        items: lv.items.map((it, i) => ({ id: it.id, num: i + 1, type: it.type, text: it.hint, storyFlags: it.flags })),
+        items: lv.items.map((it, i) => ({ id: it.id, num: i + 1, lead: desktop.icons && it.icon ? gameImg(it.icon, 'art') : null, type: it.type, text: it.hint, storyFlags: it.flags })),
       })),
     });
     add({
@@ -247,7 +265,7 @@
       key: 'picto', intro: C.picto.intro,
       groups: C.picto.discs.map(d => ({
         key: 'd' + d.n, num: d.n, title: { es: 'Disco ' + d.n, en: 'Disc ' + d.n }, subFn: () => t().scenes(d.missions.length),
-        items: [{ id: 'pd-' + d.n, disc: true, lead: TAB_ICONS.picto.replace('<svg', '<svg class="medal" style="color:var(--accent-ink)"'), titleFn: () => t().discFound, text: d.where }]
+        items: [{ id: 'pd-' + d.n, disc: true, lead: desktop.icons ? gameImg(GAME_ICONS.tab.picto, 'medal') : TAB_ICONS.picto.replace('<svg', '<svg class="medal" style="color:var(--accent-ink)"'), titleFn: () => t().discFound, text: d.where }]
           .concat(d.missions.map(m => ({ id: m.id, title: { es: m.name, en: m.name }, text: m.req }))),
       })),
     });
@@ -358,7 +376,7 @@
     const title = it.titleFn ? it.titleFn() : L(it.title);
     const badges = [];
     if (it.type) badges.push(`<span class="badge t-${it.type}">${TYPE_ICONS[it.type]}${esc(C.storyTypes[it.type][prefs.lang].one)}</span>`);
-    if (it.catBadge) badges.push(`<span class="badge plain">${esc(L(it.catBadge))}</span>`);
+    if (it.catBadge) badges.push(`<span class="badge plain">${desktop.icons && GAME_ICONS.cat[it.catBadge.en] ? gameImg(GAME_ICONS.cat[it.catBadge.en]) : ''}${esc(L(it.catBadge))}</span>`);
     (it.flags || []).forEach(f => badges.push(`<span class="flag">${esc(f.text())}</span>`));
     if (it.sub && prefs.lang === 'es' && it.sub.en !== it.sub.es) badges.push(`<span class="ename">${esc(it.sub.en)}</span>`);
     const sf = it.storyFlags && it.storyFlags[prefs.lang] || {};
@@ -639,7 +657,9 @@
   async function start() {
     applyTheme();
     [C, SAVEMAP] = await Promise.all([fetch('data/content.json').then(r => r.json()), fetch('data/savemap.json').then(r => r.json())]);
-    try { const s = await fetch('/api/status'); desktop.on = s.ok && (await s.json()).app === 'ts3-companion'; } catch { desktop.on = false; }
+    try { const s = await fetch('/api/status'), d = s.ok && await s.json(); desktop.on = d.app === 'ts3-companion'; useGameIcons(desktop.on && !!d.icons); } catch { desktop.on = false; }
+    // Un icono del juego que no carga: se vuelve a los SVG en toda la interfaz
+    document.addEventListener('error', e => { if (desktop.icons && e.target.matches && e.target.matches('img.gi')) { useGameIcons(false); build(); show(current); } }, true);
     checked = new Set(await store.load());
     if (store.recovered) { checked.forEach(id => pending.add.add(id)); store.save(); }
     // Al volver a esta ventana (o si otra pestaña cambia el progreso) se toma la lista guardada más reciente

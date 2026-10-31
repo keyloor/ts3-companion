@@ -1,4 +1,4 @@
-TOY STORY 3 COMPANION 1.0.1  (unofficial / no oficial)
+TOY STORY 3 COMPANION 1.1.0  (unofficial / no oficial)
 =======================================================
 
 EN
@@ -15,6 +15,8 @@ EN
 
 - It only READS your save and Steam's achievement cache. It never modifies
   the save, the game or Steam.
+- Icons and collectible pictures are read from your installed copy of the
+  game (found through Steam); none are included in the download.
 - Progress is stored in %APPDATA%\TS3Companion\progress.json
 - Windows SmartScreen may warn because the exe is not signed:
   "More info" > "Run anyway". The source code is on GitHub.
@@ -34,6 +36,8 @@ Compañero al 100 % para Toy Story 3 Complete Edition (PC/Steam).
 
 - Solo LEE tu partida y la caché de logros de Steam. Nunca modifica la
   partida, el juego ni Steam.
+- Los iconos e imágenes de coleccionables se leen de tu copia instalada del
+  juego (la encuentra a través de Steam); no vienen en la descarga.
 - El progreso se guarda en %APPDATA%\TS3Companion\progress.json
 - Windows SmartScreen puede avisar porque el exe no está firmado:
   "Más información" > "Ejecutar de todas formas". El código está en GitHub.

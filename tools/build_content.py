@@ -16,6 +16,7 @@ es = load('es_tracker.json')
 es_hints = load('es_hints.json')
 en_story, en_ach, en_stars, en_picto, en_hints = (load(f'en_{n}.json') for n in ('story', 'achievements', 'stars', 'picto', 'hints'))
 items, stars_rules = load('save_items.json'), load('save_stars.json')
+story_icons = load('story_icons.json')   # generado por tools/make_story_map.py
 
 
 def slug(s):
@@ -57,6 +58,8 @@ for li, lv in enumerate(es['LEVELS']):
         flags_en = en_story['flags'].get(sid, {})
         its.append({'id': sid, 'type': t, 'hint': both(text, en_story['hints'][sid]),
                     'flags': {'es': extra, 'en': flags_en}})
+        if sid in story_icons:
+            its[-1]['icon'] = story_icons[sid]   # imagen del juego (assets/ui/alscards), solo en la app de escritorio
     levels.append({'n': li + 1, 'name': both(lv['es'], en_story['levels'][li]), 'sub': lv['en'], 'items': its})
 
 # ---------- Cápsulas ----------
