@@ -5,14 +5,19 @@ Unofficial 100% companion for **Toy Story 3 Complete Edition** on PC (Steam). Th
 - 41 Steam achievements, 88 story collectibles, 289 Toy Box capsules with location hints, 103 gold stars and the Pict-O-Matic
 - Reads your save (and Steam's achievement cache) to tick things off for you
 - The desktop app shows the game's own icons and collectible pictures, read from your installed copy (none are distributed)
+- Two downloads: the desktop app, and an in-game version that opens on top of the game with F2 or D-pad down
 
 ## Desktop app (Windows)
 
-1. Download `TS3Companion.exe` from [Releases](../../releases) or Nexus Mods and run it.
+1. Download `TS3Companion-<version>.zip` from [Releases](../../releases) or Nexus Mods, extract it anywhere and run `TS3Companion.exe`.
 2. It opens in its own window and finds your save. If it can't, press **Find save…**; the location is remembered.
 3. Press **Sync now**, or leave auto-sync on to sync every time you save in-game.
 
 Options: `--save "path\to\Saved Game"`, `--browser`, `--no-window`.
+
+## In-game version
+
+Download `TS3Companion-InGame-<version>.zip` and extract it into the game folder, next to the game's exe. Press F2 or D-pad down in the game. It doesn't need the desktop app; the app can also install it from its Settings. Details in [overlay/README.md](overlay/README.md).
 
 ## Web version
 

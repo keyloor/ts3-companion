@@ -72,6 +72,12 @@
       const i = this.dv.getInt32(at, true);
       return Math.abs(i) > 10000000 ? this.dv.getFloat32(at, true) : i;   // las distancias son float
     }
+    // % de los objetos de un tema (Modifier) que tienes; QueryMode 2 es porcentaje. Sin lista para ese tema, desconocido
+    lockPct(q) {
+      const locks = (this.modifiers || {})[String(q.Modifier).toUpperCase()];
+      if (q.QueryMode !== 2 || !locks || !locks.length) return undefined;
+      return 100 * locks.filter(l => this.lock(l) >= 5).length / locks.length;
+    }
     evaluate(ev) {
       const d = ev.Data || {};
       if (ev.Type === 'Eval_Stat') {
@@ -84,7 +90,8 @@
         return rs.includes(null) ? null : true;
       }
       if (ev.Type === 'Eval_NumericCompare') {
-        const [a, b] = d.Children.map(c => c.Type === 'EvalFetch_Stat' ? this.stat(c.Data.Stat) : c.Type === 'EvalFetch_Number' ? c.Data.Value : undefined);
+        const [a, b] = d.Children.map(c => c.Type === 'EvalFetch_Stat' ? this.stat(c.Data.Stat) : c.Type === 'EvalFetch_Number' ? c.Data.Value
+          : c.Type === 'EvalFetch_Locks' ? this.lockPct(c.Data) : undefined);
         return a === undefined || b === undefined ? null : OPS[d.Operator](a, b);
       }
       return null;   // condiciones que dependen del estado del mundo
@@ -94,6 +101,7 @@
   // Devuelve los ids conseguidos según la partida
   async function readProgress(file, savemap) {
     const save = new SaveGame(await decompress(file));
+    save.modifiers = savemap.modifiers;
     const OWNED = 5;
     const capsules = Object.entries(savemap.capsules).filter(([, l]) => save.lock(l) >= OWNED).map(([id]) => id);
     const discs = Object.entries(savemap.discs).filter(([, l]) => save.lock(l) >= OWNED).map(([id]) => id);

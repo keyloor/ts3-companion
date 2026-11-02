@@ -1,4 +1,4 @@
-TOY STORY 3 COMPANION 1.1.0  (unofficial / no oficial)
+TOY STORY 3 COMPANION 1.2.0  (unofficial / no oficial)
 =======================================================
 
 EN
@@ -12,6 +12,9 @@ EN
 4. Press "Sync now". With auto-sync on (Settings), it also syncs every time
    you save in-game or unlock a Steam achievement.
 5. Close the window to quit.
+6. Optional: Settings > In the game > Install adds an in-game panel. In the
+   game, press F2 or D-pad down to see what is left. Remove it the same way.
+   (It is also a separate download, if you only want the in-game version.)
 
 - It only READS your save and Steam's achievement cache. It never modifies
   the save, the game or Steam.
@@ -33,6 +36,10 @@ Compañero al 100 % para Toy Story 3 Complete Edition (PC/Steam).
 4. Pulsa "Sincronizar ahora". Con la sincronización automática (Opciones),
    también se sincroniza al guardar en el juego o al desbloquear un logro.
 5. Cierra la ventana para salir.
+6. Opcional: Opciones > Dentro del juego > Instalar añade un panel dentro del
+   juego. En el juego, pulsa F2 o D-pad abajo para ver lo que te falta.
+   Se quita desde el mismo sitio. (También es una descarga aparte, si solo
+   quieres la versión dentro del juego.)
 
 - Solo LEE tu partida y la caché de logros de Steam. Nunca modifica la
   partida, el juego ni Steam.

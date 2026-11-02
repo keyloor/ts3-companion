@@ -18,6 +18,17 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install pyinstaller==6.11.1
       - run: python tools/build_content.py
+      # Overlay para el juego: llvm-mingw fijado por versión y SHA-256
+      - name: Build the in-game overlay
+        shell: pwsh
+        run: |
+          $zip = "$env:RUNNER_TEMP\llvm-mingw.zip"
+          Invoke-WebRequest https://github.com/mstorsjo/llvm-mingw/releases/download/20261020/llvm-mingw-20261020-ucrt-x86_64.zip -OutFile $zip
+          if ((Get-FileHash $zip -Algorithm SHA256).Hash -ne 'FD5462B7F5D93B2FF981FCD3F9C7E427E47F3203C64EA91C27BCC444EEBD74CD') { throw 'llvm-mingw checksum mismatch' }
+          Expand-Archive $zip $env:RUNNER_TEMP
+          python overlay/build.py
+        env:
+          TS3_LLVM_MINGW: ${{ runner.temp }}\llvm-mingw-20261020-ucrt-x86_64
       - run: python -m PyInstaller desktop/TS3Companion.spec --noconfirm --distpath build/dist --workpath build/work
       - run: python tools/package_release.py
       - uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65  # v2

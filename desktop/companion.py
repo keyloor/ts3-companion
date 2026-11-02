@@ -13,10 +13,10 @@ import argparse, glob, http.server, json, os, shutil, socketserver, struct, subp
 from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import gameicons
+import gameicons, overlayinstall
 
 APP = 'ts3-companion'
-VERSION = '1.1.0'
+VERSION = '1.2.0'
 BASE = getattr(sys, '_MEIPASS', os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 WEB = os.path.join(BASE, 'app')
 DATA_DIR = os.path.join(os.environ.get('APPDATA', os.path.expanduser('~')), 'TS3Companion')
@@ -26,6 +26,8 @@ BACKUP = PROGRESS + '.bak'          # versión anterior, por si progress.json se
 PROGRESS_LOCK = threading.Lock()
 PROFILE = os.path.join(DATA_DIR, 'window-profile')
 ICON_CACHE = os.path.join(DATA_DIR, 'icons')
+# Overlay para el juego (overlay/): dentro del exe en overlay_bin/; al ejecutar desde el código, lo que compila overlay/build.py
+OVERLAY_DLL = os.path.join(BASE, 'overlay_bin', 'dxgi.dll') if hasattr(sys, '_MEIPASS') else os.path.join(BASE, 'build', 'overlay', 'dxgi.dll')
 MAX_BODY = 512 * 1024
 DEFAULT_PORT = 47317
 IDLE_LIMIT = 120          # segundos sin señal de la interfaz antes de cerrarse (modo navegador)
@@ -159,13 +161,21 @@ def steam_path():
         return None
 
 
+_game = []
+def game_dir():
+    """Carpeta del juego en Steam (se busca una vez), o None."""
+    if not _game:
+        steam = steam_path()
+        _game.append(steam and gameicons.find_game(steam, STEAM_APP) or None)
+    return _game[0]
+
+
 _icons = []
 def game_icons():
     """Iconos del juego instalado (se busca una vez), o None si no se encuentra el juego."""
     if not _icons:
-        steam = steam_path()
         try:
-            game = steam and gameicons.find_game(steam, STEAM_APP)
+            game = game_dir()
             _icons.append(game and gameicons.GameIcons(game, ICON_CACHE))
         except OSError:   # sin iconos la app sigue igual, con los suyos
             _icons.append(None)
@@ -303,6 +313,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if path == '/api/progress':
             ids, corrupt = read_progress()
             return self.send_json({'checked': ids, 'corrupt': corrupt})
+        if path == '/api/overlay':
+            return self.send_json(overlayinstall.status(game_dir(), OVERLAY_DLL, os.path.join(WEB, 'data')))
         if path.startswith('/gameicons/') and path.endswith('.png'):
             gi = game_icons()
             try:
@@ -343,6 +355,17 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 return self.send_json({'error': 'not-a-save'}, 400)
             cfg = load_config(); cfg['save'] = chosen; save_config(cfg)
             return self.send_json({'ok': True, 'path': chosen})
+        if path in ('/api/overlay/install', '/api/overlay/uninstall'):
+            try:
+                if path == '/api/overlay/install':
+                    lang = str((self.read_json() or {}).get('lang', 'en'))
+                    r = overlayinstall.install(game_dir(), OVERLAY_DLL, os.path.join(WEB, 'data'), lang)
+                else:
+                    r = overlayinstall.uninstall(game_dir())
+            except OSError as e:
+                print('overlay:', e)
+                r = 'error'
+            return self.send_json({'result': r, **overlayinstall.status(game_dir(), OVERLAY_DLL, os.path.join(WEB, 'data'))})
         if path == '/api/reset-save':
             cfg = load_config(); cfg.pop('save', None); save_config(cfg)
             return self.send_json({'ok': True})
@@ -442,6 +465,8 @@ def main():
     url = 'http://127.0.0.1:%d/' % server.server_address[1]
     print('Toy Story 3 Companion', VERSION, url)
     print('Partida / Save:', find_save(args.save) or 'no encontrada / not found')
+    # Si el overlay está instalado en el juego, que tenga los datos (y la DLL) de esta versión
+    threading.Thread(target=lambda: overlayinstall.sync(game_dir(), OVERLAY_DLL, os.path.join(WEB, 'data')), daemon=True).start()
     if not args.no_window:
         proc = open_window(url, args.browser)
         threading.Thread(target=watch_and_exit, args=(server, proc), daemon=True).start()

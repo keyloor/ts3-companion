@@ -50,6 +50,13 @@
       backupDesc: 'Guarda o recupera tu progreso en un archivo .json.',
       resetAll: 'Borrar todo el progreso', resetAllDesc: 'Desmarca todo en todas las pestañas.', resetAllAsk: '¿Seguro? No se puede deshacer.', cleared: 'Progreso borrado',
       about: 'Acerca de', version: 'Versión', mode: 'Modo', modeDesktop: 'App de escritorio', modeWeb: 'Versión web',
+      overlaySec: 'Dentro del juego', overlayRow: 'Panel en el juego',
+      overlayOff: 'Muestra lo que te falta encima del juego. Se abre con F2 o D-pad abajo.',
+      overlayOn: 'Instalado. Ábrelo en el juego con F2 o D-pad abajo.', overlayOld: 'Instalado, con una versión anterior: se actualiza al cerrar el juego y abrir la app.',
+      overlayWeb: 'Solo en la app de escritorio.', overlayNoGame: 'No encuentro el juego en Steam.', overlayNone: 'No viene en esta versión de la app.',
+      overlayForeign: 'Ya hay otro dxgi.dll en la carpeta del juego (por ejemplo, ReShade); no lo toco.',
+      install: 'Instalar', uninstall: 'Quitar',
+      overlayResult: { ok: 'Hecho.', 'in-use': 'Cierra el juego y vuelve a intentarlo.', foreign: 'Ya hay otro dxgi.dll en la carpeta del juego (por ejemplo, ReShade); no lo toco.', 'no-game': 'No encuentro el juego en Steam.', unavailable: 'No viene en esta versión de la app.', error: 'No se pudo: revisa los permisos de la carpeta del juego.' },
     },
     en: {
       eyebrow: 'Unofficial tool · Steam / PC', title: 'Toy Story 3 Companion',
@@ -98,6 +105,13 @@
       backupDesc: 'Save or restore your progress as a .json file.',
       resetAll: 'Clear all progress', resetAllDesc: 'Unticks everything in every tab.', resetAllAsk: 'Sure? This cannot be undone.', cleared: 'Progress cleared',
       about: 'About', version: 'Version', mode: 'Mode', modeDesktop: 'Desktop app', modeWeb: 'Web version',
+      overlaySec: 'In the game', overlayRow: 'In-game panel',
+      overlayOff: 'Shows what is left on top of the game. Opens with F2 or D-pad down.',
+      overlayOn: 'Installed. Open it in the game with F2 or D-pad down.', overlayOld: 'Installed, an older version: it updates when you close the game and open the app.',
+      overlayWeb: 'Desktop app only.', overlayNoGame: 'Could not find the game in Steam.', overlayNone: 'Not included in this version of the app.',
+      overlayForeign: 'There is another dxgi.dll in the game folder (for example ReShade); it is left alone.',
+      install: 'Install', uninstall: 'Remove',
+      overlayResult: { ok: 'Done.', 'in-use': 'Close the game and try again.', foreign: 'There is another dxgi.dll in the game folder (for example ReShade); it is left alone.', 'no-game': 'Could not find the game in Steam.', unavailable: 'Not included in this version of the app.', error: 'Could not do it: check the game folder permissions.' },
     },
   };
 
@@ -156,7 +170,7 @@
   const counters = LS.get('ts3c-counters', {});   // totales que la partida no detalla (paracaidistas)
   let current = null;
   const query = {};
-  const desktop = { on: false, mtime: null, found: null, path: null, steam: null, steamMtime: null, icons: false };
+  const desktop = { on: false, mtime: null, found: null, path: null, steam: null, steamMtime: null, icons: false, overlay: null };
   let lastSync = null;
   const t = () => UI[prefs.lang];
   const L = (o) => (o && typeof o === 'object' && 'es' in o) ? o[prefs.lang] : o;
@@ -313,6 +327,30 @@
   // ---------- opciones ----------
   const seg = (pref, opts) => `<span class="seg" role="group">${opts.map(([v, label, icon]) => `<button type="button" data-pref="${pref}" data-v="${v}" aria-pressed="${prefs[pref] === v}">${icon || ''}${esc(label)}</button>`).join('')}</span>`;
   const row = (lbl, desc, ctl, cls = '') => `<div class="set-row"><div><span class="lbl">${esc(lbl)}</span>${desc ? `<span class="desc ${cls}">${desc}</span>` : ''}</div>${ctl || ''}</div>`;
+  // Panel dentro del juego (overlay/): lo instala y lo quita la app de escritorio
+  function overlayRow(u) {
+    const o = desktop.overlay;
+    if (!desktop.on) return row(u.overlayRow, esc(u.overlayWeb));
+    if (!o) return row(u.overlayRow, '');
+    const act = (id, label) => `<span class="acts"><button type="button" class="btn" id="${id}">${esc(label)}</button></span>`;
+    if (!o.available) return row(u.overlayRow, esc(u.overlayNone));
+    if (!o.game) return row(u.overlayRow, esc(u.overlayNoGame));
+    if (o.foreign) return row(u.overlayRow, esc(u.overlayForeign));
+    if (o.installed) return row(u.overlayRow, esc(o.current ? u.overlayOn : u.overlayOld), act('overlay-uninstall', u.uninstall));
+    return row(u.overlayRow, esc(u.overlayOff), act('overlay-install', u.install));
+  }
+  async function overlayStatus() {
+    try { desktop.overlay = await (await fetch('/api/overlay')).json(); } catch { desktop.overlay = null; }
+  }
+  async function overlayAction(what) {
+    try {
+      const r = await (await fetch('/api/overlay/' + what, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lang: prefs.lang }) })).json();
+      desktop.overlay = r;
+      toast(esc(t().overlayResult[r.result] || r.result));
+    } catch { toast(esc(t().overlayResult.error)); }
+    renderSettings();
+  }
+
   function renderSettings() {
     const u = t(), body = $('settings-body');
     $('settings-title').textContent = u.settings;
@@ -330,6 +368,9 @@
         ${row(u.saveFile, savePath, saveActs, 'path')}
         ${row(u.steamRow, esc(!desktop.on ? u.steamWeb : desktop.steam ? u.steamFound : u.steamMissing))}
         ${row(u.lastSync, esc(lastSync ? lastSync.toLocaleString(prefs.lang) : u.never))}
+      </div></section>
+      <section class="set-group"><h3>${esc(u.overlaySec)}</h3><div class="card set-list">
+        ${overlayRow(u)}
       </div></section>
       <section class="set-group"><h3>${esc(u.progressSec)}</h3><div class="card set-list">
         ${row(u.storedAt, desktop.on ? '%APPDATA%\\TS3Companion\\progress.json' : esc(u.storedWeb), '', desktop.on ? 'path' : '')}
@@ -621,7 +662,9 @@
       if (opt.dataset.pref === 'lang') return animate('lang', () => show(current));
       return show(current);
     }
-    if (e.target.closest('#settings-open')) { renderSettings(); return $('settings').showModal(); }
+    if (e.target.closest('#settings-open')) { renderSettings(); $('settings').showModal(); if (desktop.on) overlayStatus().then(renderSettings); return; }
+    if (e.target.id === 'overlay-install') return overlayAction('install');
+    if (e.target.id === 'overlay-uninstall') return overlayAction('uninstall');
     if (e.target.closest('#settings-close') || e.target.id === 'settings') return $('settings').close();
     if (e.target.id === 'reset-all') { $('reset-all-slot').innerHTML = `<span class="desc">${esc(t().resetAllAsk)}</span> <button class="btn danger" id="reset-all-yes" type="button">${esc(t().yes)}</button> <button class="btn" id="reset-all-no" type="button">${esc(t().no)}</button>`; return $('reset-all-no').focus(); }
     if (e.target.id === 'reset-all-yes') { setChecked(Object.keys(INDEX), false); toast(esc(t().cleared)); return renderSettings(); }

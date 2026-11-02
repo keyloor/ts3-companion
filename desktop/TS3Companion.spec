@@ -2,9 +2,12 @@
 import os
 ROOT = os.path.abspath(os.path.join(SPECPATH, '..'))
 
+# El overlay para el juego (python overlay/build.py) va dentro del exe, si está compilado
+OVERLAY = os.path.join(ROOT, 'build', 'overlay', 'dxgi.dll')
+
 a = Analysis([os.path.join(ROOT, 'desktop', 'companion.py')],
              pathex=[ROOT],
-             datas=[(os.path.join(ROOT, 'app'), 'app')],
+             datas=[(os.path.join(ROOT, 'app'), 'app')] + ([(OVERLAY, 'overlay_bin')] if os.path.isfile(OVERLAY) else []),
              excludes=['tkinter', 'unittest', 'pydoc', 'email.test'],
              noarchive=False)
 pyz = PYZ(a.pure)

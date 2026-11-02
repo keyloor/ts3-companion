@@ -607,8 +607,8 @@
    "mundo": "spaceport_interior",
    "objeto": "SPIntCapsule5",
    "item_juego": "CL_Alien_HT_Zurgy",
-   "cp": "CP111",
-   "nombre": "Zurg Commander Helmet",
+   "cp": "CP119",
+   "nombre": "Zurg Sentry Hat",
    "dudosa": true,
    "lock": 248
   },
@@ -679,18 +679,18 @@
    "mundo": "spaceport_interior",
    "objeto": "SPIntCapsule9",
    "item_juego": "CL_Alien_B_Zurgy3",
-   "cp": "CP101",
-   "nombre": "Zurg Trooper Outfit",
-   "dudosa": true,
+   "cp": "CP97",
+   "nombre": "Zurg Commander Outfit",
+   "dudosa": false,
    "lock": 207
   },
   {
    "mundo": "spaceport_interior",
    "objeto": "SPIntCapsule19",
    "item_juego": "CL_Alien_B_Zurgy4",
-   "cp": "CP116",
-   "nombre": "Zurg Sentry Outfit",
-   "dudosa": true,
+   "cp": "CP101",
+   "nombre": "Zurg Trooper Outfit",
+   "dudosa": false,
    "lock": 208
   },
   {
@@ -724,17 +724,17 @@
    "mundo": "spaceport_interior",
    "objeto": "SPIntCapsule20",
    "item_juego": "CL_Alien_B_Zurgy",
-   "cp": "CP97",
-   "nombre": "Zurg Commander Outfit",
-   "dudosa": true,
+   "cp": "CP116",
+   "nombre": "Zurg Sentry Outfit",
+   "dudosa": false,
    "lock": 206
   },
   {
    "mundo": "spaceport_interior",
    "objeto": "SPIntCapsule10",
    "item_juego": "CL_Alien_HT_Zurgy4",
-   "cp": "CP119",
-   "nombre": "Zurg Sentry Hat",
+   "cp": "CP113",
+   "nombre": "Zurg Trooper Hat",
    "dudosa": true,
    "lock": 250
   },
@@ -742,8 +742,8 @@
    "mundo": "spaceport_interior",
    "objeto": "SPIntCapsule11",
    "item_juego": "CL_Alien_HT_Zurgy3",
-   "cp": "CP113",
-   "nombre": "Zurg Trooper Hat",
+   "cp": "CP111",
+   "nombre": "Zurg Commander Helmet",
    "dudosa": true,
    "lock": 249
   },
@@ -2241,9 +2241,9 @@
   },
   {
    "cp": "ZB2",
-   "item_juego": "CL_Alien_PurpleMoon",
-   "lock": 271,
-   "dudosa": true
+   "item_juego": "CL_Alien_StarCom2",
+   "lock": 282,
+   "dudosa": false
   },
   {
    "cp": "ZB3",
@@ -2287,19 +2287,19 @@
    "id": "DUL1",
    "item_juego": "CL_BH_HT_Corn",
    "lock": 460,
-   "dudosa": true
+   "dudosa": false
   },
   {
    "id": "DUL2",
-   "item_juego": "CL_BH_HT_Beanie",
-   "lock": 452,
-   "dudosa": true
+   "item_juego": "CL_BH_HT_DarkBlue",
+   "lock": 461,
+   "dudosa": false
   },
   {
    "id": "DUL3",
-   "item_juego": "CL_BH_HT_BigBand",
-   "lock": 453,
-   "dudosa": true
+   "item_juego": "CL_BH_HT_HermitClean",
+   "lock": 464,
+   "dudosa": false
   },
   {
    "id": "DUL4",
@@ -2309,15 +2309,15 @@
   },
   {
    "id": "DUL5",
-   "item_juego": "CL_BH_HR_Swashbuckler",
-   "lock": 437,
-   "dudosa": true
+   "item_juego": "CL_BH_HR_LionTamer",
+   "lock": 406,
+   "dudosa": false
   },
   {
    "id": "DUL6",
-   "item_juego": "CL_BH_HR_PoofyPigTails",
-   "lock": 420,
-   "dudosa": true
+   "item_juego": "CL_BH_HR_Pigtails",
+   "lock": 416,
+   "dudosa": false
   },
   {
    "id": "DUL7",
@@ -2345,15 +2345,15 @@
   },
   {
    "id": "DUL11",
-   "item_juego": "CL_BH_HR_BangsWave",
-   "lock": 382,
-   "dudosa": true
+   "item_juego": "CL_BH_HR_PinkCowGirl",
+   "lock": 417,
+   "dudosa": false
   },
   {
    "id": "DUL12",
-   "item_juego": "CL_BH_HR_LongHair",
-   "lock": 407,
-   "dudosa": true
+   "item_juego": "CL_BH_HR_PurpleBoy",
+   "lock": 423,
+   "dudosa": false
   },
   {
    "id": "DUL13",
@@ -2369,15 +2369,15 @@
   },
   {
    "id": "DUL15",
-   "item_juego": "CL_BH_B_DarkBlue",
-   "lock": 314,
-   "dudosa": true
+   "item_juego": "CL_BH_B_HermitClean",
+   "lock": 322,
+   "dudosa": false
   },
   {
    "id": "DUL16",
    "item_juego": "CL_BH_B_LionTamer",
    "lock": 327,
-   "dudosa": true
+   "dudosa": false
   },
   {
    "id": "DUL17",

@@ -118,6 +118,7 @@ for s in stars_rules:
 savemap['starTotalStat'] = 'GOLDSTAR_COLLECTED'
 savemap['pictoDoneStat'] = 'PICTO_COMPLETED_CHALLENGE_COUNT'
 savemap['story'] = load('save_story.json')   # generado por tools/make_story_map.py
+savemap['modifiers'] = load('save_modifiers.json')   # locks de cada tema, generado por tools/make_modifier_map.py
 savemap['counters'] = {'para': {'stat': 'PARATROOPERS_LANDED_UNIQUE', 'total': 30}}   # army men: objetivos de paracaidistas del Toy Box
 assert len(savemap['capsules']) == 289 and len(savemap['stars']) == 103
 assert len(savemap['story']['items']) + sum(len(c['ids']) for c in savemap['story']['cards']) == 88

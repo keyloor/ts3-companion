@@ -41,6 +41,13 @@ class Save:
         i = struct.unpack('<i', v)[0]
         return struct.unpack('<f', v)[0] if abs(i) > 10_000_000 else i
 
+    def lock_pct(self, q):
+        """% de los objetos de un tema (Modifier) que tienes; QueryMode 2 es porcentaje. Sin lista para ese tema, None."""
+        locks = getattr(self, 'modifiers', {}).get(str(q.get('Modifier')).upper())
+        if q.get('QueryMode') != 2 or not locks:
+            return None
+        return 100 * sum(self.lock(l) >= 5 for l in locks) / len(locks)
+
     def evaluate(self, ev):
         t, d = ev['Type'], ev.get('Data', {})
         if t == 'Eval_Stat':
@@ -50,7 +57,8 @@ class Save:
             rs = [self.evaluate(c) for c in d.get('Children', [])]
             return False if False in rs else (None if None in rs else True)
         if t == 'Eval_NumericCompare':
-            vals = [self.stat(c['Data']['Stat']) if c['Type'] == 'EvalFetch_Stat' else c['Data'].get('Value') if c['Type'] == 'EvalFetch_Number' else None for c in d['Children']]
+            vals = [self.stat(c['Data']['Stat']) if c['Type'] == 'EvalFetch_Stat' else c['Data'].get('Value') if c['Type'] == 'EvalFetch_Number'
+                    else self.lock_pct(c['Data']) if c['Type'] == 'EvalFetch_Locks' else None for c in d['Children']]
             return None if None in vals else OPS[d['Operator']](*vals)
         return None
 
@@ -62,6 +70,7 @@ def main():
     a = ap.parse_args()
     sm = json.load(open(os.path.join(ROOT, 'app', 'data', 'savemap.json'), encoding='utf-8'))
     s = Save(decompress(open(a.save, 'rb').read()))
+    s.modifiers = sm.get('modifiers', {})
     caps = [i for i, l in sm['capsules'].items() if s.lock(l) >= 5]
     discs = [i for i, l in sm['discs'].items() if s.lock(l) >= 5]
     stars = [i for i, c in sm['stars'].items() if s.evaluate(c)]

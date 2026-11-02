@@ -27,6 +27,12 @@ The desktop app shows icons and collectible pictures from **your own installed c
 
 La app de escritorio muestra iconos e imágenes de coleccionables de **tu propia copia instalada** de Toy Story 3 (`assets/ui` de la carpeta del juego). Se leen en tu PC y no se reparten con el Companion; son de Disney/Pixar.
 
+## In-game panel / Panel en el juego
+
+The in-game panel is drawn with **Dear ImGui** by Omar Cornut (https://github.com/ocornut/imgui), MIT licence. It carries the app's fonts converted to TTF (Nunito; Lilita One under the name TS3C Display, as its licence asks for converted copies) and the button icons above.
+
+El panel dentro del juego se dibuja con **Dear ImGui** de Omar Cornut (https://github.com/ocornut/imgui), licencia MIT. Lleva las fuentes de la app convertidas a TTF (Nunito; Lilita One con el nombre TS3C Display, como pide su licencia para las copias convertidas) y los iconos de botones de arriba.
+
 ## Button icons / Iconos de botones
 
 Controller button icons: **Input Prompts** by **Kenney** (www.kenney.nl), released under Creative Commons Zero (CC0 1.0). Xbox and PlayStation are trademarks of Microsoft and Sony; the icons only show which button to press.
